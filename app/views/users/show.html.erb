@@ -1,0 +1,12 @@
+<br><br><br><br><br><br>
+<h1>Users#show</h1>
+
+      <% if @current_user.present? %>
+        <%= link_to 'Logout', login_path, method: 'delete' %>
+    <% else %>
+        <%= link_to 'Login', login_path %>
+
+        <%= link_to 'Sign Up', '/' %>
+    <% end %>
+
+    <%= link_to 'Edit Your Profile', edit_user_path %>

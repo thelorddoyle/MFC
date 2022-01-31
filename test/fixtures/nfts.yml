@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  wallet_id: 1
+  mint_season: 1
+  mint_bracket: 1
+  eye_colour: MyText
+  hair_style: MyText
+  hair_colour: MyText
+  skin_colour: MyText
+  shorts: MyText
+  facial_expression: MyText
+  body_type: MyText
+  handwear: MyText
+  background_colour: MyText
+  tattoos: MyText
+  total_fights: 1
+  best_position: 1
+  amount_won: 1.5
+
+two:
+  wallet_id: 1
+  mint_season: 1
+  mint_bracket: 1
+  eye_colour: MyText
+  hair_style: MyText
+  hair_colour: MyText
+  skin_colour: MyText
+  shorts: MyText
+  facial_expression: MyText
+  body_type: MyText
+  handwear: MyText
+  background_colour: MyText
+  tattoos: MyText
+  total_fights: 1
+  best_position: 1
+  amount_won: 1.5

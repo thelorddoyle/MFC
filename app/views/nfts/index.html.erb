@@ -1,0 +1,11 @@
+<h1>All Fighters</h1>
+
+<ul>
+
+    <% @nfts.each do |nft| %>
+        <li> 
+            <%= link_to nft.id, nft_path(nft.id)  %>
+        </li>
+    <% end %>
+
+</ul>
