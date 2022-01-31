@@ -1,12 +1,95 @@
-<br><br><br><br><br><br>
-<h1> <%= @current_user.username %> </h1>
+<main class="profile">
+    <div class="light top-of-page-light">
+        <h1 id="profile">Profile</h1>
+        <h2>Welcome to the MFC</h2>
+    </div>
+<div class="flex-row-stretch">
 
-      <% if @current_user.present? %>
-        <%= link_to 'Logout', login_path, method: 'delete' %>
-    <% else %>
-        <%= link_to 'Login', login_path %>
+    <div id='profile-left' class="flex-column-start">
 
-        <%= link_to 'Sign Up', '/' %>
-    <% end %>
+        <div id='profile-options' class='flex-column-start'>
 
-    <%= link_to 'Edit Your Profile', edit_user_path %>
+            <h1> Hello, <%= @current_user.username %>.</h1>
+
+            <h3>What would you like to do?</h3>
+
+            <div class="flex-column-flex-start-align">
+
+                <% if @current_user.present? %>
+                
+                <h4 id='wallet_amount'>Available Funds In Wallet: <%= @current_user.eth_in_wallet %></h2>
+
+                <%= button_to "Add Funds", edit_user_path, :method => "get", class: "buttonLink", id: "headButton" %>
+
+                <%= button_to "Edit Account", edit_user_path, :method => "get", class: "buttonLink", id: "headButton" %>
+
+                <%= button_to "Logout", login_path, method: 'delete', class: "buttonLink", id: "headButton" %>
+            
+                <% else %>
+            
+                    redirect_to login_path
+            
+                <% end %>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id='profile-right' class="flex-column-start">
+
+        <div id='top-of-asset-grid' class='asset-grid'>
+
+                <div class='asset-id asset-top-row'>
+                    <h3>Fighter #</h3>
+                </div>
+
+                <div class='asset-id'>
+                    <h3>Image</h3>
+                </div>
+
+                <div class='asset-id'>
+                    <h3>Total Fights</h3>
+                </div>                
+
+                <div class='asset-id'>
+                    <h3>Fights Won</h3>
+                </div>
+
+                <div class='asset-id'>
+                    <h3>ETH Won</h3>
+                </div>
+
+            <% @user.nfts.order([:fights_won]).reverse.each do |nft| %>
+
+                <div class='asset-id'>
+                    <h3>#<%= link_to nft.id, nft_path(nft.id)  %></h3>
+                </div>
+
+                <div class='asset-id'>
+                    <%= image_tag nft.image, alt: nft.id, class: 'profile_asset_image' %>
+                </div>
+
+                <div class='asset-id'>
+                    <h3><%= link_to nft.total_fights, nft_path(nft.id)  %></h3>
+                </div>
+
+                <div class='asset-id'>
+                    <h3><%= link_to nft.fights_won, nft_path(nft.id)  %></h3>
+                </div>
+
+                <div class='asset-id'>
+                    <h3><%= link_to nft.amount_won, nft_path(nft.id)  %></h3>
+                </div>
+
+            <% end %>
+        </div>
+
+    </div>
+
+</div>
+
+
+</main>
+

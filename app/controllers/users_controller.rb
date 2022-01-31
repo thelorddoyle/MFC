@@ -22,6 +22,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @user = User.find params[:id]
   end
 
   def edit
@@ -38,8 +39,12 @@ class UsersController < ApplicationController
       redirect_to login_path
       return
     end
+
+    eth_to_add = user_params[:eth_in_wallet].to_f
+    new_eth_total = (eth_to_add + @user.eth_in_wallet.to_f)
     
     if @user.update user_params
+      @user.update eth_in_wallet: new_eth_total
       redirect_to user_path
     else
       render :edit
@@ -54,7 +59,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :email, :password, :password_confirmation)
+    params.require(:user).permit(:username, :email, :password, :password_confirmation, :eth_in_wallet )
   end
 
 end

@@ -24851,3 +24851,2553 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/users/50" for ::1 at 2022-02-01 07:30:41 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 07:30:43 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-01 07:30:47 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 56ms (Views: 47.0ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/whitepaper" for ::1 at 2022-02-01 07:30:51 +1100
+Processing by NftsController#whitepaper as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/whitepaper.html.erb within layouts/application
+  Rendered nfts/whitepaper.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/whitepaper" for ::1 at 2022-02-01 07:30:53 +1100
+Processing by NftsController#whitepaper as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/whitepaper.html.erb within layouts/application
+  Rendered nfts/whitepaper.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:30:53 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:34:25 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-01 07:34:39 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (3.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 45ms (Views: 33.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:35:30 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:36:00 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 27.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:36:09 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:37:37 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:45:31 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:45:57 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:46:44 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 19.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:47:25 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2022-02-01 07:50:03 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/daniel/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/daniel/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [26 times] (21.9ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 43ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:51:38 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:26
+  Rendered users/show.html.erb within layouts/application (64.8ms)
+Completed 200 OK in 155ms (Views: 88.6ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/nfts/95" for ::1 at 2022-02-01 07:51:46 +1100
+Processing by NftsController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:47
+  Rendering nfts/show.html.erb within layouts/application
+  Rendered nfts/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 17.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:53:28 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:25
+  Rendered users/show.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `nft' for #<User:0x00007fad61cb9b28>
+Did you mean?  nfts):
+    25:             <% @user.nfts.each do |nft| %>
+    26:                 <div class='asset'>
+    27:                     <h2>ID: #</h2><%= link_to nft.id, nft_path(nft.id)  %>
+    28:                     <%= image_tag @user.nft.image, alt: @user.nft.id, class: 'nft_image' %>
+    29:                 </div>
+    30:             <% end %>
+    31:         </div>
+  
+app/views/users/show.html.erb:28:in `block in _app_views_users_show_html_erb__2211081134966599763_654740'
+app/views/users/show.html.erb:25:in `_app_views_users_show_html_erb__2211081134966599763_654740'
+Started GET "/users/50" for ::1 at 2022-02-01 07:53:46 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:25
+  Rendered users/show.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    25:             <% @user.nfts.each do |nft| %>
+    26:                 <div class='asset'>
+    27:                     <h2>ID: #</h2><%= link_to nft.id, nft_path(nft.id)  %>
+    28:                     <%= image_tag @nft.image, alt: @nft.id, class: 'nft_image' %>
+    29:                 </div>
+    30:             <% end %>
+    31:         </div>
+  
+app/views/users/show.html.erb:28:in `block in _app_views_users_show_html_erb__2211081134966599763_655260'
+app/views/users/show.html.erb:25:in `_app_views_users_show_html_erb__2211081134966599763_655260'
+Started GET "/users/50" for ::1 at 2022-02-01 07:53:47 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:25
+  Rendered users/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    25:             <% @user.nfts.each do |nft| %>
+    26:                 <div class='asset'>
+    27:                     <h2>ID: #</h2><%= link_to nft.id, nft_path(nft.id)  %>
+    28:                     <%= image_tag @nft.image, alt: @nft.id, class: 'nft_image' %>
+    29:                 </div>
+    30:             <% end %>
+    31:         </div>
+  
+app/views/users/show.html.erb:28:in `block in _app_views_users_show_html_erb__2211081134966599763_655780'
+app/views/users/show.html.erb:25:in `_app_views_users_show_html_erb__2211081134966599763_655780'
+Started PUT "/__web_console/repl_sessions/d9bc55316ba8fe9a545d18739bbf7bb1" for ::1 at 2022-02-01 07:54:19 +1100
+Started PUT "/__web_console/repl_sessions/d9bc55316ba8fe9a545d18739bbf7bb1" for ::1 at 2022-02-01 07:54:21 +1100
+Started PUT "/__web_console/repl_sessions/d9bc55316ba8fe9a545d18739bbf7bb1" for ::1 at 2022-02-01 07:54:23 +1100
+Started PUT "/__web_console/repl_sessions/d9bc55316ba8fe9a545d18739bbf7bb1" for ::1 at 2022-02-01 07:54:32 +1100
+Started PUT "/__web_console/repl_sessions/d9bc55316ba8fe9a545d18739bbf7bb1" for ::1 at 2022-02-01 07:54:32 +1100
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 LIMIT $2[0m  [["user_id", 50], ["LIMIT", 11]]
+  ↳ /Users/daniel/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/d9bc55316ba8fe9a545d18739bbf7bb1" for ::1 at 2022-02-01 07:54:45 +1100
+Started PUT "/__web_console/repl_sessions/d9bc55316ba8fe9a545d18739bbf7bb1" for ::1 at 2022-02-01 07:54:46 +1100
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:28
+Started PUT "/__web_console/repl_sessions/d9bc55316ba8fe9a545d18739bbf7bb1" for ::1 at 2022-02-01 07:55:16 +1100
+Started PUT "/__web_console/repl_sessions/d9bc55316ba8fe9a545d18739bbf7bb1" for ::1 at 2022-02-01 07:55:17 +1100
+Started PUT "/__web_console/repl_sessions/d9bc55316ba8fe9a545d18739bbf7bb1" for ::1 at 2022-02-01 07:55:18 +1100
+Started GET "/users/50" for ::1 at 2022-02-01 07:55:42 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (3.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:25
+  Rendered users/show.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 43ms (Views: 35.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:56:27 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (3.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:25
+  Rendered users/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 43ms (Views: 37.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:56:37 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:25
+  Rendered users/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-01 07:58:24 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (2.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 52ms (Views: 44.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:58:28 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:25
+  Rendered users/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 21ms (Views: 16.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:01:11 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:29
+  Rendered users/show.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 109ms (Views: 89.3ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:02:50 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (2.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:29
+  Rendered users/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 32ms (Views: 23.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:03:18 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (2.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:29
+  Rendered users/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 46ms (Views: 32.7ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:03:27 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:29
+  Rendered users/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 33ms (Views: 24.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 08:03:52 +1100
+Started GET "/users/50" for ::1 at 2022-02-01 08:03:53 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+Processing by SessionController#new as HTML
+  [1m[36mNft Load (32.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:29
+  Rendered users/show.html.erb within layouts/application (42.5ms)
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 117ms (Views: 66.0ms | ActiveRecord: 33.1ms)
+
+
+Completed 200 OK in 266ms (Views: 250.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 08:03:59 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 70ms (Views: 61.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:04:02 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:29
+  Rendered users/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:05:15 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:29
+  Rendered users/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 46ms (Views: 41.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:05:28 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:29
+  Rendered users/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:05:42 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:29
+  Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 39ms (Views: 28.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:09:36 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:46
+  Rendered users/show.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 122ms (Views: 107.6ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:10:04 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:46
+  Rendered users/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 40ms (Views: 36.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:16:28 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:44
+  Rendered users/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 53ms (Views: 47.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:17:02 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (14.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:44
+  Rendered users/show.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 104ms (Views: 66.4ms | ActiveRecord: 20.2ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:17:15 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:44
+  Rendered users/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 38ms (Views: 33.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:17:24 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:44
+  Rendered users/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 38ms (Views: 32.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:17:57 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:46
+  Rendered users/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 25ms (Views: 19.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:18:19 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:46
+  Rendered users/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 24ms (Views: 19.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:19:12 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:46
+  Rendered users/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:21:51 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 29ms (Views: 23.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:22:00 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 49ms (Views: 40.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:22:21 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 41ms (Views: 36.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:22:31 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 40ms (Views: 36.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:22:47 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:23:01 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (3.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 38ms (Views: 29.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:23:19 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (2.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 39ms (Views: 33.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:23:55 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 44ms (Views: 34.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:24:06 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 44ms (Views: 39.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:24:40 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 72ms (Views: 58.9ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:24:47 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 51ms (Views: 46.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:25:00 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 78ms (Views: 66.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:26:28 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (2.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 43ms (Views: 37.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:26:38 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 40ms (Views: 34.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:26:42 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 28ms (Views: 23.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:27:04 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:28:08 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (3.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 67ms (Views: 58.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:28:15 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/nfts/96" for ::1 at 2022-02-01 08:29:41 +1100
+Processing by NftsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:47
+  Rendering nfts/show.html.erb within layouts/application
+  Rendered nfts/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 34ms (Views: 29.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:29:44 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 32ms (Views: 27.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:31:20 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 36ms (Views: 31.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:32:40 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (3.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 25ms (Views: 19.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:36:46 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 85ms (Views: 69.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:36:55 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 57ms (Views: 50.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:37:00 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 33ms (Views: 29.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:37:13 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 70ms (Views: 65.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:37:26 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:37:37 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (9.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 138ms (Views: 93.9ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:37:47 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 51ms (Views: 46.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:38:11 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:38:43 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:39:01 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 40ms (Views: 35.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:40:01 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 48ms (Views: 38.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:40:11 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 35ms (Views: 30.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 08:41:35 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (2.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:50
+  Rendered users/show.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 79ms (Views: 61.7ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:07:40 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 66ms (Views: 53.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:08:15 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 44ms (Views: 36.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:08:29 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 48ms (Views: 29.1ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:09:58 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 50ms (Views: 43.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:10:25 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (4.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 160ms (Views: 151.5ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:11:31 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 47ms (Views: 42.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:12:04 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 45ms (Views: 37.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:12:12 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 42ms (Views: 37.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:12:21 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 39ms (Views: 33.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:12:32 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 60ms (Views: 48.9ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:12:43 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 42ms (Views: 35.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:12:49 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 27ms (Views: 22.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:13:50 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:14:05 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 43ms (Views: 38.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:15:16 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 45ms (Views: 41.5ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/login" for ::1 at 2022-02-01 09:17:09 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8NmWqxmoBQzWW8DaQtrIqY15p/MjR5H/omXo8FvrluieIthKicpPRqm7Z9MRKdYiHOO7buVel9tT3bYW0545lA=="}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/login
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 09:17:09 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2022-02-01 09:17:34 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"21spfKqoq3xQu3iSaHwf2dkRh9ddy9cyRbv/Gy1YHKy1oGedOsrhNi9b35s7jwFSSIubSpvS0Ra0A6H9pS2z0A==", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dlorddoyle@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 236ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 09:17:34 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 30ms (Views: 25.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:17:36 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:56
+  Rendered users/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 48ms (Views: 40.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:18:29 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:54
+  Rendered users/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 34ms (Views: 27.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:19:01 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (171.4ms)
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `llink_to' for #<#<Class:0x00007fad61a524c0>:0x00007fad765b5790>
+Did you mean?  link_to):
+    19:                     <br>
+    20:                     <%= link_to 'Sign Up', '/' %>
+    21:                 <% end %>
+    22:                     <button id="headButton"><%= llink_to 'Edit Your Profile', edit_user_path, class: "buttonLink" %></button>
+    23:             </div>
+    24: 
+    25:         </div>
+  
+app/views/users/show.html.erb:22:in `_app_views_users_show_html_erb__2211081134966599763_662860'
+Started GET "/users/50" for ::1 at 2022-02-01 09:19:14 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (11.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (3.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:53
+  Rendered users/show.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 93ms (Views: 68.8ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:19:41 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (2.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:53
+  Rendered users/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 55ms (Views: 48.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:20:12 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (3.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:53
+  Rendered users/show.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 54ms (Views: 45.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:20:59 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:49
+  Rendered users/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 33ms (Views: 27.9ms | ActiveRecord: 2.9ms)
+
+
+Started DELETE "/login" for ::1 at 2022-02-01 09:21:20 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dpo/7F8eCdWTjEYhJUMBnVyD4Y4opz/+vHwS1V51g08YYXENz3xDn+xs4Sh2sB8WzRn9E+6+OdpNxEwz1gAsMw=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 09:21:20 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 09:21:40 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 09:21:41 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2022-02-01 09:21:46 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EKTF5dpzXPZwCwWeX6hCKVQK6FMLI6hXXIiqDfLpagR+X4sEShEWvA/ropcMW1yixZD0zs06rnOtMPTrepzFeA==", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dlorddoyle@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 228ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 09:21:46 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:21:48 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:51
+  Rendered users/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 37ms (Views: 32.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:22:54 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:59
+  Rendered users/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:23:24 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `eth_amount' for #<User:0x00007fad7a386038>):
+    26: 
+    27:                 <button id="headButton"><%= link_to 'Add Funds', edit_user_path, class: "buttonLink" %></button>
+    28: 
+    29:                 <h2>Available Funds In Wallet: <%= @current_user.eth_amount %></h2>
+    30: 
+    31:             </div>
+    32: 
+  
+app/views/users/show.html.erb:29:in `_app_views_users_show_html_erb__2211081134966599763_664260'
+Started GET "/users/50" for ::1 at 2022-02-01 09:23:41 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:61
+  Rendered users/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 30ms (Views: 23.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:24:16 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:67
+  Rendered users/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 37ms (Views: 28.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:24:25 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:67
+  Rendered users/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 32ms (Views: 25.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:24:54 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (2.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 33ms (Views: 25.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:25:05 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 33ms (Views: 29.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:26:47 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (11.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (9.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 107ms (Views: 63.5ms | ActiveRecord: 22.2ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:31:03 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 52ms (Views: 45.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50/edit" for ::1 at 2022-02-01 09:31:15 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.6ms)
+  Rendered users/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 27ms (Views: 21.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:31:35 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:32:36 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 51ms (Views: 46.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:34:33 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 58ms (Views: 51.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:35:05 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (3.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 54ms (Views: 44.1ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:35:39 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:35:44 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 33ms (Views: 28.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:36:11 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 63ms (Views: 53.5ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:36:50 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 49ms (Views: 42.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:38:36 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 57ms (Views: 49.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:39:36 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:70
+  Rendered users/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/login" for ::1 at 2022-02-01 09:39:39 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"41LcdLd7GHht+VTQNAPuJIsHZofXgK9FLsVGIkE65UGNqZKVJxlSMhIZ89ln8PCvGp16GhGZqWHffRjEyU9KPQ=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 09:39:39 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2022-02-01 09:39:43 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QbH/4s3bhoJ5tbSdzkjDoUNP1zUsGyPRPNh73dw5sc0vSrEDXbnMyAZVE5Sdu90q0tXLqOoCJfXNYCU7VEwesQ==", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dlorddoyle@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 226ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 09:39:43 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 36ms (Views: 31.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:39:46 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:70
+  Rendered users/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 60ms (Views: 42.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:40:53 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 90ms (Views: 71.8ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:42:29 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 76ms (Views: 70.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:43:01 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (10.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 90ms (Views: 59.7ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:43:21 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 53ms (Views: 47.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 09:43:35 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:43:37 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 40ms (Views: 31.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:44:28 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 57ms (Views: 53.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:45:10 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 83ms (Views: 71.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:45:35 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 49ms (Views: 43.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:46:32 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 47ms (Views: 40.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:47:19 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 46ms (Views: 36.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:47:28 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 41ms (Views: 35.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:47:47 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 39ms (Views: 34.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-01 09:47:49 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 27ms (Views: 21.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:47:52 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:48:30 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 51ms (Views: 46.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:49:40 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 70ms (Views: 66.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-01 09:49:45 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-01 09:50:15 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 40ms (Views: 36.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-01 09:50:34 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 09:50:48 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 32ms (Views: 23.0ms | ActiveRecord: 3.6ms)
+
+
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts"[0m
+Started GET "/" for ::1 at 2022-02-01 10:10:19 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 64ms (Views: 53.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 10:10:26 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 44ms (Views: 38.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-01 10:11:11 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 36ms (Views: 31.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/whitepaper" for ::1 at 2022-02-01 10:11:48 +1100
+Processing by NftsController#whitepaper as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/whitepaper.html.erb within layouts/application
+  Rendered nfts/whitepaper.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 10:11:49 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 10:11:52 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 34ms (Views: 28.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 10:11:59 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 27ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 10:12:00 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 10:12:38 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (3.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 36ms (Views: 24.3ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 10:12:49 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 62ms (Views: 49.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 10:14:32 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 10:14:34 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 10:14:36 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 34ms (Views: 30.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 10:14:40 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 10:15:17 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 10:21:35 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 40ms (Views: 30.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 10:22:35 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 61ms (Views: 27.8ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 10:39:18 +1100
+  
+SyntaxError (/Users/daniel/sei/projects/mfc/app/controllers/users_controller.rb:47: syntax error, unexpected ':', expecting `end'
+...   @user.update :eth_in_wallet: new_eth_total
+...                              ^
+):
+  
+app/controllers/users_controller.rb:47: syntax error, unexpected ':', expecting `end'
+Started GET "/users/50" for ::1 at 2022-02-01 10:40:10 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (140.2ms)
+Completed 200 OK in 418ms (Views: 173.5ms | ActiveRecord: 107.9ms)
+
+
+Started GET "/users/50/edit" for ::1 at 2022-02-01 10:40:17 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (11.3ms)
+  Rendered users/edit.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 91ms (Views: 83.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/50/edit" for ::1 at 2022-02-01 10:40:52 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (11.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.4ms)
+  Rendered users/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 89ms (Views: 69.8ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 10:41:13 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 62ms (Views: 49.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/users/50/edit" for ::1 at 2022-02-01 10:41:22 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.2ms)
+  Rendered users/edit.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 55ms (Views: 49.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/50/edit" for ::1 at 2022-02-01 10:41:42 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.5ms)
+  Rendered users/edit.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 53ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/users/50" for ::1 at 2022-02-01 10:41:55 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+y+JvYmN5/w8zNYlsZFFMt/4/Vv6TnokGLd0QHQgfa2V1MdcGe+ttkMscSziYlu5TmLhxjxXfADpDyqm/FXS0Q==", "user"=>{"username"=>"thelorddoyle", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0.2"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 7.9ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/users_controller.rb:61:in `user_params'
+app/controllers/users_controller.rb:43:in `update'
+Started PATCH "/users/50" for ::1 at 2022-02-01 10:42:46 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+y+JvYmN5/w8zNYlsZFFMt/4/Vv6TnokGLd0QHQgfa2V1MdcGe+ttkMscSziYlu5TmLhxjxXfADpDyqm/FXS0Q==", "user"=>{"username"=>"thelorddoyle", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0.2"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 21.4ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/users_controller.rb:61:in `user_params'
+app/controllers/users_controller.rb:43:in `update'
+Started PATCH "/users/50" for ::1 at 2022-02-01 10:43:38 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+y+JvYmN5/w8zNYlsZFFMt/4/Vv6TnokGLd0QHQgfa2V1MdcGe+ttkMscSziYlu5TmLhxjxXfADpDyqm/FXS0Q==", "user"=>{"username"=>"thelorddoyle", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0.2"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+Unpermitted parameter: :eth_in_wallet
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 10.8ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/users_controller.rb:44:in `update'
+Started PATCH "/users/50" for ::1 at 2022-02-01 10:43:55 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+y+JvYmN5/w8zNYlsZFFMt/4/Vv6TnokGLd0QHQgfa2V1MdcGe+ttkMscSziYlu5TmLhxjxXfADpDyqm/FXS0Q==", "user"=>{"username"=>"thelorddoyle", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0.2"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+Unpermitted parameter: :eth_in_wallet
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 10.3ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/users_controller.rb:44:in `update'
+Started PUT "/__web_console/repl_sessions/433b86654f57082b5b4abbc34840f3a9" for ::1 at 2022-02-01 10:44:06 +1100
+Started PUT "/__web_console/repl_sessions/433b86654f57082b5b4abbc34840f3a9" for ::1 at 2022-02-01 10:44:08 +1100
+Started PUT "/__web_console/repl_sessions/433b86654f57082b5b4abbc34840f3a9" for ::1 at 2022-02-01 10:44:21 +1100
+Unpermitted parameter: :eth_in_wallet
+Started PUT "/__web_console/repl_sessions/433b86654f57082b5b4abbc34840f3a9" for ::1 at 2022-02-01 10:44:39 +1100
+Started PATCH "/users/50" for ::1 at 2022-02-01 10:44:49 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+y+JvYmN5/w8zNYlsZFFMt/4/Vv6TnokGLd0QHQgfa2V1MdcGe+ttkMscSziYlu5TmLhxjxXfADpDyqm/FXS0Q==", "user"=>{"username"=>"thelorddoyle", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0.2"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 9.4ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/users_controller.rb:44:in `update'
+Started PUT "/__web_console/repl_sessions/9a3a52dd39c29a0df3aca37aa354bcee" for ::1 at 2022-02-01 10:44:56 +1100
+Started PUT "/__web_console/repl_sessions/9a3a52dd39c29a0df3aca37aa354bcee" for ::1 at 2022-02-01 10:44:57 +1100
+Started PUT "/__web_console/repl_sessions/9a3a52dd39c29a0df3aca37aa354bcee" for ::1 at 2022-02-01 10:45:28 +1100
+Started PUT "/__web_console/repl_sessions/9a3a52dd39c29a0df3aca37aa354bcee" for ::1 at 2022-02-01 10:45:37 +1100
+Started PUT "/__web_console/repl_sessions/9a3a52dd39c29a0df3aca37aa354bcee" for ::1 at 2022-02-01 10:45:53 +1100
+Started PUT "/__web_console/repl_sessions/9a3a52dd39c29a0df3aca37aa354bcee" for ::1 at 2022-02-01 10:45:58 +1100
+Started PATCH "/users/50" for ::1 at 2022-02-01 10:46:16 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+y+JvYmN5/w8zNYlsZFFMt/4/Vv6TnokGLd0QHQgfa2V1MdcGe+ttkMscSziYlu5TmLhxjxXfADpDyqm/FXS0Q==", "user"=>{"username"=>"thelorddoyle", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0.2"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 14.2ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/users_controller.rb:44:in `update'
+Started PUT "/__web_console/repl_sessions/46a314a6dd1db6f6b17a24e0de85d073" for ::1 at 2022-02-01 10:46:23 +1100
+Started PUT "/__web_console/repl_sessions/46a314a6dd1db6f6b17a24e0de85d073" for ::1 at 2022-02-01 10:46:23 +1100
+Started PUT "/__web_console/repl_sessions/46a314a6dd1db6f6b17a24e0de85d073" for ::1 at 2022-02-01 10:46:30 +1100
+Started PUT "/__web_console/repl_sessions/46a314a6dd1db6f6b17a24e0de85d073" for ::1 at 2022-02-01 10:46:37 +1100
+Started PUT "/__web_console/repl_sessions/46a314a6dd1db6f6b17a24e0de85d073" for ::1 at 2022-02-01 10:47:09 +1100
+Started PUT "/__web_console/repl_sessions/46a314a6dd1db6f6b17a24e0de85d073" for ::1 at 2022-02-01 10:47:10 +1100
+Started PUT "/__web_console/repl_sessions/46a314a6dd1db6f6b17a24e0de85d073" for ::1 at 2022-02-01 10:47:16 +1100
+Started PATCH "/users/50" for ::1 at 2022-02-01 10:47:29 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+y+JvYmN5/w8zNYlsZFFMt/4/Vv6TnokGLd0QHQgfa2V1MdcGe+ttkMscSziYlu5TmLhxjxXfADpDyqm/FXS0Q==", "user"=>{"username"=>"thelorddoyle", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0.2"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (14.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+  [1m[35m (11.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "dlorddoyle@gmail.com"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Update (11.1ms)[0m  [1m[33mUPDATE "users" SET "eth_in_wallet" = $1, "password_digest" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["eth_in_wallet", 0.2], ["password_digest", "$2a$12$AyBah1JcsjwZm4Ej/076luULF8I1N15zRwbIGX64j7kJFogfciq12"], ["updated_at", "2022-01-31 23:47:29.974239"], ["id", 50]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:47
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "dlorddoyle@gmail.com"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47
+  [1m[36mUser Update (25.1ms)[0m  [1m[33mUPDATE "users" SET "eth_in_wallet" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["eth_in_wallet", 1.0], ["updated_at", "2022-01-31 23:47:30.054346"], ["id", 50]]
+  ↳ app/controllers/users_controller.rb:47
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:47
+Redirected to http://localhost:3000/users/50
+Completed 302 Found in 889ms (ActiveRecord: 79.4ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 10:47:30 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (83.9ms)
+Completed 200 OK in 141ms (Views: 127.6ms | ActiveRecord: 9.5ms)
+
+

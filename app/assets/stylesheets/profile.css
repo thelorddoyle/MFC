@@ -1,0 +1,104 @@
+#profile {
+    padding-top: 20px;
+}
+
+main.profile h2 {
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+main {
+    text-align: center;
+}
+
+.flex-row-stretch {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    align-items:stretch;
+    align-content:stretch
+}
+
+.flex-column-start {
+    display:flex;
+    flex-direction:column;
+    flex-grow: 1;
+}
+
+.flex-column-flex-start-align {
+    display:flex;
+    flex-direction:column;
+    flex-grow: 1;
+}
+
+#profile-left {
+    width: 40vw;
+}
+
+#profile-right {
+    width: 60vw;
+}
+
+#profile-options {
+    padding: 40px 20%;
+}
+
+.profile_asset_image {
+    width: 100px;
+}
+
+#top-of-asset-grid {
+    padding: 40px 130px 0px 50px;
+
+}
+
+.asset-top-row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.asset-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+
+}
+
+.asset-id {
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+input#headButton.buttonLink {
+    color: white;
+}
+
+input#headButton.buttonLink:hover {
+    color: red;
+}
+
+input#headButton {
+    width: 50%;
+    padding: 10px 20px;
+    color: black;
+    font-size: large;
+    background-color: red;
+    border: 2px solid black;
+}
+
+input#headButton:hover > .buttonLink {
+    background-color: white; 
+}
+
+input#headButton:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+#wallet_amount {
+    padding-bottom: 50px;
+}
+

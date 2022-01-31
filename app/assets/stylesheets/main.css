@@ -10,7 +10,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, .buttonLink {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -184,6 +184,10 @@ h3 {
     justify-content:center;
     align-content:center;
     text-align: center;
+}
+
+.top-of-page-light {
+    margin-bottom: 30px;
 }
 
 .lightBlock {
