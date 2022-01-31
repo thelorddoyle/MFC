@@ -24218,3 +24218,636 @@ Processing by NftsController#home as HTML
 Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/rankings" for ::1 at 2022-01-31 15:50:25 +1100
+Processing by NftsController#rankings as HTML
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (15.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (57.4ms)
+Completed 200 OK in 135ms (Views: 105.3ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/" for ::1 at 2022-01-31 15:50:33 +1100
+Processing by NftsController#home as HTML
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 05:46:06 +1100
+Processing by NftsController#home as HTML
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 83ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 05:46:12 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-01 05:46:55 +1100
+Processing by NftsController#rankings as HTML
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (9.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 56ms (Views: 36.6ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/whitepaper" for ::1 at 2022-02-01 05:46:59 +1100
+Processing by NftsController#whitepaper as HTML
+  Rendering nfts/whitepaper.html.erb within layouts/application
+  Rendered nfts/whitepaper.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/whitepaper" for ::1 at 2022-02-01 05:47:00 +1100
+Processing by NftsController#whitepaper as HTML
+  Rendering nfts/whitepaper.html.erb within layouts/application
+  Rendered nfts/whitepaper.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 05:47:01 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2600417417628977100)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddPasswordConfirmationToUsers (20220131200408)
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (15.1ms)[0m  [1m[35mALTER TABLE "users" ADD "password_confirmation" character varying[0m
+  ↳ db/migrate/20220131200408_add_password_confirmation_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (5.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220131200408"]]
+  ↳ bin/rails:4
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2600417417628977100)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/login" for ::1 at 2022-02-01 07:05:46 +1100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniel/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2022-02-01 07:05:48 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.9ms)
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 92ms (Views: 51.7ms | ActiveRecord: 14.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-01 07:06:04 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B6fOf0bh3psxSwZuYVeIUM8DLIVy8kEx9aeeYxKCu3VpXICe1oOU0U6roWcypJbbXpkwGLTrRxUEH8CFmvcUCQ==", "user"=>{"username"=>"thelorddoyle12", "email"=>"gangster@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gangster@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Create (8.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "thelorddoyle12"], ["email", "gangster@gmail.com"], ["created_at", "2022-01-31 20:06:05.228603"], ["updated_at", "2022-01-31 20:06:05.228603"], ["password_digest", "$2a$12$UsxjGaxwmDKKgZVMExXGaeHUUdxoELOcFHE8mrRao7qMsDbJetayi"]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/rankings
+Completed 302 Found in 240ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-01 07:06:05 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 52ms (Views: 40.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/users/47" for ::1 at 2022-02-01 07:06:08 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 16.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/login" for ::1 at 2022-02-01 07:06:10 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"g73TGKuTkkDuPs0Ymg1+r7Z0gsXETQtuldpYxNw0X6ftRp35O/HYCpHeahHJ/mAkJ+6eWAJUDUpkYgYiVEHw2w=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 07:06:10 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2022-02-01 07:06:15 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.9ms)
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-01 07:06:27 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tFE/jtvdqGyHE2tQJUfxiSE/ZwDKaySQ1cO0LZL+4BLaqnFvS7/iJvjzzFl2tO8CsKV7nQxyIrQke+rLGotPbg==", "user"=>{"username"=>"gangster", "email"=>"dfsdf@efgsdf.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dfsdf@efgsdf.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "gangster"], ["email", "dfsdf@efgsdf.com"], ["created_at", "2022-01-31 20:06:27.881478"], ["updated_at", "2022-01-31 20:06:27.881478"], ["password_digest", "$2a$12$ZlEC7NWFjW4R3q.1RxlJ.erIGuf1IUARUIIe3KCdw9RUjanJGr6jS"]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/rankings
+Completed 302 Found in 232ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-01 07:06:27 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.7ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2600417417628977100)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to RemovePasswordConfirmationFromUsers (20220131200910)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (4.6ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "password_confirmation"[0m
+  ↳ db/migrate/20220131200910_remove_password_confirmation_from_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220131200910"]]
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(2600417417628977100)[0m
+  ↳ bin/rails:4
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/rankings" for ::1 at 2022-02-01 07:10:14 +1100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniel/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (1.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 80ms (Views: 50.4ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/users/48" for ::1 at 2022-02-01 07:10:16 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/login" for ::1 at 2022-02-01 07:10:17 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"O06LmhjeVNO5mlhbmqoLmow0Y4FE/xH+Dlgqus9xaNZVtcV7iLwemcZ6/1LJWRURHa5/HILmF9r/4HRcRwTHqg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 07:10:17 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2022-02-01 07:10:19 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-01 07:10:35 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"udkWwOso46rOyGVHUzURQWna+64sPewsFZedbNdtSr7XIlghe0qp4LEowk4Axg/K+EDnM+ok6gjkL8OKXxjlwg==", "user"=>{"username"=>"thelorddoyle2123", "email"=>"qw@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (2.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "qw@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "thelorddoyle2123"], ["email", "qw@gmail.com"], ["created_at", "2022-01-31 20:10:35.272459"], ["updated_at", "2022-01-31 20:10:35.272459"], ["password_digest", "$2a$12$wp9d74qff/t76mXeN6QQmOkRs3TRKE2ALenMQqAzkr7z63DaaZNa6"]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/rankings
+Completed 302 Found in 245ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-01 07:10:35 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (2.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 48ms (Views: 40.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/49" for ::1 at 2022-02-01 07:12:05 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 15.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/login" for ::1 at 2022-02-01 07:12:06 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5+9O9aQbG337Yy6KsJrgo6q3Nefam7eyrip4lhCifBiJFAAUNHlRN4SDiYPjaf4oOy0pehyCsZZfkiZwmNfTZA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 07:12:06 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2022-02-01 07:12:09 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.3ms)
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-01 07:12:22 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r+YwZ1nATMti2kmihZ6/e8T+yX6xeNpxfwvWEEL/I+jBHX6GyaIGgR067qvWbaHwVWTV43dh3FWOs4j2yoqMlA==", "user"=>{"username"=>"giggity", "email"=>"giggity@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "giggity@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (7.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.3ms)
+  Rendered users/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 260ms (Views: 21.2ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/users" for ::1 at 2022-02-01 07:22:49 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r+YwZ1nATMti2kmihZ6/e8T+yX6xeNpxfwvWEEL/I+jBHX6GyaIGgR067qvWbaHwVWTV43dh3FWOs4j2yoqMlA==", "user"=>{"username"=>"giggity", "email"=>"giggity@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (2.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "giggity@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (9.9ms)
+  Rendered users/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 382ms (Views: 88.7ms | ActiveRecord: 2.7ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2600417417628977100)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddEthInWalletToUsers (20220131202413)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "users" ADD "eth_in_wallet" float[0m
+  ↳ db/migrate/20220131202413_add_eth_in_wallet_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220131202413"]]
+  ↳ bin/rails:4
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2600417417628977100)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mUser Destroy (3.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 44]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 45]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 46]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 47]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 48]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 49]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dlorddoyle@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dlorddoyle@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest", "eth_in_wallet") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "thelorddoyle"], ["email", "dlorddoyle@gmail.com"], ["created_at", "2022-01-31 20:26:14.328976"], ["updated_at", "2022-01-31 20:26:14.328976"], ["password_digest", "$2a$12$axTya8OQmu65EPHVgsdxK.OPEctbq.w2YoIKn6cm3fxfdkHncdPh6"], ["eth_in_wallet", 0.8]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lukearthur@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest", "eth_in_wallet") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "lukearthur"], ["email", "lukearthur@gmail.com"], ["created_at", "2022-01-31 20:26:14.562366"], ["updated_at", "2022-01-31 20:26:14.562366"], ["password_digest", "$2a$12$zh.OHinyMfO6QAQSGgmGpe.svdTcWnM3rFlBo9sO3vJNhnQi/V2gy"], ["eth_in_wallet", 1.8]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jdog@outlook.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest", "eth_in_wallet") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "jordo2017"], ["email", "jdog@outlook.com"], ["created_at", "2022-01-31 20:26:14.789313"], ["updated_at", "2022-01-31 20:26:14.789313"], ["password_digest", "$2a$12$ceQ3ci.BIaotb4Mfj.XeZuApCh.AW6wZcAXVZQGeSLDsh2eDl3VZK"], ["eth_in_wallet", 2.4]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mNft Destroy (0.6ms)[0m  [1m[31mDELETE FROM "nfts" WHERE "nfts"."id" = $1[0m  [["id", 86]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mNft Destroy (0.3ms)[0m  [1m[31mDELETE FROM "nfts" WHERE "nfts"."id" = $1[0m  [["id", 87]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mNft Destroy (0.3ms)[0m  [1m[31mDELETE FROM "nfts" WHERE "nfts"."id" = $1[0m  [["id", 88]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mNft Destroy (0.3ms)[0m  [1m[31mDELETE FROM "nfts" WHERE "nfts"."id" = $1[0m  [["id", 89]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mNft Destroy (0.3ms)[0m  [1m[31mDELETE FROM "nfts" WHERE "nfts"."id" = $1[0m  [["id", 90]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mNft Destroy (0.3ms)[0m  [1m[31mDELETE FROM "nfts" WHERE "nfts"."id" = $1[0m  [["id", 91]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mNft Destroy (0.3ms)[0m  [1m[31mDELETE FROM "nfts" WHERE "nfts"."id" = $1[0m  [["id", 92]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mNft Destroy (0.2ms)[0m  [1m[31mDELETE FROM "nfts" WHERE "nfts"."id" = $1[0m  [["id", 93]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mNft Destroy (0.2ms)[0m  [1m[31mDELETE FROM "nfts" WHERE "nfts"."id" = $1[0m  [["id", 94]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mNft Create (0.9ms)[0m  [1m[32mINSERT INTO "nfts" ("user_id", "mint_season", "mint_bracket", "eye_colour", "hair_style", "hair_colour", "skin_colour", "shorts", "facial_expression", "body_type", "handwear", "background_colour", "tattoos", "total_fights", "best_position", "amount_won", "created_at", "updated_at", "image", "fights_won", "average_position") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["user_id", 50], ["mint_season", 1], ["mint_bracket", 1], ["eye_colour", "Grey"], ["hair_style", "Crop top"], ["hair_colour", "Dark brown"], ["skin_colour", "Pale"], ["shorts", "Green with red band"], ["facial_expression", "Grim"], ["body_type", "Mesomorph"], ["handwear", "None"], ["background_colour", "Caged"], ["tattoos", "None"], ["total_fights", 0], ["best_position", 0], ["amount_won", 0.0], ["created_at", "2022-01-31 20:26:14.866289"], ["updated_at", "2022-01-31 20:26:14.866289"], ["image", "ape1.png"], ["fights_won", 2], ["average_position", 14]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mNft Create (0.3ms)[0m  [1m[32mINSERT INTO "nfts" ("user_id", "mint_season", "mint_bracket", "eye_colour", "hair_style", "hair_colour", "skin_colour", "shorts", "facial_expression", "body_type", "handwear", "background_colour", "tattoos", "total_fights", "best_position", "amount_won", "created_at", "updated_at", "image", "fights_won", "average_position") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["user_id", 50], ["mint_season", 1], ["mint_bracket", 1], ["eye_colour", "Green"], ["hair_style", "Dreadlocks"], ["hair_colour", "Black"], ["skin_colour", "Dark"], ["shorts", "Pure white"], ["facial_expression", "Laughing"], ["body_type", "Mesomorph"], ["handwear", "Headband"], ["background_colour", "Gym"], ["tattoos", "Dragon"], ["total_fights", 0], ["best_position", 0], ["amount_won", 0.0], ["created_at", "2022-01-31 20:26:14.875938"], ["updated_at", "2022-01-31 20:26:14.875938"], ["image", "ape2.png"], ["fights_won", 3], ["average_position", 12]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mNft Create (0.5ms)[0m  [1m[32mINSERT INTO "nfts" ("user_id", "mint_season", "mint_bracket", "eye_colour", "hair_style", "hair_colour", "skin_colour", "shorts", "facial_expression", "body_type", "handwear", "background_colour", "tattoos", "total_fights", "best_position", "amount_won", "created_at", "updated_at", "image", "fights_won", "average_position") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["user_id", 51], ["mint_season", 1], ["mint_bracket", 1], ["eye_colour", "Green"], ["hair_style", "Dreadlocks"], ["hair_colour", "Black"], ["skin_colour", "Dark"], ["shorts", "Pure white"], ["facial_expression", "Laughing"], ["body_type", "Mesomorph"], ["handwear", "Headband"], ["background_colour", "Gym"], ["tattoos", "Dragon"], ["total_fights", 0], ["best_position", 0], ["amount_won", 0.0], ["created_at", "2022-01-31 20:26:14.878728"], ["updated_at", "2022-01-31 20:26:14.878728"], ["image", "ape3.png"], ["fights_won", 1], ["average_position", 2]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:85
+  [1m[36mNft Create (0.6ms)[0m  [1m[32mINSERT INTO "nfts" ("user_id", "mint_season", "mint_bracket", "eye_colour", "hair_style", "hair_colour", "skin_colour", "shorts", "facial_expression", "body_type", "handwear", "background_colour", "tattoos", "total_fights", "best_position", "amount_won", "created_at", "updated_at", "image", "fights_won", "average_position") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["user_id", 51], ["mint_season", 1], ["mint_bracket", 1], ["eye_colour", "Green"], ["hair_style", "Dreadlocks"], ["hair_colour", "Black"], ["skin_colour", "Dark"], ["shorts", "Pure white"], ["facial_expression", "Laughing"], ["body_type", "Mesomorph"], ["handwear", "Headband"], ["background_colour", "Gym"], ["tattoos", "Dragon"], ["total_fights", 0], ["best_position", 0], ["amount_won", 0.0], ["created_at", "2022-01-31 20:26:14.881660"], ["updated_at", "2022-01-31 20:26:14.881660"], ["image", "ape4.png"], ["fights_won", 3], ["average_position", 12]]
+  ↳ db/seeds.rb:85
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:107
+  [1m[36mNft Create (0.7ms)[0m  [1m[32mINSERT INTO "nfts" ("user_id", "mint_season", "mint_bracket", "eye_colour", "hair_style", "hair_colour", "skin_colour", "shorts", "facial_expression", "body_type", "handwear", "background_colour", "tattoos", "total_fights", "best_position", "amount_won", "created_at", "updated_at", "image", "fights_won", "average_position") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["user_id", 52], ["mint_season", 1], ["mint_bracket", 1], ["eye_colour", "Green"], ["hair_style", "Dreadlocks"], ["hair_colour", "Black"], ["skin_colour", "Dark"], ["shorts", "Pure white"], ["facial_expression", "Laughing"], ["body_type", "Mesomorph"], ["handwear", "Headband"], ["background_colour", "Gym"], ["tattoos", "Dragon"], ["total_fights", 0], ["best_position", 0], ["amount_won", 0.0], ["created_at", "2022-01-31 20:26:14.884745"], ["updated_at", "2022-01-31 20:26:14.884745"], ["image", "ape5.png"], ["fights_won", 3], ["average_position", 12]]
+  ↳ db/seeds.rb:107
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:107
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mNft Create (0.6ms)[0m  [1m[32mINSERT INTO "nfts" ("user_id", "mint_season", "mint_bracket", "eye_colour", "hair_style", "hair_colour", "skin_colour", "shorts", "facial_expression", "body_type", "handwear", "background_colour", "tattoos", "total_fights", "best_position", "amount_won", "created_at", "updated_at", "image", "fights_won", "average_position") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["user_id", 52], ["mint_season", 1], ["mint_bracket", 1], ["eye_colour", "Green"], ["hair_style", "Dreadlocks"], ["hair_colour", "Black"], ["skin_colour", "Dark"], ["shorts", "Pure white"], ["facial_expression", "Laughing"], ["body_type", "Mesomorph"], ["handwear", "Headband"], ["background_colour", "Gym"], ["tattoos", "Dragon"], ["total_fights", 0], ["best_position", 0], ["amount_won", 0.0], ["created_at", "2022-01-31 20:26:14.887736"], ["updated_at", "2022-01-31 20:26:14.887736"], ["image", "ape6.png"], ["fights_won", 3], ["average_position", 12]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:151
+  [1m[36mNft Create (0.4ms)[0m  [1m[32mINSERT INTO "nfts" ("mint_season", "mint_bracket", "eye_colour", "hair_style", "hair_colour", "skin_colour", "shorts", "facial_expression", "body_type", "handwear", "background_colour", "tattoos", "total_fights", "best_position", "amount_won", "created_at", "updated_at", "image", "fights_won", "average_position") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20) RETURNING "id"[0m  [["mint_season", 1], ["mint_bracket", 1], ["eye_colour", "Green"], ["hair_style", "Dreadlocks"], ["hair_colour", "Black"], ["skin_colour", "Dark"], ["shorts", "Pure white"], ["facial_expression", "Laughing"], ["body_type", "Mesomorph"], ["handwear", "Headband"], ["background_colour", "Gym"], ["tattoos", "Dragon"], ["total_fights", 0], ["best_position", 0], ["amount_won", 0.0], ["created_at", "2022-01-31 20:26:14.890565"], ["updated_at", "2022-01-31 20:26:14.890565"], ["image", "ape7.png"], ["fights_won", 3], ["average_position", 12]]
+  ↳ db/seeds.rb:151
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:151
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:172
+  [1m[36mNft Create (0.3ms)[0m  [1m[32mINSERT INTO "nfts" ("mint_season", "mint_bracket", "eye_colour", "hair_style", "hair_colour", "skin_colour", "shorts", "facial_expression", "body_type", "handwear", "background_colour", "tattoos", "total_fights", "best_position", "amount_won", "created_at", "updated_at", "image", "fights_won", "average_position") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20) RETURNING "id"[0m  [["mint_season", 1], ["mint_bracket", 1], ["eye_colour", "Green"], ["hair_style", "Dreadlocks"], ["hair_colour", "Black"], ["skin_colour", "Dark"], ["shorts", "Pure white"], ["facial_expression", "Laughing"], ["body_type", "Mesomorph"], ["handwear", "Headband"], ["background_colour", "Gym"], ["tattoos", "Dragon"], ["total_fights", 0], ["best_position", 0], ["amount_won", 0.0], ["created_at", "2022-01-31 20:26:14.892851"], ["updated_at", "2022-01-31 20:26:14.892851"], ["image", "ape2.png"], ["fights_won", 3], ["average_position", 12]]
+  ↳ db/seeds.rb:172
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:172
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:193
+  [1m[36mNft Create (0.4ms)[0m  [1m[32mINSERT INTO "nfts" ("mint_season", "mint_bracket", "eye_colour", "hair_style", "hair_colour", "skin_colour", "shorts", "facial_expression", "body_type", "handwear", "background_colour", "tattoos", "total_fights", "best_position", "amount_won", "created_at", "updated_at", "image", "fights_won", "average_position") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20) RETURNING "id"[0m  [["mint_season", 1], ["mint_bracket", 1], ["eye_colour", "Green"], ["hair_style", "Dreadlocks"], ["hair_colour", "Black"], ["skin_colour", "Dark"], ["shorts", "Pure white"], ["facial_expression", "Laughing"], ["body_type", "Mesomorph"], ["handwear", "Headband"], ["background_colour", "Gym"], ["tattoos", "Dragon"], ["total_fights", 0], ["best_position", 0], ["amount_won", 0.0], ["created_at", "2022-01-31 20:26:14.895145"], ["updated_at", "2022-01-31 20:26:14.895145"], ["image", "ape1.png"], ["fights_won", 3], ["average_position", 12]]
+  ↳ db/seeds.rb:193
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:193
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "nfts"[0m
+  ↳ db/seeds.rb:214
+Started GET "/" for ::1 at 2022-02-01 07:27:25 +1100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniel/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by NftsController#home as HTML
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 42ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 07:27:27 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2022-02-01 07:27:31 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"glNN9iVXoR2WiJl+uD5Ng2k3mJdXfz5VNbkATimIGpjsqAMXtTXrV+loPnfrzVMI+K2ECpFmOHHEAV6oof215A==", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dlorddoyle@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 247ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 07:27:32 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:27:33 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 07:28:14 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (13.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 13.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<User:0x00007fad808c1a60>):
+    1: <br><br><br><br><br><br>
+    2: <h1> <%= @current_user.name %> </h1>
+    3: 
+    4:       <% if @current_user.present? %>
+    5:         <%= link_to 'Logout', login_path, method: 'delete' %>
+  
+app/views/users/show.html.erb:2:in `_app_views_users_show_html_erb__2211081134966599763_648620'
+Started GET "/users/50" for ::1 at 2022-02-01 07:28:27 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.4ms)
+
+

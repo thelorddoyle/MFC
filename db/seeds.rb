@@ -4,9 +4,9 @@ print "Creating seed users...".green
 
 User.destroy_all
 
-user1 = User.create! username: 'thelorddoyle', email: 'dlorddoyle@gmail.com', password: 'chicken'
-user2 = User.create! username: 'lukearthur', email: 'lukearthur@gmail.com', password: 'chicken'
-user3 = User.create! username: 'jordo2017', email: 'jdog@outlook.com', password: 'chicken'
+user1 = User.create! username: 'thelorddoyle', email: 'dlorddoyle@gmail.com', password: 'chicken', eth_in_wallet: 0.8
+user2 = User.create! username: 'lukearthur', email: 'lukearthur@gmail.com', password: 'chicken', eth_in_wallet: 1.8
+user3 = User.create! username: 'jordo2017', email: 'jdog@outlook.com', password: 'chicken', eth_in_wallet: 2.4
 
 puts "#{ User.count } users created.".green
 
@@ -149,7 +149,6 @@ nft6 = Nft.create!(
 )
 
 nft7 = Nft.create!(
-    user_id: user1.id,
     mint_season: 1,
     mint_bracket: 1,
     eye_colour: 'Green',
@@ -171,7 +170,6 @@ nft7 = Nft.create!(
 )
 
 nft8 = Nft.create!(
-    user_id: user2.id,
     mint_season: 1,
     mint_bracket: 1,
     eye_colour: 'Green',
@@ -193,7 +191,6 @@ nft8 = Nft.create!(
 )
 
 nft9 = Nft.create!(
-    user_id: user1.id,
     mint_season: 1,
     mint_bracket: 1,
     eye_colour: 'Green',
