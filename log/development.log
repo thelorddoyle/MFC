@@ -27967,3 +27967,414 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 38ms (Views: 26.7ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/users/50/addfunds" for ::1 at 2022-02-01 11:26:19 +1100
+Processing by UsersController#addfunds as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56
+  Rendering users/addfunds.erb within layouts/application
+  Rendered users/_form2.html.erb (118.4ms)
+  Rendered users/addfunds.erb within layouts/application (120.1ms)
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 2.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `hidden_field_tag' for #<ActionView::Helpers::FormBuilder:0x00007fad77702f20>
+Did you mean?  hidden_field):
+     5:     <%= f.text_field :eth_in_wallet %>
+     6:     <br><br>
+     7: 
+     8:     <%= f.hidden_field_tag :username %>
+     9:     <br><br>
+    10: 
+    11:     <%= f.label :email  %>
+  
+app/views/users/_form2.html.erb:8:in `block in _app_views_users__form__html_erb___1444609067873037068_753860'
+app/views/users/_form2.html.erb:1:in `_app_views_users__form__html_erb___1444609067873037068_753860'
+app/views/users/addfunds.erb:5:in `_app_views_users_addfunds_erb___1070808774875158686_753840'
+Started GET "/users/50/addfunds" for ::1 at 2022-02-01 11:26:29 +1100
+Processing by UsersController#addfunds as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56
+  Rendering users/addfunds.erb within layouts/application
+  Rendered users/_form2.html.erb (44.6ms)
+  Rendered users/addfunds.erb within layouts/application (46.8ms)
+Completed 200 OK in 78ms (Views: 73.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/50/addfunds" for ::1 at 2022-02-01 11:26:41 +1100
+Processing by UsersController#addfunds as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56
+  Rendering users/addfunds.erb within layouts/application
+  Rendered users/_form2.html.erb (76.4ms)
+  Rendered users/addfunds.erb within layouts/application (77.4ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 4.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `hidden_field_tag' for #<ActionView::Helpers::FormBuilder:0x00007fad7d0f0bb8>
+Did you mean?  hidden_field):
+     5:     <%= f.text_field :eth_in_wallet %>
+     6:     <br><br>
+     7: 
+     8:     <%= f.hidden_field_tag :username  %>
+     9:     <br>
+    10:     <%= f.hidden_field :username %>
+    11:     <br><br>
+  
+app/views/users/_form2.html.erb:8:in `block in _app_views_users__form__html_erb___1444609067873037068_754600'
+app/views/users/_form2.html.erb:1:in `_app_views_users__form__html_erb___1444609067873037068_754600'
+app/views/users/addfunds.erb:5:in `_app_views_users_addfunds_erb___1070808774875158686_754580'
+Started GET "/users/50/addfunds" for ::1 at 2022-02-01 11:27:16 +1100
+Processing by UsersController#addfunds as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56
+  Rendering users/addfunds.erb within layouts/application
+  Rendered users/_form2.html.erb (4.3ms)
+  Rendered users/addfunds.erb within layouts/application (6.8ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/users/50" for ::1 at 2022-02-01 11:27:20 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fiIT9DFNgb96cGw+1awslAbi1ltEim2YVDWHcHxKmVMQ2V0VoS/L9QWQyzeGXzIfl3jKxoKTa7yljdmW9D82Lw==", "user"=>{"eth_in_wallet"=>"2.0", "username"=>"thelorddoyle", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "dlorddoyle@gmail.com"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.2ms)
+  Rendered users/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 51ms (Views: 34.7ms | ActiveRecord: 3.0ms)
+
+
+Started PATCH "/users/50" for ::1 at 2022-02-01 11:27:56 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fiIT9DFNgb96cGw+1awslAbi1ltEim2YVDWHcHxKmVMQ2V0VoS/L9QWQyzeGXzIfl3jKxoKTa7yljdmW9D82Lw==", "user"=>{"eth_in_wallet"=>"2.0", "username"=>"thelorddoyle", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "dlorddoyle@gmail.com"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.7ms)
+  Rendered users/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 47ms (Views: 30.4ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 11:27:59 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 58ms (Views: 38.0ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/users/50/addfunds" for ::1 at 2022-02-01 11:28:02 +1100
+Processing by UsersController#addfunds as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56
+  Rendering users/addfunds.erb within layouts/application
+  Rendered users/_form2.html.erb (5.4ms)
+  Rendered users/addfunds.erb within layouts/application (6.8ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/users/50" for ::1 at 2022-02-01 11:28:08 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hb85dmb8C38QhmW+8/6Bva8qmmLGDg+BTG0lkPSj4KRzRHeX9p5BNW9mwregDZ82PrCG/wAXCaW91Xt2fNZP2A==", "user"=>{"eth_in_wallet"=>"2.0", "username"=>"thelorddoyle", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "dlorddoyle@gmail.com"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["password_digest", "$2a$12$.5EiBK.CjgsAv0WQpOu.sOETh2jzPdmckgMHL6qLe7Bcjzg2xcUAm"], ["updated_at", "2022-02-01 00:28:09.116638"], ["id", 50]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:47
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "dlorddoyle@gmail.com"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "eth_in_wallet" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["eth_in_wallet", 4.0], ["updated_at", "2022-02-01 00:28:09.127343"], ["id", 50]]
+  ↳ app/controllers/users_controller.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:47
+Redirected to http://localhost:3000/users/50
+Completed 302 Found in 279ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 11:28:09 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/50/edit" for ::1 at 2022-02-01 11:28:12 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.1ms)
+  Rendered users/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 39ms (Views: 33.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/50/edit" for ::1 at 2022-02-01 11:28:41 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (14.9ms)
+  Rendered users/edit.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 63ms (Views: 53.5ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/users/50/edit" for ::1 at 2022-02-01 11:29:26 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (79.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (16.7ms)
+  Rendered users/edit.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 278ms (Views: 88.1ms | ActiveRecord: 80.8ms)
+
+
+Started PATCH "/users/50" for ::1 at 2022-02-01 11:29:34 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CbKd1yCVbslJKS9ciKlwXaWOVsKFBh3Udx7jOtIFGiVnSdM2sPckgzbJiFXbWm7WNBRKX0MfG/CGpr3cWnC1WQ==", "user"=>{"username"=>"thelorddoyle", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Exists (1.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "dlorddoyle@gmail.com"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "eth_in_wallet" = $1, "password_digest" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["eth_in_wallet", 0.0], ["password_digest", "$2a$12$rp/GqCpGzfUNE3GZlOhLg.DtL1kNuiR.zhUkx41b/U74hBMmLMFBK"], ["updated_at", "2022-02-01 00:29:34.321383"], ["id", 50]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:47
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "dlorddoyle@gmail.com"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "eth_in_wallet" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["eth_in_wallet", 4.0], ["updated_at", "2022-02-01 00:29:34.330945"], ["id", 50]]
+  ↳ app/controllers/users_controller.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:47
+Redirected to http://localhost:3000/users/50
+Completed 302 Found in 270ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 11:29:34 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 23ms (Views: 18.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 11:34:50 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (2.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 53ms (Views: 48.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/50/addfunds" for ::1 at 2022-02-01 11:37:45 +1100
+Processing by UsersController#addfunds as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56
+  Rendering users/addfunds.erb within layouts/application
+  Rendered users/_form2.html.erb (5.0ms)
+  Rendered users/addfunds.erb within layouts/application (10.6ms)
+Completed 200 OK in 43ms (Views: 38.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/users/50" for ::1 at 2022-02-01 11:37:50 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zEVtMffH0hU0z7nF9TNuA1wqXgMfe0/tDoKywEhiKKuiviPQZ6WYX0svHsymwHCIzbBCntliScn/OuwmwBeH1w==", "user"=>{"eth_in_wallet"=>"4.0", "username"=>"thelorddoyle", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "dlorddoyle@gmail.com"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["password_digest", "$2a$12$9k0pC2.0YvLixkmMBR7MBeL8M0oRMwCeZrzsgIMknYVyBheZiNdZu"], ["updated_at", "2022-02-01 00:37:50.869450"], ["id", 50]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:47
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "dlorddoyle@gmail.com"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "eth_in_wallet" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["eth_in_wallet", 8.0], ["updated_at", "2022-02-01 00:37:50.880614"], ["id", 50]]
+  ↳ app/controllers/users_controller.rb:47
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:47
+Redirected to http://localhost:3000/users/50
+Completed 302 Found in 275ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 11:37:50 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/50/edit" for ::1 at 2022-02-01 11:37:53 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.5ms)
+  Rendered users/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 37ms (Views: 32.5ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/users/50" for ::1 at 2022-02-01 11:37:59 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k7kHePRpPBhVkD8SVBBqonw4KrMPiblLoWL0MQnEBl39QkmZZAt2UipwmBsH43Qp7aI2LsmQv29Q2qrXgbGpIQ==", "user"=>{"username"=>"thelorddoyle2", "email"=>"dlorddoyle@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Update User", "id"=>"50"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (12.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "dlorddoyle@gmail.com"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "eth_in_wallet" = $1, "username" = $2, "password_digest" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["eth_in_wallet", 0.0], ["username", "thelorddoyle2"], ["password_digest", "$2a$12$JfISNrvZ5aJzQLsNjjCaFu/pkvHiDab7.HXcMF.NzsTbzlm.nTRya"], ["updated_at", "2022-02-01 00:37:59.608941"], ["id", 50]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:47
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "dlorddoyle@gmail.com"], ["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "eth_in_wallet" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["eth_in_wallet", 8.0], ["updated_at", "2022-02-01 00:37:59.618445"], ["id", 50]]
+  ↳ app/controllers/users_controller.rb:47
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:47
+Redirected to http://localhost:3000/users/50
+Completed 302 Found in 292ms (ActiveRecord: 22.9ms)
+
+
+Started GET "/users/50" for ::1 at 2022-02-01 11:37:59 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 50]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 28ms (Views: 21.4ms | ActiveRecord: 2.4ms)
+
+
+Started DELETE "/login" for ::1 at 2022-02-01 11:38:04 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mxcfhDPcI+IC5pd5FwDiejpghDJ1/OsMA8RQQj6kdb717FFlo75pqH0GMHBE8/zxq/qYr7Pl7SjyfA6kttHawg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for ::1 at 2022-02-01 11:38:04 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-01 11:38:09 +1100
+Processing by NftsController#home as HTML
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 57ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
