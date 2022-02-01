@@ -44804,3 +44804,699 @@ Processing by NftsController#home as HTML
 Completed 200 OK in 28ms (Views: 22.2ms | ActiveRecord: 1.9ms)
 
 
+Started GET "/users/69" for ::1 at 2022-02-02 08:55:31 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 69]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 31ms (Views: 26.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/nfts/694" for ::1 at 2022-02-02 08:58:27 +1100
+Processing by NftsController#show as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:58
+  Rendering nfts/show.html.erb within layouts/application
+  Rendered nfts/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 23ms (Views: 18.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 08:58:29 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 49ms (Views: 42.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:02:57 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (2.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (4.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 83ms (Views: 44.6ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2022-02-02 09:11:55 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/daniel/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/daniel/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (10.6ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:42:30 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.5ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 100ms (Views: 53.9ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:46:38 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 51ms (Views: 34.8ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:48:52 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (11.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (5.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (12.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (116.6ms)
+Completed 200 OK in 275ms (Views: 203.9ms | ActiveRecord: 34.8ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:49:09 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (5.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 93ms (Views: 74.9ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:49:46 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (5.8ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 43ms (Views: 28.1ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:54:34 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 29ms (Views: 22.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:54:47 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 25ms (Views: 19.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:55:04 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 27ms (Views: 22.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:55:29 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:55:37 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 27ms (Views: 21.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:56:06 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 29ms (Views: 23.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:56:20 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 43ms (Views: 38.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:57:52 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 38ms (Views: 30.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:58:22 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 37ms (Views: 31.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 09:59:07 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 62ms (Views: 42.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:02:21 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 37ms (Views: 29.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:06:02 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 172ms (Views: 156.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:06:14 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 29ms (Views: 23.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:06:26 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 34ms (Views: 28.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:06:53 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:33
+  Rendered nfts/fight.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 33ms (Views: 27.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:07:31 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:39
+  Rendered nfts/fight.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 36ms (Views: 29.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:08:06 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.2ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:39
+  Rendered nfts/fight.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 37ms (Views: 32.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:08:24 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (4.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:39
+  Rendered nfts/fight.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 67ms (Views: 54.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:14:29 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:45
+  Rendered nfts/fight.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 49ms (Views: 41.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:15:31 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:41
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  Rendered nfts/fight.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 55ms (Views: 40.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:15:43 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (4.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:42
+  Rendered nfts/fight.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 37ms (Views: 24.9ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:18:15 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (6.2ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:42
+  Rendered nfts/fight.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 80ms (Views: 45.7ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:18:27 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:42
+  Rendered nfts/fight.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 35ms (Views: 29.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:19:03 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.8ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (2.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:42
+  Rendered nfts/fight.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 33ms (Views: 22.3ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:19:23 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:40
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:43
+  Rendered nfts/fight.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 35ms (Views: 21.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:19:53 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:40
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:43
+  Rendered nfts/fight.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 39ms (Views: 28.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:21:27 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:41
+  Rendered nfts/fight.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 41ms (Views: 30.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:21:35 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:41
+  Rendered nfts/fight.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 36ms (Views: 31.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:21:41 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:30
+  Rendered nfts/fight.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for 69:Integer):
+    27:             </div>
+    28:             
+    29:             <%= image_tag @winner.image, alt: @winner.id, id:'winner_img', class: 'nft_image' %>
+    30:             <h1><%= @winner.user.id.username %> </h1>
+    31: 
+    32:         </div>
+    33: 
+  
+app/views/nfts/fight.html.erb:30:in `_app_views_nfts_fight_html_erb___1879818946527447064_25580'
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:21:47 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:41
+  Rendered nfts/fight.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 43ms (Views: 35.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:22:05 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:40
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:43
+  Rendered nfts/fight.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 30ms (Views: 24.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:24:05 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:40
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:43
+  Rendered nfts/fight.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 51ms (Views: 45.2ms | ActiveRecord: 1.5ms)
+
+

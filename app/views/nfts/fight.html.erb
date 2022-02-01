@@ -15,8 +15,15 @@
 
         <div id='fun-fight-comments'>
             
-            <div id='fun-fight-comments1'>
-                <h1 id='live-fight-comment'>Winner</h1>
+            <div id='fun-fight-comments'>
+                <h1 id='live-fight-comment1'></h1>
+                <p id='live-fight-comment2'></p>
+                <p id='live-fight-comment3'></p>
+                <p id='live-fight-comment4'></p>
+                <p id='live-fight-comment5'></p>
+                <p id='live-fight-comment6'></p>
+                <p id='live-fight-comment7'></p>
+                <p id='live-fight-comment8'></p>
             </div>
             
             <%= image_tag @winner.image, alt: @winner.id, id:'winner_img', class: 'nft_image' %>
@@ -30,10 +37,13 @@
 
     <script>
         const fighter = <%= @nft.id %>
-        const fighterOwner = "<%= @opponent.user.username %>"
+        const fighterOwner = "<%= @nft.user.username %>"
 
         const opponent = <%= @opponent.id %>
         const opponentOwner = "<%= @opponent.user.username %>"
+
+        const winner = <%= @winner.id %>
+        const winnerOwner = "<%= @winner.user.username %>"
 
         const earlyFightStatusUpdates = [
         'tentatively moves around the Octagon...',
@@ -61,20 +71,43 @@
         'MID is just having a word with the referee. He does NOT like something.'
         ]
 
-        const chooseUpdate = function (array) {
-        const arrLength = array.length
-        const randomNumber = Math.floor(Math.random * arrLength)
-        return array[randomNumber]
+        const endFightStatusUpdates = [
+        'END tentatively moves around the Octagon...',
+        'END moves in closer...',
+        'END looks to be testing his opponent with leg kicks.',
+        'END has come out swinging! He almost got an early knockout.',
+        'END taunts his opponent by flexing his muscles! Ha! Cheeky.',
+        'END nods to his corner, who are reminding him about his early game plan.',
+        'END throws a nice, measuring left jab.',
+        'END has ran at his opponent like a madman! What a start.',
+        'END turns to the crowd and asks for more noise. This is going to be exciting.',
+        'END is just having a word with the referee. He does NOT like something.'
+        ]
+
+        const winningAttack = [
+        'wins',
+        'wins in emphatic fashion',
+        'smashes his oppponent with a crushing fist.'
+        ]
+
+        function chooseUpdate (array) {
+            const arrLength = array.length
+            const randomNumber = Math.floor(Math.random() * arrLength)
+            return array[randomNumber]
         }
-        
-        const winner = <%= @winner.id %>
 
         $(document).ready(function() {
 
-        // #('#live-fight-comment')
+        $('#live-fight-comment1').html(`${ fighterOwner } vs. ${ opponentOwner }`)
+        $('#live-fight-comment2').html(`${ fighterOwner }(${ fighter }) ${ chooseUpdate(earlyFightStatusUpdates) }`)
+        $('#live-fight-comment3').html(`${ opponentOwner }(${ opponent }) ${ chooseUpdate(earlyFightStatusUpdates) }`)
+        $('#live-fight-comment4').html(`${ fighterOwner }(${ fighter }) ${ chooseUpdate(midFightStatusUpdates) }`)
+        $('#live-fight-comment5').html(`${ opponentOwner }(${ opponent }) ${ chooseUpdate(midFightStatusUpdates) }`)
+        $('#live-fight-comment6').html(`${ fighterOwner }(${ fighter }) ${ chooseUpdate(endFightStatusUpdates) }`)
+        $('#live-fight-comment7').html(`${ opponentOwner }(${ opponent }) ${ chooseUpdate(endFightStatusUpdates) }`)
+        $('#live-fight-comment8').html(`${ winnerOwner }(${ winner }) ${ chooseUpdate(winningAttack) }`)
 
-        $('#winner_img').fadeIn(2000)
-
+        $('#winner_img').delay(4000).fadeIn(2000)
         });
         
     </script>
