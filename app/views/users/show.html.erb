@@ -19,7 +19,7 @@
                 
                 <h4 id='wallet_amount'>Available Funds In Wallet: <%= @current_user.eth_in_wallet %></h2>
 
-                <%= button_to "Add Funds", edit_user_path, :method => "get", class: "buttonLink", id: "headButton" %>
+                <%= button_to "Add Funds", addfunds_path, :method => "get", class: "buttonLink", id: "headButton" %>
 
                 <%= button_to "Edit Account", edit_user_path, :method => "get", class: "buttonLink", id: "headButton" %>
 

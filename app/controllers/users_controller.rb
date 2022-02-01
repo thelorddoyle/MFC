@@ -52,6 +52,12 @@ class UsersController < ApplicationController
 
   end
 
+  def addfunds
+    @user = User.find params[:id]
+
+    redirect_to rankings_path unless @user.id == @current_user.id
+  end
+
   def delete
   end
 

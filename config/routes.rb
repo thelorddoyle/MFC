@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'nfts/show' => 'nfts#show'
   get 'nfts/edit' => 'nfts#edit'
 
+  get 'users/:id/addfunds' => 'users#addfunds', as: 'addfunds'
+
   get '/login' => 'session#new' #show login form
   post '/login' => 'session#create' #create session
   delete '/login' => 'session#destroy' #logout link
