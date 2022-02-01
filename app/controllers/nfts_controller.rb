@@ -20,6 +20,17 @@ class NftsController < ApplicationController
     @nft = Nft.new
   end
 
+  def fight
+    eth_range = 0.2..1000000
+    opponent_list = Nft.joins(:user).where(:users => {:eth_in_wallet => eth_range})
+    @nft = Nft.find params[:id]
+    # makes sure that the current_nft is not in opponent list
+    @opponent = (opponent_list-[@nft]).sample  
+    # chooses winner randomly 
+    @winner = rand > 0.5 ? @opponent : @nft
+    # TODO: THIS IS WHERE I WILL MANIPULATE THE RESULTS TABLE 
+end
+
   def create
 
     # nft = Nft.create nft_params
@@ -62,8 +73,15 @@ class NftsController < ApplicationController
     #   redirect_to login_path
     #   return
     # end
+    if @current_user.eth_in_wallet >= 0.8
 
-    @nft.update nft_params
+      eth_to_take_from = @current_user.eth_in_wallet.to_f
+      new_eth_total = (eth_to_take_from.to_f - 0.8)
+
+      @current_user.update eth_in_wallet: new_eth_total
+      @nft.update nft_params
+
+    end
     
     if @nft.persisted?
       redirect_to nft_path
@@ -75,9 +93,7 @@ class NftsController < ApplicationController
 
   def mint
     @nft = Nft.find_by user_id: nil
-
     # redirect_to rankings_path unless @nft.user_id == @current_user.id
-
   end
 
   def delete

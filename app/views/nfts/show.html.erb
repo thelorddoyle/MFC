@@ -70,6 +70,8 @@
 
 <br><br><br><br>
 
+<%= link_to 'Fight', fight_path(@nft.id) %>
+
 <% if @current_user.present? && @nft.user_id == @current_user.id %>
     <%= link_to 'Edit', edit_nft_path(@nft) %>
     <%= link_to 'Delete', nft_path(@nft), method: 'delete' %>
