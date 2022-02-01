@@ -1,0 +1,40 @@
+<%= form_with model: @user, local: true do |f| %>
+
+    <%= f.label :eth_in_wallet %>
+    <br>
+    <%= f.text_field :eth_in_wallet %>
+    <br><br>
+
+    <%= f.label :username  %>
+    <br>
+    <%= f.text_field :username %>
+    <br><br>
+
+    <%= f.label :email  %>
+    <br>
+    <%= f.text_field :email %>
+    <br><br>
+
+    <%= f.label :password %>
+    <br>
+    <%= f.password_field :password %>
+    <br><br>
+
+    <%= f.label :password_confirmation %>
+    <br>
+    <%= f.password_field :password_confirmation %>
+    <br><br>
+
+    <%= f.submit %>
+<% end %>
+
+<% if @user.errors.any? %>
+<p>Please correct the following errors:</p>
+    <ul>
+        <% @user.errors.full_messages.each do |e| %>
+            <li>
+                <%= e %>
+            </li>
+        <% end %>
+    </ul>
+<% end %>
