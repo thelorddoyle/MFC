@@ -7,13 +7,75 @@
 
     </div>
 
-    <div>
+    <div id='fight-container'>
+
+        <div id='fighter1'>
+            <%= image_tag @nft.image, alt: @nft.id, id:'fighter1_img', class: 'nft_image' %>
+        </div>
+
+        <div id='fun-fight-comments'>
+            
+            <div id='fun-fight-comments1'>
+                <h1 id='live-fight-comment'>Winner</h1>
+            </div>
+            
+            <%= image_tag @winner.image, alt: @winner.id, id:'winner_img', class: 'nft_image' %>
+
+        </div>
+
+        <div id='fighter2'>
+            <%= image_tag @opponent.image, alt: @opponent.id, id:'fighter2_img', class: 'nft_image' %>
+        </div>
         <%# FIGHT THEM %>
+
     <script>
-        const opponent = <%= @opponent.id %>
         const fighter = <%= @nft.id %>
+        const fighterOwner = "<%= @opponent.user.username %>"
+
+        const opponent = <%= @opponent.id %>
+        const opponentOwner = "<%= @opponent.user.username %>"
+
+        const earlyFightStatusUpdates = [
+        'tentatively moves around the Octagon...',
+        'moves in closer...',
+        'looks to be testing his opponent with leg kicks.',
+        'has come out swinging! He almost got an early knockout.',
+        'taunts his opponent by flexing his muscles! Ha! Cheeky.',
+        'nods to his corner, who are reminding him about his early game plan.',
+        'throws a nice, measuring left jab.',
+        'has ran at his opponent like a madman! What a start.',
+        'turns to the crowd and asks for more noise. This is going to be exciting.',
+        'is just having a word with the referee. He does NOT like something.'
+        ]
+
+        const midFightStatusUpdates = [
+        'MID tentatively moves around the Octagon...',
+        'MID moves in closer...',
+        'MID looks to be testing his opponent with leg kicks.',
+        'MID has come out swinging! He almost got an early knockout.',
+        'MID taunts his opponent by flexing his muscles! Ha! Cheeky.',
+        'MID nods to his corner, who are reminding him about his early game plan.',
+        'MID throws a nice, measuring left jab.',
+        'MID has ran at his opponent like a madman! What a start.',
+        'MID turns to the crowd and asks for more noise. This is going to be exciting.',
+        'MID is just having a word with the referee. He does NOT like something.'
+        ]
+
+        const chooseUpdate = function (array) {
+        const arrLength = array.length
+        const randomNumber = Math.floor(Math.random * arrLength)
+        return array[randomNumber]
+        }
+        
         const winner = <%= @winner.id %>
 
+        $(document).ready(function() {
+
+        // #('#live-fight-comment')
+
+        $('#winner_img').fadeIn(2000)
+
+        });
         
     </script>
         

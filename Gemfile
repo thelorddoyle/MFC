@@ -51,3 +51,5 @@ end
 gem 'pry-rails'
 
 gem 'colorize'
+
+gem 'jquery-rails'

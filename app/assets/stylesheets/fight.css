@@ -1,0 +1,25 @@
+#fight-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#fighter1 {
+    text-align: center;
+}
+
+#fighter2 {
+    text-align: center;
+}
+
+#fun-fight-comments {
+    text-align: center;
+}
+
+#winner_img {
+    display: none;
+}
+
+#live-fight-comment {
+
+    font-size: xx-large;
+}

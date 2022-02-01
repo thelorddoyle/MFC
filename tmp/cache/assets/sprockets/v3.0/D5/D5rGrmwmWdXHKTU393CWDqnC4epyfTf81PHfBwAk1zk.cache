@@ -1,0 +1,57 @@
+{:uriI"yfile://app/assets/images/Mfc.html?type=text/html&id=3c22f6ded80bc9d44d38f8a524fad4cd40e69234f30775324f7d5b5f5d844ebf:ET:load_pathI"app/assets/images;T:filenameI"app/assets/images/Mfc.html;T:	nameI"Mfc;T:logical_pathI"Mfc.html;T:content_typeI"text/html;T:sourceI"–
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:3000/rankings -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Mfc</title>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="j7QBH5sdGQbDjjPHDgBQgDVepSbBl4cGrpu0xcdqVxLhT0/+C39TTLxulM5d804LpMS5uweOgSJfI+ojTx/4bg==">
+    
+
+    <link rel="stylesheet" media="all" href="./Mfc_files/main.self-d762e1241cef53be67eea6ed79030e8a93199fc851fff8e52c60e3df6998fc58.css">
+<link rel="stylesheet" media="all" href="./Mfc_files/nfts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+<link rel="stylesheet" media="all" href="./Mfc_files/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+<link rel="stylesheet" media="all" href="./Mfc_files/wallets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+<link rel="stylesheet" media="all" href="./Mfc_files/application.self-f0d704deea029cf000697e2c0181ec173a1b474645466ed843eb5ee7bb215794.css">
+    <script src="./Mfc_files/rails-ujs.self-81c572f39b69ead02e3f97fe43b76954a434591bc2837e3a35af212315e67569.js"></script>
+<script src="./Mfc_files/action_cable.self-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js"></script>
+<script src="./Mfc_files/cable.self-8484513823f404ed0c0f039f75243bfdede7af7919dda65f2e66391252443ce9.js"></script>
+<script src="./Mfc_files/nfts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js"></script>
+<script src="./Mfc_files/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js"></script>
+<script src="./Mfc_files/wallets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js"></script>
+<script src="./Mfc_files/application.self-58b1eb225e13e3709a67ff1fd3579ba47e1509e0221833d7f486543e09ddef38.js"></script>
+    <link rel="stylesheet" href="./Mfc_files/main.css">
+  </head>
+
+  <body>
+
+    <nav>
+
+      <div>
+        <a class="navLogo" href="http://localhost:3000/"><img src="./Mfc_files/MFC-logo-addde759cc38f27ab9bdad0275fff22f80284cba248f6026105475e5b80072bc.png"></a>
+      </div>
+
+      <div class="navLinks">      
+        <ul>
+          <li><a href="http://localhost:3000/">Home</a></li>
+          <li><a href="http://localhost:3000/rankings">Rankings</a></li>
+          <li><a href="http://localhost:3000/whitepaper">Whitepaper</a></li>
+          <!-- TODO: link up Gitbook -->
+          <li><a href="http://localhost:3000/rankings">About</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <button><a href="http://localhost:3000/connect">Connect</a></button>
+      </div>
+
+    </nav>
+
+    <h1>Rankings</h1>
+  
+
+</body></html>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"-file-digest://app/assets/images/Mfc.html;TTF:charsetI"
+utf-8;F:digest"%µ£~`Øgk–À…&ºCuWÓ®:Ë÷ó`„ŽhJK:lengthi–
+:dependencies_digest"%¶Œ€	»‹‡¯Ž… ß™as¢î§«Á«@ßŽ±õ ó:idI"E3c22f6ded80bc9d44d38f8a524fad4cd40e69234f30775324f7d5b5f5d844ebf;F:
+mtimel+Æõa
