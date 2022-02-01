@@ -1,69 +1,77 @@
 <h2> <%= @nft.id %> </h2>
 
+<%= image_tag @nft.image, alt: @nft.id, class: 'nft_image' %>
+
+<p>
+    <strong>User ID: </strong> 
+
+        <% if @nft.user_id == nil %>
+        Unowned
+        <% else %>
+        <%= @nft.user_id %>
+        <% end %>
+</p>
+
+<p>
+    <strong>Mint Season: </strong> <%= @nft.mint_season %>
+</p>
+
+<p>
+    <strong>Mint Bracket: </strong> <%= @nft.mint_bracket %>
+</p>
+
+<p>
+    <strong>Eye Color: </strong> <%= @nft.eye_colour %>
+</p>
+
+<p>
+    <strong>Hair Style: </strong> <%= @nft.hair_style %>
+</p>
+
+<p>
+    <strong>Hair Colour: </strong> <%= @nft.hair_colour %>
+</p>
+
+<p>
+    <strong>Skin Colour: </strong> <%= @nft.skin_colour %>
+</p>
+
+<p>
+    <strong>Shorts: </strong> <%= @nft.shorts %>
+</p>
+
+<p>
+    <strong>Facial Expression: </strong> <%= @nft.facial_expression %>
+</p>
+
+<p>
+    <strong>Body Type: </strong> <%= @nft.body_type %>
+</p>
+
+<p>
+    <strong>Handwear: </strong> <%= @nft.handwear %>
+</p>
+
+<p>
+    <strong>Background Colour: </strong> <%= @nft.background_colour %>
+</p>
+
+<p>
+    <strong>Total Fights: </strong> <%= @nft.total_fights %>
+</p>
+
+<p>
+    <strong>Best Position: </strong> <%= @nft.best_position %>
+</p>
+
+<p>
+    <strong>Amount Won: </strong> <%= @nft.amount_won %>
+</p>
+
+<br><br><br><br>
+
 <% if @current_user.present? && @nft.user_id == @current_user.id %>
     <%= link_to 'Edit', edit_nft_path(@nft) %>
     <%= link_to 'Delete', nft_path(@nft), method: 'delete' %>
     <%= link_to 'New', new_nft_path, method: 'get' %>
 <% end %>
-
-<%= image_tag @nft.image, alt: @nft.id, class: 'nft_image' %>
-
-<p>
-    <strong>User ID: </strong>: <%= @nft.user_id %>
-</p>
-
-<p>
-    <strong>Mint Season: </strong>: <%= @nft.mint_season %>
-</p>
-
-<p>
-    <strong>Mint Bracket: </strong>: <%= @nft.mint_bracket %>
-</p>
-
-<p>
-    <strong>Eye Color: </strong>: <%= @nft.eye_colour %>
-</p>
-
-<p>
-    <strong>Hair Style: </strong>: <%= @nft.hair_style %>
-</p>
-
-<p>
-    <strong>Hair Colour: </strong>: <%= @nft.hair_colour %>
-</p>
-
-<p>
-    <strong>Skin Colour: </strong>: <%= @nft.skin_colour %>
-</p>
-
-<p>
-    <strong>Shorts: </strong>: <%= @nft.shorts %>
-</p>
-
-<p>
-    <strong>Facial Expression: </strong>: <%= @nft.facial_expression %>
-</p>
-
-<p>
-    <strong>Body Type: </strong>: <%= @nft.body_type %>
-</p>
-
-<p>
-    <strong>Handwear: </strong>: <%= @nft.handwear %>
-</p>
-
-<p>
-    <strong>Background Colour: </strong>: <%= @nft.background_colour %>
-</p>
-
-<p>
-    <strong>Total Fights: </strong>: <%= @nft.total_fights %>
-</p>
-
-<p>
-    <strong>Best Position: </strong>: <%= @nft.best_position %>
-</p>
-
-<p>
-    <strong>Amount Won: </strong>: <%= @nft.amount_won %>
-</p>

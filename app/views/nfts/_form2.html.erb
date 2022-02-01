@@ -1,0 +1,24 @@
+<%= form_with model: @nft, local: true do |f| %>
+
+    <%= f.hidden_field :user_id, value:@current_user.id %>
+    <%= f.hidden_field :mint_season %>
+    <%= f.hidden_field :mint_bracket %>
+    <%= f.hidden_field :eye_colour %>
+    <%= f.hidden_field :hair_style %>
+    <%= f.hidden_field :hair_colour %>
+    <%= f.hidden_field :skin_colour %>
+    <%= f.hidden_field :shorts %>
+    <%= f.hidden_field :facial_expression %>
+    <%= f.hidden_field :body_type %>
+    <%= f.hidden_field :handwear %>
+    <%= f.hidden_field :background_colour %>
+    <%= f.hidden_field :tattoos %>
+    <%= f.hidden_field :total_fights %>
+    <%= f.hidden_field :best_position %>
+    <%= f.hidden_field :amount_won %>
+    <%= f.hidden_field :image %>
+    <%= f.hidden_field :fights_won %>
+    <%= f.hidden_field :average_position %>
+    
+    <%= f.submit 'Mint' %>
+<% end %>

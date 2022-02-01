@@ -1,31 +1,36 @@
 
-<br><br><br><br><br><br><br>
+<main class="profile">
+    <div class="light top-of-page-light">
+        <h1 id="profile">Login</h1>
+        <h2>Login and fight!</h2>
+    </div>
 
-<div>
+    <div class='login'>
 
-    <h1>Login</h1>
+        <%= form_with url: login_path, local: true do |f| %>
 
-    <%= form_with url: login_path, local: true do |f| %>
+            <%= f.label :email, class: 'login_form_label' %>
+            <br><br>
+            <%= f.text_field :email %>
+            <br><br><br>
 
-        <%= f.label :email %>
-        <br>
-        <%= f.text_field :email %>
-        <br><br>
+            <%= f.label :password, class: 'login_form_label' %>
+            <br><br>
+            <%= f.password_field :password %>
+            <br><br><br>
+            <%= f.submit 'Login', class: 'buttonLink2', id: "login-button" %>
 
-        <%= f.label :password %>
-        <br>
-        <%= f.password_field :password %>
+        <% end%>
 
-        <br><br>
-        <%= f.submit 'Login' %>
-    <% end%>
+            <% if flash[:error]  %>
+            <br>
+            <p><strong><%= flash[:error] %></strong></p>
+            <br>
+            <% end %>
+            <br>
+            <%= button_to "Sign Up", new_user_path, method: 'GET', class: "buttonLink", id: "signup-button" %>
 
-    <% if flash[:error]  %>
-    <br>
-    <p><strong><%= flash[:error] %></strong></p>
-    <br>
-    <% end %>
-    <br><br>
-    <%= link_to 'Sign Up', new_user_path %>
 
-</div>
+    </div>
+
+</main>

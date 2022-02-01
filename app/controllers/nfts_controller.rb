@@ -26,7 +26,7 @@ class NftsController < ApplicationController
     # nft.user_id = @current_user.id
     # nft.save
 
-    @nft = Nft.new nft_params
+    @nft = Nft.new nft_params()
     @nft.user_id = @current_user.id
     @nft.save
 
@@ -57,10 +57,11 @@ class NftsController < ApplicationController
 
     @nft = Nft.find params[:id]
 
-    if @nft.id != @current_nft.id
-      redirect_to login_path
-      return
-    end
+    # TODO: Ask Luke where @current_nft is 
+    # if @nft.id != @current_nft.id
+    #   redirect_to login_path
+    #   return
+    # end
 
     @nft.update nft_params
     
@@ -72,13 +73,20 @@ class NftsController < ApplicationController
         
   end
 
+  def mint
+    @nft = Nft.find_by user_id: nil
+
+    # redirect_to rankings_path unless @nft.user_id == @current_user.id
+
+  end
+
   def delete
   end
 
   private
 
   def nft_params
-    params.require(:nft).permit(:mint_season, :mint_bracket, :eye_colour, :hair_style, :hair_colour, :skin_colour, :shorts, :facial_expression, :body_type, :handwear, :background_colour, :tattoos, :total_fights, :best_position, :amount_won, :image, :fights_won, :average_position, :wallet_id )
+    params.require(:nft).permit(:mint_season, :mint_bracket, :eye_colour, :hair_style, :hair_colour, :skin_colour, :shorts, :facial_expression, :body_type, :handwear, :background_colour, :tattoos, :total_fights, :best_position, :amount_won, :image, :fights_won, :average_position, :user_id )
   end
 
 end

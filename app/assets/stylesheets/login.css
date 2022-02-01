@@ -1,0 +1,67 @@
+input#signup-button.buttonLink {
+    color: red;
+    width: 300px;
+}
+
+input#signup-button.buttonLink:hover {
+    color: white;
+}
+
+input#signup-button {
+    width: 50%;
+    padding: 10px 20px;
+    color: black;
+    font-size: large;
+    background-color: white;
+    border: 2px solid black;
+}
+
+input#signup-button:hover > .buttonLink {
+    background-color: red; 
+}
+
+input#signup-button:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+/* login button */
+
+input#login-button.buttonLink2 {
+    color: white;
+    width: 300px;
+}
+
+input#login-button.buttonLink2:hover {
+    color: red;
+}
+
+input#login-button {
+    width: 50%;
+    padding: 10px 20px;
+    color: black;
+    font-size: large;
+    background-color: red;
+    border: 2px solid black;
+}
+
+input#login-button:hover > .buttonLink2 {
+    background-color: white; 
+}
+
+input#login-button:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.login_form_label {
+    font-size: 1.5rem;
+}
+
+input#email {
+    font-size: 1.5rem;
+}
+
+input#password {
+    font-size: 1.5rem;
+}

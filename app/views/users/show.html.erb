@@ -68,7 +68,7 @@
                 </div>
 
                 <div class='asset-id'>
-                    <%= image_tag nft.image, alt: nft.id, class: 'profile_asset_image' %>
+                    <%= link_to image_tag(nft.image, class: "profile_asset_image"), nft_path(nft.id) %>
                 </div>
 
                 <div class='asset-id'>

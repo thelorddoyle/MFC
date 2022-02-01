@@ -1,5 +1,10 @@
 <%= form_with model: @nft, local: true do |f| %>
 
+    <%= f.label :user_id %>
+    <br>
+    <%= f.text_field :user_id %>
+    <br><br>
+
     <%= f.label :mint_season  %>
     <br>
     <%= f.text_field :mint_season %>
@@ -90,5 +95,5 @@
     <%= f.text_field :average_position %>
     <br><br>
 
-    <%= f.submit %>
+    <%= f.submit 'Mint' %>
 <% end %>
