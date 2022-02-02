@@ -102,3 +102,34 @@ input#headButton:hover {
     padding-bottom: 50px;
 }
 
+.profile_image {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 150px;
+    padding: 20px 0;
+}
+
+input#fightButton.buttonLink {
+    color: white;
+}
+
+input#fightButton.buttonLink:hover {
+    color: red;
+}
+
+input#fightButton {
+    padding: 10px 10px;
+    color: black;
+    font-size: large;
+    background-color: red;
+    border: 2px solid black;
+}
+
+input#fightButton:hover > .buttonLink {
+    background-color: white; 
+}
+
+input#fightButton:hover {
+    cursor: pointer;
+    background-color: white;
+}

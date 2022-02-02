@@ -11,7 +11,7 @@
 
             <h1> Hello, <%= @current_user.username %>.</h1>
 
-            <%= cl_image_tag @current_user.profile_image, alt: @current_user.username, class: 'nft_image' %>
+            <%= cl_image_tag @current_user.profile_image, alt: @current_user.username, class: 'profile_image' %>
 
             <h3>What would you like to do?</h3>
 
@@ -52,16 +52,18 @@
                 </div>
 
                 <div class='asset-id'>
-                    <h3>Total Fights</h3>
-                </div>                
+                    <h3>ETH Won</h3>
+                </div>      
 
                 <div class='asset-id'>
                     <h3>Fights Won</h3>
                 </div>
 
                 <div class='asset-id'>
-                    <h3>ETH Won</h3>
+                    <h3>Fight</h3>
                 </div>
+
+
 
             <% @user.nfts.order([:fights_won]).reverse.each do |nft| %>
 
@@ -74,7 +76,7 @@
                 </div>
 
                 <div class='asset-id'>
-                    <h3><%= link_to nft.total_fights, nft_path(nft.id)  %></h3>
+                    <h3><%= link_to nft.amount_won, nft_path(nft.id)  %></h3>
                 </div>
 
                 <div class='asset-id'>
@@ -82,7 +84,7 @@
                 </div>
 
                 <div class='asset-id'>
-                    <h3><%= link_to nft.amount_won, nft_path(nft.id)  %></h3>
+                    <h3><%= button_to 'Fight', fight_path(nft.id), method:'get', class: "buttonLink", id: "fightButton" %></h3>
                 </div>
 
             <% end %>

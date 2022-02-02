@@ -201,6 +201,13 @@ h3 {
     text-shadow: 3px 3px red;
 }
 
+h1#fight {
+    padding: 0 0 30px;
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 3px 3px red;
+}
+
 .light p {
     padding: 10px 0;
 }

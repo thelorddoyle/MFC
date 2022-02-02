@@ -1,51 +1,95 @@
-#fight {
+main.fight {
     padding-top: 20px;
+    box-sizing: border-box;
 }
 
-#fight-container {
-    display:inline-flex;
-    flex-direction:row;
-    flex-wrap:nowrap;
-    justify-content:flex-start;
-    align-items:stretch;
-    align-content:stretch;
+.fight-wrap {
+    margin: 0 auto;
+    width: 80%;
 }
 
-#fighters {
-    flex-grow: 1;
+#fight-grid {
+    display: grid;
+    grid-gap: 1rem;
+    width: 100%;
+    grid-template-columns: minmax(1fr, 0) 300px;
+    min-height: 0;  /* NEW */
+    min-width: 0;   /* NEW; needed for Firefox */
+
+    grid-template-areas:
+    "a a a"
+    "b c c"
+    "b c c";
 }
 
-#fun-fight-comments {
-    flex-grow: 2;
-    display:inline-flex;
-    flex-direction:column;
-    flex-wrap:nowrap;
-    justify-content:center;
-    align-items:center;
-    align-content:stretch
+.grid-header {
+    grid-area: a;
+    background-color: #111111;
+    padding: 20px 0;
+}
+
+.grid-sidebar {
+    grid-area: b;
+    background-color: #111111;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#versus {
+    padding: 20px 0;
+    color: red;
+}
+
+.grid-main {
+    grid-area: c;
+    background-color: #111111;
+    padding-top: 30px;
 }
 
 .fighter_image {
-    width: 50%;
+    width: 200px;
+}
+
+.sidebar-name {
+    padding-bottom: 20px;
+}
+
+#fighter_img_id2 {
+    padding-bottom: 20px;
+}
+
+#winner {
+    padding: 20px 0;
+    display: none;
+}
+
+#winner_announcement {
+    padding-bottom: 20px;
 }
 
 #winner_img {
-    display: none;
+    border-radius: 15px;
 }
 
 #live-fight-comment {
     font-size: xx-large;
 }
 
-.typewriter h1 {
+.typewriter {
+  flex-basis: 0px;
+  flex-grow: 1;
+  margin: 5px;
+}
+
+.typewriter p {
     color: #fff;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    border-right: .15em solid red; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.05em; /* Adjust as needed */
     animation:
-        typing 1.5s steps(30, end),
+        typing 2.5s steps(30, end),
         blink-caret .5s step-end infinite;
 }
 
@@ -58,5 +102,7 @@
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange }
+  50% { border-color: red }
 }
+
+p.para { display: none; }
