@@ -21,15 +21,14 @@ class NftsController < ApplicationController
   end
 
   def fight
+    @nft = Nft.find params[:id]
+
     eth_range = 0.2..1000000
     opponent_list = Nft.joins(:user).where(:users => {:eth_in_wallet => eth_range})
-    @nft = Nft.find params[:id]
-    # makes sure that the current_nft is not in opponent list
+
     @opponent = (opponent_list-[@nft]).sample  
-    # chooses winner randomly 
-    @winner = rand > 0.5 ? @opponent : @nft
-    # TODO: THIS IS WHERE I WILL MANIPULATE THE RESULTS TABLE 
-end
+    @winner = @nft.fight(@opponent)
+  end
 
   def create
 
@@ -56,6 +55,9 @@ end
 
   def show
     @nft = Nft.find params[:id]
+    @results = Result.where(winner:@nft.id).or(Result.where(loser:@nft.id))
+    @wins = @nft.wins
+    @losses = @nft.losses
   end
 
   def edit

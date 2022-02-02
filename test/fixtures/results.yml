@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  winner: MyString
+  loser: MyString
+  amount_bet: 1.5
+  total_prize_pool: 1.5
+
+two:
+  winner: MyString
+  loser: MyString
+  amount_bet: 1.5
+  total_prize_pool: 1.5

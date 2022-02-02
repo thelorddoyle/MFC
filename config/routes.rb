@@ -20,5 +20,6 @@ Rails.application.routes.draw do
 
   resources :users
   resources :nfts
+  resources :results
 
 end

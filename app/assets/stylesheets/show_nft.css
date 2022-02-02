@@ -1,0 +1,71 @@
+#nft_showcase {
+    padding-top: 20px;
+}
+
+h2#owned-by {
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+main {
+    text-align: center;
+}
+
+#nft-top-of-asset-grid {
+    max-width: 1200px;
+    padding: 40px 50px 0px 50px;
+    margin: 0 auto;
+}
+
+.nft-asset-top-row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.nft-asset-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+
+}
+
+.nft-asset-id {
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.results-graph-winner {
+    background-color: green;
+}
+
+.results-graph-loser {
+    background-color: red;
+}
+
+#showcase-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#showcase-container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.nft-showcase-stats-table {
+    padding: 20px;
+    background-color: #111111;
+    border-radius: 15px;
+}
+
+#showcase-properties {
+    display: grid;
+    min-height: 332px;
+}

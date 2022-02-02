@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_02_001545) do
+ActiveRecord::Schema.define(version: 2022_02_02_092655) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,13 @@ ActiveRecord::Schema.define(version: 2022_02_02_001545) do
     t.text "image"
     t.integer "fights_won"
     t.integer "average_position"
+  end
+
+  create_table "results", force: :cascade do |t|
+    t.integer "winner_id"
+    t.integer "loser_id"
+    t.float "eth_bet"
+    t.float "total_prize_pool"
   end
 
   create_table "users", force: :cascade do |t|

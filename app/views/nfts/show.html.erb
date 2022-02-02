@@ -1,79 +1,157 @@
-<h2> <%= @nft.id %> </h2>
+<main class="nft_showcase">
+    <div class="light top-of-page-light">
+        <h1 id="profile">#<%= @nft.id %></h1>
+        <h2 id='owned-by'>Owned by: <%= @nft.user.username %></h2>
+    </div>
+    <div id='showcase-wrapper'>
+        <div id='showcase-container'>
 
-<%= image_tag @nft.image, alt: @nft.id, class: 'nft_image' %>
+            <div class='nft-showcase-stats-table' id='showcase-image-and-details'>
+                <%= image_tag @nft.image, alt: @nft.id, class: 'nft_image' %>
+            </div>
 
-<p>
-    <strong>User ID: </strong> 
+            <div class='nft-showcase-stats-table' id='showcase-properties'>
+                <p>
+                    <strong>Eye Color: </strong> <%= @nft.eye_colour %>
+                </p>
+                <p>
+                    <strong>Hair Style: </strong> <%= @nft.hair_style %>
+                </p>
+                <p>
+                    <strong>Hair Colour: </strong> <%= @nft.hair_colour %>
+                </p>
+                <p>
+                    <strong>Skin Colour: </strong> <%= @nft.skin_colour %>
+                </p>
+                <p>
+                    <strong>Shorts: </strong> <%= @nft.shorts %>
+                </p>
+                <p>
+                    <strong>Facial Expression: </strong> <%= @nft.facial_expression %>
+                </p>
+                <p>
+                    <strong>Body Type: </strong> <%= @nft.body_type %>
+                </p>
+                <p>
+                    <strong>Handwear: </strong> <%= @nft.handwear %>
+                </p>
+                <p>
+                    <strong>Background Colour: </strong> <%= @nft.background_colour %>
+                </p>
+            </div>
 
-        <% if @nft.user_id == nil %>
-        Unowned
-        <% else %>
-        <%= @nft.user_id %>
-        <% end %>
-</p>
+            <div class='nft-showcase-stats-table' id='minting_stats'>
+                <p>
+                    <strong>User ID: </strong> 
+                        <% if @nft.user_id == nil %>
+                        Unowned
+                        <% else %>
+                        <%= @nft.user_id %>
+                        <% end %>
+                </p>
+                <p>
+                    <strong>Mint Season: </strong> <%= @nft.mint_season %>
+                </p>
+                <p>
+                    <strong>Mint Bracket: </strong> <%= @nft.mint_bracket %>
+                </p>
+            </div>
 
-<p>
-    <strong>Mint Season: </strong> <%= @nft.mint_season %>
-</p>
 
-<p>
-    <strong>Mint Bracket: </strong> <%= @nft.mint_bracket %>
-</p>
+            <div class='nft-showcase-stats-table' id='fight_stats'>
+                <p>
+                    <strong>Total Fights: </strong> <%= @nft.total_fights %>
+                </p>
+                <p>
+                    <strong>Best Position: </strong> <%= @nft.best_position %>
+                </p>
+                <p>
+                    <strong>Amount Won: </strong> <%= @nft.amount_won %>
+                </p>
+            </div>
 
-<p>
-    <strong>Eye Color: </strong> <%= @nft.eye_colour %>
-</p>
 
-<p>
-    <strong>Hair Style: </strong> <%= @nft.hair_style %>
-</p>
-
-<p>
-    <strong>Hair Colour: </strong> <%= @nft.hair_colour %>
-</p>
-
-<p>
-    <strong>Skin Colour: </strong> <%= @nft.skin_colour %>
-</p>
-
-<p>
-    <strong>Shorts: </strong> <%= @nft.shorts %>
-</p>
-
-<p>
-    <strong>Facial Expression: </strong> <%= @nft.facial_expression %>
-</p>
-
-<p>
-    <strong>Body Type: </strong> <%= @nft.body_type %>
-</p>
-
-<p>
-    <strong>Handwear: </strong> <%= @nft.handwear %>
-</p>
-
-<p>
-    <strong>Background Colour: </strong> <%= @nft.background_colour %>
-</p>
-
-<p>
-    <strong>Total Fights: </strong> <%= @nft.total_fights %>
-</p>
-
-<p>
-    <strong>Best Position: </strong> <%= @nft.best_position %>
-</p>
-
-<p>
-    <strong>Amount Won: </strong> <%= @nft.amount_won %>
-</p>
-
-<br><br><br><br>
+        </div>
+    </div>
 
 <%= link_to 'Fight', fight_path(@nft.id) %>
 
-<% if @current_user.present? && @nft.user_id == @current_user.id %>
-    <%= link_to 'Edit', edit_nft_path(@nft) %>
-    <%= link_to 'Delete', nft_path(@nft), method: 'delete' %>
-    <%= link_to 'New', new_nft_path, method: 'get' %>
-<% end %>
+                <h1>Wins: <%= @wins %></h1>
+                <h1>Losses: <%= @losses %></h1>
+
+        <div id='nft-top-of-asset-grid' class='nft-asset-grid'>
+
+                <div class='nft-asset-id nft-asset-top-row'>
+                    <h3>Match #</h3>
+                </div>
+
+                <div class='nft-asset-id'>
+                    <h3>Winning NFT</h3>
+                </div>
+
+                <div class='nft-asset-id'>
+                    <h3>Winner</h3>
+                </div>
+
+                <div class='nft-asset-id'>
+                    <h3>Losing NFT</h3>
+                </div>
+
+                <div class='nft-asset-id'>
+                    <h3>Loser</h3>
+                </div>
+
+                <div class='nft-asset-id'>
+                    <h3>ETH Bet Each</h3>
+                </div>      
+
+                <div class='nft-asset-id'>
+                    <h3>Prize Pool</h3>
+                </div>
+
+
+            <% @results.each do |result| %>
+
+                <% if result.winner.user.id != @current_user.id && result.loser.user.id != @current_user.id %>
+                    <div class='nft-asset-id'>
+                        <h3><%= result.id %></h3>
+                    </div>
+                <% else %>
+                    <% if result.winner.user.id == @current_user.id %>
+                        <div class='nft-asset-id results-graph-winner'>
+                            <h3>YOU WON: <%= result.id %></h3>
+                        </div>
+                    <% else %>
+                        <div class='nft-asset-id results-graph-loser'>
+                            <h3>YOU LOST: <%= result.id %></h3>
+                        </div>
+                    <% end %>
+                <% end %>
+
+                <div class='nft-asset-id'>
+                    <%= link_to image_tag(result.winner.image, class: "profile_asset_image"), nft_path(result.winner.id) %>
+                </div>
+
+                <div class='nft-asset-id'>
+                    <h3><%= result.winner.user.username %></h3>
+                </div>
+
+                <div class='nft-asset-id'>
+                    <%= link_to image_tag(result.loser.image, class: "profile_asset_image"), nft_path(result.loser.id) %>
+                </div>
+
+                <div class='nft-asset-id'>
+                    <h3><%= result.loser.user.username %></h3>
+                </div>                
+
+                <div class='nft-asset-id'>
+                    <h3><%= result.eth_bet %></h3>
+                </div>                
+
+                <div class='nft-asset-id'>
+                    <h3><%= result.total_prize_pool %></h3>
+                </div>
+
+            <% end %>
+
+</main>

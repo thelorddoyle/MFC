@@ -274,3 +274,7 @@ footer {
     padding-left: 10px;
     vertical-align: middle;
 }
+
+.nft_image {
+    border-radius: 15px;
+}
