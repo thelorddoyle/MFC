@@ -47511,3 +47511,26 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 43ms (Views: 36.6ms | ActiveRecord: 1.7ms)
 
 
+Started GET "/" for ::1 at 2022-02-02 13:00:23 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 61ms (Views: 52.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/78" for ::1 at 2022-02-02 13:00:25 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 78]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 62ms (Views: 47.8ms | ActiveRecord: 2.3ms)
+
+
