@@ -6,9 +6,9 @@ User.destroy_all
 
 users_array = [ nil, ]
 
-User.create! username: 'thelorddoyle', email: 'dlorddoyle@gmail.com', password: 'chicken', eth_in_wallet: 0.8
-User.create! username: 'lukearthur', email: 'lukearthur@gmail.com', password: 'chicken', eth_in_wallet: 1.8
-User.create! username: 'jordo2017', email: 'jdog@outlook.com', password: 'chicken', eth_in_wallet: 2.4
+User.create! username: 'thelorddoyle', email: 'dlorddoyle@gmail.com', password: 'chicken', eth_in_wallet: 30
+User.create! username: 'lukearthur', email: 'lukearthur@gmail.com', password: 'chicken', eth_in_wallet: 30
+User.create! username: 'jordo2017', email: 'jdog@outlook.com', password: 'chicken', eth_in_wallet: 30
 
 users_array.push User.all.first.id
 users_array.push User.all.second.id

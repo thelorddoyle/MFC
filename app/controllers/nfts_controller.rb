@@ -25,8 +25,10 @@ class NftsController < ApplicationController
 
     eth_range = 0.2..1000000
     opponent_list = Nft.joins(:user).where(:users => {:eth_in_wallet => eth_range})
+    #had to add this in to only keep others from foghting
+    opponent_list_final = opponent_list.where.not(user_id: @current_user.id)
 
-    @opponent = (opponent_list-[@nft]).sample  
+    @opponent = (opponent_list_final).sample  
     @winner = @nft.fight(@opponent)
   end
 
