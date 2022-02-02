@@ -1,4 +1,4 @@
-<main class="rankings">
+<main class="fight">
 
     <div class="light top-of-page-light">
 
@@ -9,15 +9,26 @@
 
     <div id='fight-container'>
 
-        <div id='fighter1'>
-            <%= image_tag @nft.image, alt: @nft.id, id:'fighter1_img', class: 'nft_image' %>
+        <div id='fighters'>
+
+            <h1 id='live-fight-comment1'></h1>
+    
+            <%= image_tag @nft.image, alt: @nft.id, id:'fighter1_img', class: 'fighter_image' %>
+            
+            <br>
+                        
+            <h2>versus</h2>
+                        
+            <br>
+                        
+            <%= image_tag @opponent.image, alt: @opponent.id, id:'fighter2_img', class: 'fighter_image' %>
+
         </div>
 
         <div id='fun-fight-comments'>
             
             <div id='fun-fight-comments'>
-                <h1 id='live-fight-comment1'></h1>
-                <p id='live-fight-comment2'></p>
+                
                 <p id='live-fight-comment3'></p>
                 <p id='live-fight-comment4'></p>
                 <p id='live-fight-comment5'></p>
@@ -25,13 +36,16 @@
                 <p id='live-fight-comment7'></p>
                 <p id='live-fight-comment8'></p>
             </div>
+
+            <div class="typewriter">
+                <h1>The cat and the hat.</h1>
+            </div>
+            <div class="typewriter">
+                <h1 id="live-fight-comment2"></h1>
+            </div>
             
             <%= image_tag @winner.image, alt: @winner.id, id:'winner_img', class: 'nft_image' %>
 
-        </div>
-
-        <div id='fighter2'>
-            <%= image_tag @opponent.image, alt: @opponent.id, id:'fighter2_img', class: 'nft_image' %>
         </div>
         <%# FIGHT THEM %>
 
@@ -106,6 +120,8 @@
         $('#live-fight-comment6').html(`${ fighterOwner }(${ fighter }) ${ chooseUpdate(endFightStatusUpdates) }`)
         $('#live-fight-comment7').html(`${ opponentOwner }(${ opponent }) ${ chooseUpdate(endFightStatusUpdates) }`)
         $('#live-fight-comment8').html(`${ winnerOwner }(${ winner }) ${ chooseUpdate(winningAttack) }`)
+
+
 
         $('#winner_img').delay(4000).fadeIn(2000)
         });

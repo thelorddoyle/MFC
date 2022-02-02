@@ -7,6 +7,14 @@ class UsersController < ApplicationController
   def create
 
     @user = User.new user_params
+
+    if params[:user][:profile_image].present?
+        # Forward the uploaded image on to Cloudinary (using the gem):
+        response = Cloudinary::Uploader.upload params[:user][:profile_image]
+        p response  # so we can see what the response looks like
+        @user.profile_image = response['public_id']
+    end  # upload check
+
     @user.save
 
     if @user.persisted? #saved
@@ -15,6 +23,8 @@ class UsersController < ApplicationController
     else
       render :new
     end
+
+    
 
   end
 
@@ -34,6 +44,14 @@ class UsersController < ApplicationController
   def update
 
     @user = User.find params[:id]
+
+
+    if params[:user][:profile_image].present?
+        # Forward the uploaded image on to Cloudinary (using the gem):
+        response = Cloudinary::Uploader.upload params[:user][:profile_image]
+        p response  # so we can see what the response looks like
+        @user.profile_image = response['public_id']
+    end  # upload check
 
     if @user.id != @current_user.id
       redirect_to login_path

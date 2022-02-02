@@ -1,18 +1,32 @@
+#fight {
+    padding-top: 20px;
+}
+
 #fight-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    display:inline-flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    align-items:stretch;
+    align-content:stretch;
 }
 
-#fighter1 {
-    text-align: center;
-}
-
-#fighter2 {
-    text-align: center;
+#fighters {
+    flex-grow: 1;
 }
 
 #fun-fight-comments {
-    text-align: center;
+    flex-grow: 2;
+    display:inline-flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    align-content:stretch
+}
+
+.fighter_image {
+    width: 50%;
 }
 
 #winner_img {
@@ -23,30 +37,26 @@
     font-size: xx-large;
 }
 
-#live-fight-comment2 {
-    display: none;
+.typewriter h1 {
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.05em; /* Adjust as needed */
+    animation:
+        typing 1.5s steps(30, end),
+        blink-caret .5s step-end infinite;
 }
 
-#live-fight-comment3 {
-    display: none;
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-#live-fight-comment4 {
-    display: none;
-}
-
-#live-fight-comment5 {
-    display: none;
-}
-
-#live-fight-comment6 {
-    display: none;
-}
-
-#live-fight-comment7 {
-    display: none;
-}
-
-#live-fight-comment8 {
-display: none;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }

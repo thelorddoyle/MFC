@@ -45500,3 +45500,2014 @@ Processing by NftsController#fight as HTML
 Completed 200 OK in 51ms (Views: 45.2ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:37:32 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 93ms (Views: 67.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:37:58 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 77ms (Views: 66.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:38:50 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 98ms (Views: 90.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:40:31 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (16.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (3.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (3.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:40
+  Rendered nfts/fight.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 251ms (Views: 201.3ms | ActiveRecord: 24.9ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:40:56 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:40
+  Rendered nfts/fight.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 43ms (Views: 30.1ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:41:06 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (2.3ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:40
+  Rendered nfts/fight.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 40ms (Views: 31.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:45:57 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (2.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 201ms (Views: 170.9ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:46:33 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 49ms (Views: 40.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:46:46 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 48ms (Views: 40.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:47:10 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (12.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (30.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (19.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 270ms (Views: 195.4ms | ActiveRecord: 62.6ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:47:21 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 53ms (Views: 48.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:47:51 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (2.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 76ms (Views: 63.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:48:47 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 85ms (Views: 69.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:49:29 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 44ms (Views: 37.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:58:57 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (2.1ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 193ms (Views: 161.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:59:32 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 46ms (Views: 37.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 10:59:43 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (3.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (2.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 66ms (Views: 47.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:00:26 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 66ms (Views: 58.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:00:32 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (3.8ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 44ms (Views: 34.7ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:01:35 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 53ms (Views: 47.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:02:22 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 39ms (Views: 32.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:03:13 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (3.6ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 59ms (Views: 44.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:03:51 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 40ms (Views: 34.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:04:02 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 50ms (Views: 39.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:05:01 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (14.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (5.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (4.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 173ms (Views: 98.1ms | ActiveRecord: 26.7ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:06:02 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:45
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:48
+  Rendered nfts/fight.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 61ms (Views: 53.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:06:32 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 32ms (Views: 26.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:07:08 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (3.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 36ms (Views: 28.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:07:42 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 50ms (Views: 42.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:07:56 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 57ms (Views: 50.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:08:27 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.3ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 51ms (Views: 45.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:08:49 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (2.1ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 258ms (Views: 248.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-02 11:11:41 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 100ms (Views: 95.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/69" for ::1 at 2022-02-02 11:11:45 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (2.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 69]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 69ms (Views: 61.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/nfts/694" for ::1 at 2022-02-02 11:11:47 +1100
+Processing by NftsController#show as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:58
+  Rendering nfts/show.html.erb within layouts/application
+  Rendered nfts/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 37ms (Views: 32.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:11:50 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.2ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (3.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 61ms (Views: 52.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:12:38 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.2ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 43ms (Views: 38.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/nfts/694/fight" for ::1 at 2022-02-02 11:12:42 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"694"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 694], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 45ms (Views: 32.1ms | ActiveRecord: 3.8ms)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2600417417628977100)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddProfileImageToUsers (20220202001545)
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (19.0ms)[0m  [1m[35mALTER TABLE "users" ADD "profile_image" text[0m
+  ↳ db/migrate/20220202001545_add_profile_image_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (5.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220202001545"]]
+  ↳ bin/rails:4
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2600417417628977100)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/users/69" for ::1 at 2022-02-02 11:16:55 +1100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniel/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (13.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 69]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 139ms (Views: 74.6ms | ActiveRecord: 34.9ms)
+
+
+Started DELETE "/login" for ::1 at 2022-02-02 11:16:58 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bBbRPi5omBROQAPIZ0hpA3yJIhkgQmRc5lFG6VvNE8YC7Z/fvgrSXjGgpME0u3eI7RM+hOZbYngX6RgP07i8ug=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/login
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2022-02-02 11:16:58 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 65ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2022-02-02 11:17:54 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/new" for ::1 at 2022-02-02 11:17:58 +1100
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"K4qzAeUNUS+k/FDJx2HptibxVLED+FTcprsU/IC3l0NFcf3gdW8bZdsc98CUkvc9t2tILMXhUvhXA0oaCMI4Pw=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (19.9ms)
+  Rendered users/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 202ms (Views: 128.0ms | ActiveRecord: 21.1ms)
+
+
+Started POST "/users" for ::1 at 2022-02-02 11:18:12 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R4VZpPRDHnkWENhUKpjgq1g9atXygQT1RuDo2SAurJkpfhdFZCFUM2nwf115a/4gyad2SDSYAtG3WLY/qFsD5Q==", "user"=>{"username"=>"gangster", "email"=>"gangster@gmail.com", "profile_image"=>"hello.jpeg", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gangster@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest", "eth_in_wallet", "profile_image") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "gangster"], ["email", "gangster@gmail.com"], ["created_at", "2022-02-02 00:18:13.172830"], ["updated_at", "2022-02-02 00:18:13.172830"], ["password_digest", "$2a$12$CigrYzhdmcDxlrFgyfHsiOftiuDJCQWf3X9v/0N6sZU3CWjHBBuMS"], ["eth_in_wallet", 0.0], ["profile_image", "hello.jpeg"]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/rankings
+Completed 302 Found in 308ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-02 11:18:13 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (1.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (103.5ms)
+Completed 200 OK in 136ms (Views: 115.2ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/users/72" for ::1 at 2022-02-02 11:18:17 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 72]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 45ms (Views: 38.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/72" for ::1 at 2022-02-02 11:19:20 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (The asset "hello.jpeg" is not present in the asset pipeline.
+):
+    11: 
+    12:             <h1> Hello, <%= @current_user.username %>.</h1>
+    13: 
+    14:             <%= image_tag @current_user.profile_image, alt: @current_user.username, class: 'nft_image' %>
+    15: 
+    16:             <h3>What would you like to do?</h3>
+    17: 
+  
+app/views/users/show.html.erb:14:in `_app_views_users_show_html_erb___970083762426115712_38960'
+Started POST "/users" for ::1 at 2022-02-02 11:20:40 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R4VZpPRDHnkWENhUKpjgq1g9atXygQT1RuDo2SAurJkpfhdFZCFUM2nwf115a/4gyad2SDSYAtG3WLY/qFsD5Q==", "user"=>{"username"=>"gangster", "email"=>"gangster@gmail.com", "profile_image"=>"data:image/png;base64,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", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Create User"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (5.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gangster@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.8ms)
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 318ms (Views: 36.0ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/users" for ::1 at 2022-02-02 11:20:47 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H9h2rkZUVMdxchOP2si4JW1u+CwV3WM/yiamwedlf+NxIzhP1jYejQ6StIaJO6au/PTksdPEZRs7nvgnbxDQnw==", "user"=>{"username"=>"gangster", "email"=>"gangster2@gmail.com", "profile_image"=>"data:image/png;base64,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", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Create User"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gangster2@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Create (13.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest", "eth_in_wallet", "profile_image") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "gangster"], ["email", "gangster2@gmail.com"], ["created_at", "2022-02-02 00:20:48.114517"], ["updated_at", "2022-02-02 00:20:48.114517"], ["password_digest", "$2a$12$vyXiyQ1AYDwcAQw1trwPH.EI.AXExRQ060LGsRCVUd85XYcvNb.u."], ["eth_in_wallet", 0.0], ["profile_image", "data:image/png;base64,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"]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/rankings
+Completed 302 Found in 316ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-02 11:20:48 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (66.2ms)
+Completed 200 OK in 92ms (Views: 85.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/73" for ::1 at 2022-02-02 11:20:51 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 73]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/73/addfunds" for ::1 at 2022-02-02 11:25:59 +1100
+Processing by UsersController#addfunds as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56
+  Rendering users/addfunds.erb within layouts/application
+  Rendered users/_form2.html.erb (2.1ms)
+  Rendered users/addfunds.erb within layouts/application (4.1ms)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/users/73" for ::1 at 2022-02-02 11:26:03 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YouZctQYaUZK0Q+u+Dyjf940hHbRvQWJZeIE9WgxJq8McNeTRHojDDUxqKerz730T66Y6xekA62UWloT4ESJ0w==", "user"=>{"eth_in_wallet"=>"22", "username"=>"gangster", "email"=>"gangster2@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update User", "id"=>"73"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:36
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "gangster2@gmail.com"], ["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Update (4.1ms)[0m  [1m[33mUPDATE "users" SET "eth_in_wallet" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["eth_in_wallet", 22.0], ["updated_at", "2022-02-02 00:26:03.825189"], ["id", 73]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:47
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "gangster2@gmail.com"], ["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:47
+Redirected to http://localhost:3000/users/73
+Completed 302 Found in 21ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/users/73" for ::1 at 2022-02-02 11:26:03 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 73]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 55ms (Views: 41.3ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-02 11:26:09 +1100
+Processing by NftsController#home as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/home.html.erb within layouts/application
+  Rendered nfts/home.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 58ms (Views: 51.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/nfts/mint" for ::1 at 2022-02-02 11:26:11 +1100
+Processing by NftsController#mint as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."user_id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:95
+  Rendering nfts/mint.html.erb within layouts/application
+  Rendered nfts/_form2.html.erb (2.5ms)
+  Rendered nfts/mint.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 626ms (Views: 614.7ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/nfts/695" for ::1 at 2022-02-02 11:26:17 +1100
+Processing by NftsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MRRX5gwlhCL71emkrnSkGtRVulEo/FUjB4WhURqpwIRf7xkHnEfOaIQ1Tq39h7qRRc+mzO7lUwf2Pf+3ktxv+A==", "nft"=>{"user_id"=>"73", "mint_season"=>"3", "mint_bracket"=>"5", "eye_colour"=>"Red", "hair_style"=>"Cropped", "hair_colour"=>"White", "skin_colour"=>"Red", "shorts"=>"Blue", "facial_expression"=>"Smiling", "body_type"=>"Ectomorph", "handwear"=>"None", "background_colour"=>"Cage", "tattoos"=>"None", "total_fights"=>"20", "best_position"=>"18", "amount_won"=>"1.02", "image"=>"fighter26.png", "fights_won"=>"1", "average_position"=>"26"}, "commit"=>"Mint", "id"=>"695"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/nfts_controller.rb:81
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "gangster2@gmail.com"], ["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:81
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "eth_in_wallet" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["eth_in_wallet", 21.2], ["updated_at", "2022-02-02 00:26:17.525578"], ["id", 73]]
+  ↳ app/controllers/nfts_controller.rb:81
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/nfts_controller.rb:81
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/nfts_controller.rb:82
+  [1m[36mNft Update (0.6ms)[0m  [1m[33mUPDATE "nfts" SET "user_id" = $1, "updated_at" = $2 WHERE "nfts"."id" = $3[0m  [["user_id", 73], ["updated_at", "2022-02-02 00:26:17.531479"], ["id", 695]]
+  ↳ app/controllers/nfts_controller.rb:82
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/nfts_controller.rb:82
+Redirected to http://localhost:3000/nfts/695
+Completed 302 Found in 16ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/nfts/695" for ::1 at 2022-02-02 11:26:17 +1100
+Processing by NftsController#show as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:58
+  Rendering nfts/show.html.erb within layouts/application
+  Rendered nfts/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 65ms (Views: 50.0ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:26:20 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 57ms (Views: 46.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:32:54 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 150ms (Views: 114.5ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:33:12 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 50ms (Views: 37.1ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:40:40 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (4.9ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (9.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 1138ms (Views: 1098.9ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:41:15 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (9.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (5.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 122ms (Views: 80.9ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:41:37 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (10.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 94ms (Views: 73.9ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:43:31 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (3.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 238ms (Views: 218.7ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:44:14 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 54ms (Views: 43.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:46:54 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (2.5ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (3.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (487.5ms)
+Completed 200 OK in 697ms (Views: 620.9ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:47:10 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (3.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 47ms (Views: 32.6ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:47:13 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (2.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 108ms (Views: 85.3ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:47:16 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (2.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 76ms (Views: 61.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:47:18 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.0ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 97ms (Views: 86.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:49:22 +1100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniel/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (1000.0ms)
+Completed 200 OK in 1188ms (Views: 1084.2ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:53:33 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (4.7ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (3.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (94.9ms)
+Completed 200 OK in 1078ms (Views: 982.9ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:55:23 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (3.6ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (32.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 680ms (Views: 615.4ms | ActiveRecord: 44.1ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:56:36 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (2.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 223ms (Views: 186.6ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:57:00 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (14.4ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (3.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 983ms (Views: 927.3ms | ActiveRecord: 30.4ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 11:59:06 +1100
+  [1m[35m (12.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniel/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.6ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (790.8ms)
+Completed 200 OK in 1246ms (Views: 1062.5ms | ActiveRecord: 30.3ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 12:00:18 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (3.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:44
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:47
+  Rendered nfts/fight.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 84ms (Views: 55.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 12:02:20 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:46
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:49
+  Rendered nfts/fight.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 116ms (Views: 92.0ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 12:03:16 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (6.0ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (2.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:54
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:57
+  Rendered nfts/fight.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 71ms (Views: 46.0ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 12:03:45 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (2.8ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:54
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:57
+  Rendered nfts/fight.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 90ms (Views: 58.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 12:04:00 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (0.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:54
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:57
+  Rendered nfts/fight.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 72ms (Views: 65.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 12:04:40 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.6ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.1ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:54
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:57
+  Rendered nfts/fight.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 101ms (Views: 89.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 12:06:51 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (1.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:54
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:57
+  Rendered nfts/fight.html.erb within layouts/application (65.1ms)
+Completed 200 OK in 303ms (Views: 259.9ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/nfts/695/fight" for ::1 at 2022-02-02 12:09:41 +1100
+Processing by NftsController#fight as HTML
+  Parameters: {"id"=>"695"}
+  [1m[36mUser Load (14.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT  "nfts".* FROM "nfts" WHERE "nfts"."id" = $1 LIMIT $2[0m  [["id", 695], ["LIMIT", 1]]
+  ↳ app/controllers/nfts_controller.rb:26
+  [1m[36mNft Load (18.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" INNER JOIN "users" ON "users"."id" = "nfts"."user_id" WHERE "users"."eth_in_wallet" BETWEEN $1 AND $2[0m  [["eth_in_wallet", 0.2], ["eth_in_wallet", 1000000.0]]
+  ↳ app/controllers/nfts_controller.rb:28
+  Rendering nfts/fight.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:54
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/nfts/fight.html.erb:57
+  Rendered nfts/fight.html.erb within layouts/application (166.0ms)
+Completed 200 OK in 646ms (Views: 588.6ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/users/73" for ::1 at 2022-02-02 12:09:58 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.2ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 73]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 49ms (Views: 40.6ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/login" for ::1 at 2022-02-02 12:10:03 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cGBQD5pVANCzhqCvQzxoA0l48h91mJO44D3Xp6+FewEemx7uCjdKmsxmB6YQz3aI2OLugrOBlZwRhYlBJ/DUfQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2022-02-02 12:10:03 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (43.7ms)
+Completed 200 OK in 162ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/new" for ::1 at 2022-02-02 12:10:14 +1100
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"I/609j0wlRQlpUxk72FHfLvJ3RoEKwpSIwhslu1s33FNBfoXrVLfXlpF6228kln3KlPBh8IyDHbSsDJwZRlwDQ=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.4ms)
+  Rendered users/new.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/daniel/sei/projects/mfc/app/views/users/_form.html.erb:1: syntax error, unexpected ','
+...h model: @user, local: true do, html: { multipart: true } |f...
+...                              ^
+/Users/daniel/sei/projects/mfc/app/views/users/_form.html.erb:1: syntax error, unexpected ')'
+...html: { multipart: true } |f| );@output_buffer.safe_append='
+...                              ^
+/Users/daniel/sei/projects/mfc/app/views/users/_form.html.erb:44: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/Users/daniel/sei/projects/mfc/app/views/users/_form.html.erb:46: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/users/_form.html.erb:1: syntax error, unexpected ','
+app/views/users/_form.html.erb:1: syntax error, unexpected ')'
+app/views/users/_form.html.erb:44: syntax error, unexpected `ensure', expecting ')'
+app/views/users/_form.html.erb:46: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:5:in `_app_views_users_new_html_erb___23032003174636085_18580'
+Started POST "/users/new" for ::1 at 2022-02-02 12:11:14 +1100
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"I/609j0wlRQlpUxk72FHfLvJ3RoEKwpSIwhslu1s33FNBfoXrVLfXlpF6228kln3KlPBh8IyDHbSsDJwZRlwDQ=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (41.6ms)
+  Rendered users/new.html.erb within layouts/application (47.3ms)
+Completed 200 OK in 220ms (Views: 216.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-02 12:12:54 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PP+kDV/lm9UapvoHksUq2WCFQC0nftAfgDhKpkQiA2JSBOrsz4fRn2VGXQ7BNjRS8R9csOFn1jtxgBRAzFesHg==", "user"=>{"username"=>"thelorddoyle2", "email"=>"gangster213@gmail.com", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fcd2d41e838 @tempfile=#<Tempfile:/var/folders/yy/70qht9mj6z3c_25ksgw5x1jh0000gn/T/RackMultipart20220202-97662-7yjd6h.png>, @original_filename="ape6.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"ape6.png\"\r\nContent-Type: image/png\r\n">, "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (4.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gangster213@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Create (11.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest", "eth_in_wallet", "profile_image") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "thelorddoyle2"], ["email", "gangster213@gmail.com"], ["created_at", "2022-02-02 01:12:55.122512"], ["updated_at", "2022-02-02 01:12:55.122512"], ["password_digest", "$2a$12$hAlb6nEBplypD8T43rIWpOgluJ2Ey.N0FcsAAQ.4rZ91ybjZbXBfm"], ["eth_in_wallet", 0.0], ["profile_image", "#<ActionDispatch::Http::UploadedFile:0x00007fcd2d41e838>"]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/rankings
+Completed 302 Found in 281ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-02 12:12:55 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (0.8ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (94.8ms)
+Completed 200 OK in 117ms (Views: 112.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/74" for ::1 at 2022-02-02 12:12:57 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"74"}
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (55.7ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 9.9ms)
+
+
+  
+ActionView::Template::Error (The asset "" is not present in the asset pipeline.
+):
+    11: 
+    12:             <h1> Hello, <%= @current_user.username %>.</h1>
+    13: 
+    14:             <%= image_tag @current_user.profile_image, alt: @current_user.username, class: 'nft_image' %>
+    15: 
+    16:             <h3>What would you like to do?</h3>
+    17: 
+  
+app/views/users/show.html.erb:14:in `_app_views_users_show_html_erb__1066592438201534024_19440'
+Started POST "/users" for ::1 at 2022-02-02 12:13:48 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PP+kDV/lm9UapvoHksUq2WCFQC0nftAfgDhKpkQiA2JSBOrsz4fRn2VGXQ7BNjRS8R9csOFn1jtxgBRAzFesHg==", "user"=>{"username"=>"thelorddoyle223", "email"=>"gangster21323@gmail.com", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fcd2e03e2a8 @tempfile=#<Tempfile:/var/folders/yy/70qht9mj6z3c_25ksgw5x1jh0000gn/T/RackMultipart20220202-97662-ys7b1n.png>, @original_filename="ape6.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"ape6.png\"\r\nContent-Type: image/png\r\n">, "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Create User"}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gangster21323@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest", "eth_in_wallet", "profile_image") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "thelorddoyle223"], ["email", "gangster21323@gmail.com"], ["created_at", "2022-02-02 01:13:48.280074"], ["updated_at", "2022-02-02 01:13:48.280074"], ["password_digest", "$2a$12$1XXCysRhaoI9EX/Z5cRMUOWCrVbSUxsOLszl2fHhxv9C2wT3WqLAK"], ["eth_in_wallet", 0.0], ["profile_image", "#<ActionDispatch::Http::UploadedFile:0x00007fcd2e03e2a8>"]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (10.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/rankings
+Completed 302 Found in 264ms (ActiveRecord: 15.6ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-02 12:13:48 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (70.5ms)
+Completed 200 OK in 101ms (Views: 97.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/75" for ::1 at 2022-02-02 12:13:50 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"75"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (The asset "" is not present in the asset pipeline.
+):
+    11: 
+    12:             <h1> Hello, <%= @current_user.username %>.</h1>
+    13: 
+    14:             <%= image_tag @current_user.profile_image, alt: @current_user.username, class: 'nft_image' %>
+    15: 
+    16:             <h3>What would you like to do?</h3>
+    17: 
+  
+app/views/users/show.html.erb:14:in `_app_views_users_show_html_erb__1066592438201534024_20060'
+Started GET "/users/75" for ::1 at 2022-02-02 12:14:20 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"75"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 36.0ms)
+
+
+  
+ActionView::Template::Error (The asset "" is not present in the asset pipeline.
+):
+    11: 
+    12:             <h1> Hello, <%= @current_user.username %>.</h1>
+    13: 
+    14:             <%= image_tag @current_user.profile_image, alt: @current_user.username, class: 'nft_image' %>
+    15: 
+    16:             <h3>What would you like to do?</h3>
+    17: 
+  
+app/views/users/show.html.erb:14:in `_app_views_users_show_html_erb__1066592438201534024_24940'
+Started POST "/users/new" for ::1 at 2022-02-02 12:14:46 +1100
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"I/609j0wlRQlpUxk72FHfLvJ3RoEKwpSIwhslu1s33FNBfoXrVLfXlpF6228kln3KlPBh8IyDHbSsDJwZRlwDQ=="}
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.2ms)
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 92ms (Views: 72.4ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/users" for ::1 at 2022-02-02 12:15:33 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gYEa5JMwLUJlTDmSG704yarwwo6emZcPgqzXof+M34nvelQFA1JnCBqsnptITiZCO2reE1iAkStzFIlHd/lw9Q==", "user"=>{"username"=>"qwwertwert", "email"=>"2345r435t", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fcd2bc63680 @tempfile=#<Tempfile:/var/folders/yy/70qht9mj6z3c_25ksgw5x1jh0000gn/T/RackMultipart20220202-97662-axe9pa.png>, @original_filename="ape4.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"ape4.png\"\r\nContent-Type: image/png\r\n">, "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Create User"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2345r435t"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest", "eth_in_wallet", "profile_image") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "qwwertwert"], ["email", "2345r435t"], ["created_at", "2022-02-02 01:15:33.629849"], ["updated_at", "2022-02-02 01:15:33.629849"], ["password_digest", "$2a$12$PKKoOPpVo7PsW68rKXcaQOLY1eHE9WN.Cr.LaN7QjEbAKR8ikdpTK"], ["eth_in_wallet", 0.0], ["profile_image", "#<ActionDispatch::Http::UploadedFile:0x00007fcd2bc63680>"]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:10
+Completed 500 Internal Server Error in 269ms (ActiveRecord: 7.7ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/users_controller.rb:12:in `create'
+Started POST "/users" for ::1 at 2022-02-02 12:21:59 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gYEa5JMwLUJlTDmSG704yarwwo6emZcPgqzXof+M34nvelQFA1JnCBqsnptITiZCO2reE1iAkStzFIlHd/lw9Q==", "user"=>{"username"=>"qwwertwert", "email"=>"2345r435t", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fcd2a7875e0 @tempfile=#<Tempfile:/var/folders/yy/70qht9mj6z3c_25ksgw5x1jh0000gn/T/RackMultipart20220202-97662-10ack3f.png>, @original_filename="ape4.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"ape4.png\"\r\nContent-Type: image/png\r\n">, "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Create User"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 1133ms (ActiveRecord: 206.5ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started PUT "/__web_console/repl_sessions/b8eab77990a6f9281ae9fa707d4ad8a1" for ::1 at 2022-02-02 12:22:30 +1100
+Started PUT "/__web_console/repl_sessions/b8eab77990a6f9281ae9fa707d4ad8a1" for ::1 at 2022-02-02 12:22:30 +1100
+Started PUT "/__web_console/repl_sessions/b8eab77990a6f9281ae9fa707d4ad8a1" for ::1 at 2022-02-02 12:22:37 +1100
+Started PUT "/__web_console/repl_sessions/b8eab77990a6f9281ae9fa707d4ad8a1" for ::1 at 2022-02-02 12:22:43 +1100
+Started POST "/users" for ::1 at 2022-02-02 12:23:33 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gYEa5JMwLUJlTDmSG704yarwwo6emZcPgqzXof+M34nvelQFA1JnCBqsnptITiZCO2reE1iAkStzFIlHd/lw9Q==", "user"=>{"username"=>"qwwertwert", "email"=>"2345r435t", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fcd2e016500 @tempfile=#<Tempfile:/var/folders/yy/70qht9mj6z3c_25ksgw5x1jh0000gn/T/RackMultipart20220202-97662-95g3j9.png>, @original_filename="ape4.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"ape4.png\"\r\nContent-Type: image/png\r\n">, "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Create User"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2345r435t"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:16
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.2ms)
+  Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 2989ms (Views: 87.9ms | ActiveRecord: 8.4ms)
+
+
+Started POST "/users" for ::1 at 2022-02-02 12:24:15 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WgvQx0ZLGWxXUqb1lNEYzWtH+6Hz1fySQl8wXQrq5fo08J4m1ilTJiiyAfzHIgZG+t3nPDXM+raz5267gp9Khg==", "user"=>{"username"=>"qwwertwertdfg", "email"=>"2345r435tdfg", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fcd2d657f00 @tempfile=#<Tempfile:/var/folders/yy/70qht9mj6z3c_25ksgw5x1jh0000gn/T/RackMultipart20220202-97662-6xi1t1.png>, @original_filename="ape3.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"ape3.png\"\r\nContent-Type: image/png\r\n">, "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Create User"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2345r435tdfg"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest", "eth_in_wallet", "profile_image") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "qwwertwertdfg"], ["email", "2345r435tdfg"], ["created_at", "2022-02-02 01:24:18.222706"], ["updated_at", "2022-02-02 01:24:18.222706"], ["password_digest", "$2a$12$w78VY0l0Zrq.YXpXjbB3t.uG4gMVhu.FiB7VcUHZfQChPIimTlF5y"], ["eth_in_wallet", 0.0], ["profile_image", "#<ActionDispatch::Http::UploadedFile:0x00007fcd2d657f00>"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:16
+Redirected to http://localhost:3000/rankings
+Completed 302 Found in 2494ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-02 12:24:18 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (1.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (176.5ms)
+Completed 200 OK in 249ms (Views: 225.0ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/users/77" for ::1 at 2022-02-02 12:24:22 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"77"}
+  [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 21.3ms)
+
+
+  
+ActionView::Template::Error (The asset "" is not present in the asset pipeline.
+):
+    11: 
+    12:             <h1> Hello, <%= @current_user.username %>.</h1>
+    13: 
+    14:             <%= image_tag @current_user.profile_image, alt: @current_user.username, class: 'nft_image' %>
+    15: 
+    16:             <h3>What would you like to do?</h3>
+    17: 
+  
+app/views/users/show.html.erb:14:in `_app_views_users_show_html_erb__1066592438201534024_83360'
+Started GET "/users/77" for ::1 at 2022-02-02 12:26:37 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"77"}
+  [1m[36mUser Load (20.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:34
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (6.6ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 77]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (167.3ms)
+Completed 200 OK in 517ms (Views: 256.3ms | ActiveRecord: 160.0ms)
+
+
+Started GET "/users/77" for ::1 at 2022-02-02 12:26:52 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"77"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:34
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (1.4ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 77]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 50ms (Views: 43.5ms | ActiveRecord: 2.9ms)
+
+
+Started DELETE "/login" for ::1 at 2022-02-02 12:26:54 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tOByZ49SMogSOh6Rq1gqE93YyfJBz10SBb9f1TiuvEbaGzyGHzB4wm3auZj4qzSYTELVb4fWWzb0BwEzsNsTOg=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for ::1 at 2022-02-02 12:26:54 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 88ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/new" for ::1 at 2022-02-02 12:27:01 +1100
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"kNZGliJ7ZojhfIAsMdMCVTlq79N0elQAHZL1EQMA3ov+LQh3shkswp6cJyViIBzeqPDzTrJjUiTsKqv3i3Vx9w=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 37ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-02 12:27:18 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lsgrMy9f3hBobyvXyGGBbNrp3vmkr/DuGD+11ui9NFX4M2XSvz2UWhePjN6bkp/nS3PCZGK29srph+swYMibKQ==", "user"=>{"username"=>"123", "email"=>"123", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fcd26748088 @tempfile=#<Tempfile:/var/folders/yy/70qht9mj6z3c_25ksgw5x1jh0000gn/T/RackMultipart20220202-97662-1ca5li0.png>, @original_filename="ape2.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"ape2.png\"\r\nContent-Type: image/png\r\n">, "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 2366ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `profile_image=' for nil:NilClass):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2022-02-02 12:28:20 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lsgrMy9f3hBobyvXyGGBbNrp3vmkr/DuGD+11ui9NFX4M2XSvz2UWhePjN6bkp/nS3PCZGK29srph+swYMibKQ==", "user"=>{"username"=>"123", "email"=>"123", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fcd2bf0c5a8 @tempfile=#<Tempfile:/var/folders/yy/70qht9mj6z3c_25ksgw5x1jh0000gn/T/RackMultipart20220202-97662-hg7qyk.png>, @original_filename="ape2.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"ape2.png\"\r\nContent-Type: image/png\r\n">, "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Exists (2.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:18
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (8.6ms)
+  Rendered users/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 2754ms (Views: 75.4ms | ActiveRecord: 27.6ms)
+
+
+Started POST "/users" for ::1 at 2022-02-02 12:28:37 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mWoCc+PvpfKsZO0byF9CW6QD++N9DWx08v4dd39v2x33kUySc43vuNOEShKbrFzQNZnnfrsUalADRkOR9xp0YQ==", "user"=>{"username"=>"123123", "email"=>"123123", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fcd2a40e670 @tempfile=#<Tempfile:/var/folders/yy/70qht9mj6z3c_25ksgw5x1jh0000gn/T/RackMultipart20220202-97662-jubu9k.png>, @original_filename="ape7.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"ape7.png\"\r\nContent-Type: image/png\r\n">, "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "123123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest", "eth_in_wallet", "profile_image") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "123123"], ["email", "123123"], ["created_at", "2022-02-02 01:28:40.792638"], ["updated_at", "2022-02-02 01:28:40.792638"], ["password_digest", "$2a$12$CMSRC8vmx0XkRK/kFv9UMuLpCtf9KhNI3bjc10w9Cp1EJ6OtYsQ7G"], ["eth_in_wallet", 0.0], ["profile_image", "xek4xidujmim1acnqnia"]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:18
+Redirected to http://localhost:3000/rankings
+Completed 302 Found in 3365ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/rankings" for ::1 at 2022-02-02 12:28:40 +1100
+Processing by NftsController#rankings as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendering nfts/rankings.html.erb within layouts/application
+  [1m[36mNft Load (1.5ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" ORDER BY "nfts"."fights_won" ASC[0m
+  ↳ app/views/nfts/rankings.html.erb:22
+  Rendered nfts/rankings.html.erb within layouts/application (202.8ms)
+Completed 200 OK in 253ms (Views: 235.7ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/users/78" for ::1 at 2022-02-02 12:28:55 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 78]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 70ms (Views: 53.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/users/78" for ::1 at 2022-02-02 12:29:47 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (5.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 78]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (79.4ms)
+Completed 200 OK in 412ms (Views: 331.8ms | ActiveRecord: 59.3ms)
+
+
+Started GET "/users/78/edit" for ::1 at 2022-02-02 12:30:00 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:39
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.8ms)
+  Rendered users/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 66ms (Views: 51.9ms | ActiveRecord: 3.8ms)
+
+
+Started PATCH "/users/78" for ::1 at 2022-02-02 12:30:12 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HHbiAqs963uyvpSvF6ntNvR9tLcIur3URqgyxRjVAkVyjazjO1+hMc1eM6ZEWvO9ZeeoKs6ju/C3EGwjkKCtOQ==", "user"=>{"username"=>"123123", "email"=>"123123", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fcd2ba2bac0 @tempfile=#<Tempfile:/var/folders/yy/70qht9mj6z3c_25ksgw5x1jh0000gn/T/RackMultipart20220202-97662-1a0rmqk.png>, @original_filename="ape6.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"ape6.png\"\r\nContent-Type: image/png\r\n">, "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Update User", "id"=>"78"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (18.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:63
+  [1m[36mUser Exists (2.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "123123"], ["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "profile_image" = $1, "password_digest" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["profile_image", "#<ActionDispatch::Http::UploadedFile:0x00007fcd2ba2bac0>"], ["password_digest", "$2a$12$OLo/AsVuhXudA1KmRie9EeCESXOWu565FWx0bG8rsXoQz/5kA0FAy"], ["updated_at", "2022-02-02 01:30:15.265271"], ["id", 78]]
+  ↳ app/controllers/users_controller.rb:63
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:63
+  [1m[35m (5.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:64
+  [1m[36mUser Exists (5.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "123123"], ["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:64
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:64
+Redirected to http://localhost:3000/users/78
+Completed 302 Found in 2912ms (ActiveRecord: 38.3ms)
+
+
+Started GET "/users/78" for ::1 at 2022-02-02 12:30:15 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.9ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 78]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 67ms (Views: 63.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/78/edit" for ::1 at 2022-02-02 12:32:57 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:39
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.0ms)
+  Rendered users/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 56ms (Views: 41.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/users/78" for ::1 at 2022-02-02 12:33:08 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jNgmbU9mByNTigx1mPCPDCptaEkBnUzDZVkqmcLTNwDiI2iM3wRNaSxqq3zLA5GHu/d01MeESueU4XR/SqaYfA==", "user"=>{"username"=>"123123", "email"=>"123123", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fcd2d64d2f8 @tempfile=#<Tempfile:/var/folders/yy/70qht9mj6z3c_25ksgw5x1jh0000gn/T/RackMultipart20220202-97662-1pfsevm.png>, @original_filename="ape5.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"ape5.png\"\r\nContent-Type: image/png\r\n">, "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "eth_in_wallet"=>"0"}, "commit"=>"Update User", "id"=>"78"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+Unpermitted parameter: :profile_image
+Unpermitted parameter: :profile_image
+  [1m[35m (6.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:64
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "123123"], ["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:64
+  [1m[36mUser Update (1.3ms)[0m  [1m[33mUPDATE "users" SET "profile_image" = $1, "password_digest" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["profile_image", "buelhdmpxxxi1bmqueyk"], ["password_digest", "$2a$12$zWUeO6da2B3gKg8ZcglgAuSXKV5e.nEC3OKo72wtZHENc7uIIP7QK"], ["updated_at", "2022-02-02 01:33:11.037582"], ["id", 78]]
+  ↳ app/controllers/users_controller.rb:64
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:64
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:65
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "123123"], ["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:65
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:65
+Redirected to http://localhost:3000/users/78
+Completed 302 Found in 2956ms (ActiveRecord: 16.4ms)
+
+
+Started GET "/users/78" for ::1 at 2022-02-02 12:33:11 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mNft Load (0.7ms)[0m  [1m[34mSELECT "nfts".* FROM "nfts" WHERE "nfts"."user_id" = $1 ORDER BY "nfts"."fights_won" ASC[0m  [["user_id", 78]]
+  ↳ app/views/users/show.html.erb:66
+  Rendered users/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 43ms (Views: 36.6ms | ActiveRecord: 1.7ms)
+
+

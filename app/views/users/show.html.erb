@@ -11,6 +11,8 @@
 
             <h1> Hello, <%= @current_user.username %>.</h1>
 
+            <%= cl_image_tag @current_user.profile_image, alt: @current_user.username, class: 'nft_image' %>
+
             <h3>What would you like to do?</h3>
 
             <div class="flex-column-flex-start-align">
