@@ -4,7 +4,7 @@ print "Creating seed users...".green
 
 User.destroy_all
 
-users_array = []
+users_array = [ nil, ]
 
 User.create! username: 'thelorddoyle', email: 'dlorddoyle@gmail.com', password: 'chicken', eth_in_wallet: 0.8
 User.create! username: 'lukearthur', email: 'lukearthur@gmail.com', password: 'chicken', eth_in_wallet: 1.8

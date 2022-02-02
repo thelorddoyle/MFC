@@ -133,7 +133,13 @@
                 </div>
 
                 <div class='nft-asset-id'>
-                    <h3><%= result.winner.user.username %></h3>
+                    <h3>
+                        <% if result.winner.user != nil %>
+                        <%= result.winner.user.username %>
+                        <% else %>
+                        Unowned
+                        <% end %>
+                    </h3>
                 </div>
 
                 <div class='nft-asset-id'>
@@ -141,7 +147,13 @@
                 </div>
 
                 <div class='nft-asset-id'>
-                    <h3><%= result.loser.user.username %></h3>
+                    <h3>
+                        <% if result.loser.user != nil %>
+                        <%= result.loser.user.username %>                        
+                        <% else %>
+                        Unowned
+                        <% end %>
+                    </h3>
                 </div>                
 
                 <div class='nft-asset-id'>
