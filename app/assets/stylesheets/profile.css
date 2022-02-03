@@ -98,7 +98,11 @@ input#headButton:hover {
 }
 
 #wallet_amount {
-    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+#wallet_amount_number {
+    padding-bottom: 30px;
 }
 
 .profile_image {

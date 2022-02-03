@@ -10,7 +10,6 @@
         <div id='profile-options' class='flex-column-start'>
 
             <h1> Hello, <%= @current_user.username %>.</h1>
-            <h2> <%= @current_user.profile_image %> </h2>
 
             <%= cl_image_tag @current_user.profile_image, alt: @current_user.username, class: 'profile_image' %>
 
@@ -20,7 +19,8 @@
 
                 <% if @current_user.present? %>
                 
-                <h4 id='wallet_amount'>Available Funds In Wallet: <%= @current_user.eth_in_wallet %></h2>
+                <h4 id='wallet_amount'>Available Funds In Wallet:</h2>
+                <h1 id='wallet_amount_number'><%= @current_user.eth_in_wallet %></h1>
 
                 <%= button_to "Add Funds", addfunds_path, :method => "get", class: "buttonLink", id: "headButton" %>
 
