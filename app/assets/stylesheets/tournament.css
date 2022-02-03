@@ -1,0 +1,55 @@
+.four-column-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#contender-h1 {
+    padding-bottom: 20px;
+}
+
+.contender-nft-image {
+    max-width: 150px;
+}
+
+.contender-nft-image-winner {
+    max-width: 250px;
+}
+
+.contender-nft-image-tiny {
+    max-width: 100px;
+}
+
+.four-column-grid-tournament {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+#round1-1 {
+    display: none;
+}
+
+#round1-2 {
+    display: none;
+}
+
+#round2-1 {
+    display: none;
+}
+
+#round2-2 {
+    display: none;
+}
+
+#final-1 {
+    display: none;
+}
+
+#final-2 {
+    display: none;
+}
+
+#final-3 {
+    display: none;
+}

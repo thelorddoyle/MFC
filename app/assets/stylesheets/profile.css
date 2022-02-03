@@ -137,8 +137,47 @@ input#fightButton:hover {
     background-color: white;
 }
 
+.asset-id h3 {
+    color: white;
+}
+
 #tournament-widget {
     margin: 30px;
-    background-color: green;
+    background-color: white;
     padding: 20px;
+    border-radius: 15px;
+}
+
+#tournament-widget h1,h3 {
+    color: black;
+    padding-bottom: 10px;
+}
+
+input.tournament-button {
+    padding: 10px;
+}
+
+input.tournament-button {
+    padding: 20px 20px;
+    color: black;
+    font-size: large;
+    background-color: red;
+    border: 2px solid black;
+}
+
+input.tournament-button {
+    color: white;
+}
+
+input.tournament-button:hover {
+    color: red;
+}
+
+input.tournament-button:hover > .buttonLink {
+    background-color: white; 
+}
+
+input.tournament-button:hover {
+    cursor: pointer;
+    background-color: white;
 }

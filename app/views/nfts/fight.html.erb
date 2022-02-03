@@ -35,6 +35,8 @@
                         <p class="para" id='para5'></p>
                         <p class="para" id='para6'></p>
 
+                        <p class="para" id='para7'></p>
+
                     </div>  
 
                     <div id='winner'>
@@ -200,9 +202,36 @@
         ]
 
         const winningAttack = [
-        'wins',
-        'wins in emphatic fashion',
-        'smashes his oppponent with a crushing fist.'
+            'finishes his opponent with a clean straight',
+            'gets the walk off knockout finishing in style',
+            'refuses to quit eventually knocking out his opponent ',
+            'wins a split decision 29-28',
+            'wins a unanimous decision 30-27',
+            'has somehow won the decision was this a robbery',
+            'wins on the judges scorecard',
+            'gets the submission what a way to win ',
+            'leaves his opponent unconcious with the uppercut',
+            'leaves his opponent unconcious with the hook',
+            'leaves his opponent unconcious with the head kick ',
+            'lands a flying knee and his opponents out cold',
+            'lands a flying triangle its in tight, his opponent taps',
+            'lands a gullotine its in tight, his opponent taps',
+            'lands a gullotine its in tight, his opponent is out cold',
+            'lands a kimura its in tight, his opponent taps',
+            'lands a combination, his opponent is out cold',
+            'is on top landing ground and pound this could be it ',
+            'puts his opponent down with a final flurry',
+            'puts his opponent down with a huge overhand',
+            'puts his opponent down with a flying kick ',
+            'puts his opponent down with a switch kick ',
+            'lands the counter, this could be it his opponets down',
+            'lands the knee, this could be it his opponets down',
+            'lands the jab, this could be it his opponets down',
+            'returns fire knocking his opponent out ',
+            'looks hurt but fires back with a knockout punch',
+            'taunts his opponet as he knocks him out ',
+            'take his back and locks in the choke, its all over ',
+            'has the armbar locked in, its all over ',
         ]
 
         function chooseUpdate (array) {
@@ -226,6 +255,7 @@
         $('#para4').html(`${ opponentOwner }(#${ opponent }) ${ chooseUpdate(earlyFightStatusUpdates) }`)
         $('#para5').html(`${ fighterOwner }(#${ fighter }) ${ chooseUpdate(earlyFightStatusUpdates) }`)
         $('#para6').html(`${ opponentOwner }(#${ opponent }) ${ chooseUpdate(earlyFightStatusUpdates) }`)
+        $('#para7').html(`${ winnerOwner }(#${ winner }) ${ chooseUpdate(winningAttack) }`)
         $('#winner_announcement').html(`${ winnerOwner }(#${ winner }) has won!!`)
         $('#winner_img')
         

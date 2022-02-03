@@ -35,6 +35,8 @@ class Tournament < ApplicationRecord
         # Perform the updates on THE RESULT for the fights (give them the right round number and the correct prize pool)
         tournament_winner.won_fights.last.update tournament_id: Tournament.last.id, round_number: 2, total_prize_pool: (prize_pool)
 
+        # raise 'hell'
+
         @new_tournament = Tournament.new
         @new_tournament.save
 

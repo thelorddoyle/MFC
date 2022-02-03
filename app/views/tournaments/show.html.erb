@@ -1,5 +1,90 @@
-<br><br><br><br><br><br><br><br><br>
+<main class="mint">
+    <div class="light top-of-page-light">
+        <h1 id="mint">Tournament #<%= @tournament.id %></h1>
+        <h2 id='mint-h2'>Playing for 0.8 ETH</h2>
+    </div>
 
-<h1>HELLO</h1>
+<div>
 
-<%= @tournament.id %>
+    <div class='four-column-grid-tournament'>
+
+        <div>
+            <div id='round1-1'>
+                <h1>Round 1</h1>
+                <h4>Fight 1</h4>
+            </div>
+
+            <div id='round1-2'>
+                <h4>Winner</h4>
+                <%= image_tag @tournament.results[0].winner.image, class: 'contender-nft-image' %>
+                <h4>Loser</h4>
+                <%= image_tag @tournament.results[0].loser.image, class: 'contender-nft-image' %>
+            </div>
+
+        </div>
+
+        <div>
+            <div id='round2-1'>
+                <h1>Round 1</h1>
+                <h4>Fight 2</h4>
+            </div>
+
+            <div id='round2-2'>
+                <h4>Winner</h4>
+                <%= image_tag @tournament.results[1].winner.image, class: 'contender-nft-image' %>
+                <h4>Loser</h4>
+                <%= image_tag @tournament.results[1].loser.image, class: 'contender-nft-image' %>
+            </div>
+
+        </div>
+
+        <div>
+            <div id='final-1'>
+                <h1>Final</h1>
+            </div>
+            <div id='final-2'>
+                <h4>Winner</h4>
+                <%= image_tag @tournament.results[2].winner.image, class: 'contender-nft-image' %>
+                <h4>Loser</h4>
+                <%= image_tag @tournament.results[2].loser.image, class: 'contender-nft-image' %>
+            </div>
+
+        </div>  
+
+        <div id='final-3'>
+            <h1>Champion</h4>
+            <%= image_tag @tournament.results[2].winner.image, class: 'contender-nft-image-winner' %>
+            <h1><%= @tournament.results[2].winner.user.username %> WINS 0.8 ETH!</h1>
+        </div>  
+
+    </div>
+
+    <h1 id='contender-h1'>Contenders</h1>
+    <div class='four-column-grid'>
+        <div></div>
+        <div><%= image_tag @tournament.nfts[0].image, class: 'contender-nft-image-tiny' %> <figcaption>#<%= @tournament.nfts[0].user.username %> </figcaption> </div>
+        <div><%= image_tag @tournament.nfts[1].image, class: 'contender-nft-image-tiny' %> <figcaption>#<%= @tournament.nfts[1].user.username %> </figcaption> </div>
+        <div><%= image_tag @tournament.nfts[2].image, class: 'contender-nft-image-tiny' %> <figcaption>#<%= @tournament.nfts[2].user.username %> </figcaption> </div>
+        <div><%= image_tag @tournament.nfts[3].image, class: 'contender-nft-image-tiny' %> <figcaption>#<%= @tournament.nfts[3].user.username %> </figcaption> </div>
+        <div></div>
+    </div>
+</div>
+
+        <script>
+
+                $(document).ready(function() {
+                
+                $('#round1-1').delay(2000).fadeIn(1000)
+                $('#round1-2').delay(2000).fadeIn(1000)
+                $('#round2-1').delay(4000).fadeIn(1000)
+                $('#round2-2').delay(4000).fadeIn(1000)
+                $('#final-1').delay(6000).fadeIn(1000)
+                $('#final-2').delay(6000).fadeIn(1000)
+                $('#final-3').delay(6000).fadeIn(1000)
+                });
+
+        </script>
+
+
+</main>
+

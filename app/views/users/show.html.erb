@@ -29,9 +29,20 @@
                 <%= button_to "Logout", login_path, method: 'delete', class: "buttonLink", id: "headButton" %>
 
                 <div id='tournament-widget'>
+
                     <h1>Join Tournament</h1>
                     <h3><%= @tournament.nfts.count %> / 4</h3>
-                    <%= button_to 'Join Tournament', nfts_tournament_path, method: 'get', class: "buttonLink", id: "headButton" %>
+
+                    <% if (Tournament.last.nfts.includes(Nft.where user_id: user_id=@current_user.id).count > 0) %>
+
+                        <h3>You already have a fighter in this tournament! Please wait.</h3>
+
+                    <% else %>
+
+                        <%= button_to 'Bet 0.2 ETH', nfts_tournament_path, method: 'get', class: "tournament-button" %>
+
+                    <% end %> 
+
 
                 </div>
             
