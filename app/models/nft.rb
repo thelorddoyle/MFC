@@ -3,6 +3,7 @@ class Nft < ApplicationRecord
     belongs_to :user, optional: true
     has_many :won_fights, class_name: 'Result', foreign_key: 'winner_id'
     has_many :lost_fights, class_name: 'Result', foreign_key: 'loser_id'
+    has_and_belongs_to_many :tournaments, optional: true
 
     def fight(opponent)
         # chooses winner randomly 
@@ -36,9 +37,6 @@ class Nft < ApplicationRecord
 
         r1 = Result.create!(winner_id: winner.id, loser_id: loser.id, eth_bet: 0.2, total_prize_pool: 0.4)
         r1.save
-
-        # TODO: THIS IS WHERE I WILL MANIPULATE THE RESULTS TABLE
-
 
         winner
     end

@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   get 'nfts/edit' => 'nfts#edit'
   get 'nfts/mint' => 'nfts#mint'
   get 'nfts/:id/fight' => 'nfts#fight', as: 'fight'
+  get 'nfts/tournament' => 'nfts#tournament'
+
+  get 'tournaments/:id/show' => 'tournaments#show', as: 'tournament'
 
   get 'users/:id/addfunds' => 'users#addfunds', as: 'addfunds'
   post 'users/new' => 'users#new'

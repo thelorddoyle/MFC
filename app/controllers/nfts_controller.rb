@@ -33,11 +33,6 @@ class NftsController < ApplicationController
   end
 
   def create
-
-    # nft = Nft.create nft_params
-    # nft.user_id = @current_user.id
-    # nft.save
-
     @nft = Nft.new nft_params()
     @nft.user_id = @current_user.id
     @nft.save
@@ -47,8 +42,6 @@ class NftsController < ApplicationController
     else
       render :new
     end
-
-
   end
 
   def index
@@ -101,8 +94,21 @@ class NftsController < ApplicationController
     # redirect_to rankings_path unless @nft.user_id == @current_user.id
   end
 
-  def delete
+  def tournament
+    @nft = @current_user.nfts.sample
+
+    Tournament.last.nfts << @nft
+
+    if Tournament.last.nfts.count >= 4
+      @live_tournament = Tournament.last
+      @winner = @live_tournament.play
+      redirect_to tournament_path(@live_tournament.id) and return
+    else
+      redirect_to user_path(@current_user.id) and return
+    end
+    
   end
+
 
   private
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_03_013955) do
+ActiveRecord::Schema.define(version: 2022_02_03_061429) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,11 +39,18 @@ ActiveRecord::Schema.define(version: 2022_02_03_013955) do
     t.integer "average_position"
   end
 
+  create_table "nfts_tournaments", force: :cascade do |t|
+    t.integer "nft_id"
+    t.integer "tournament_id"
+  end
+
   create_table "results", force: :cascade do |t|
     t.integer "winner_id"
     t.integer "loser_id"
     t.float "eth_bet"
     t.float "total_prize_pool"
+    t.integer "tournament_id"
+    t.integer "round_number"
   end
 
   create_table "tournaments", force: :cascade do |t|

@@ -27,6 +27,13 @@
                 <%= button_to "Edit Account", edit_user_path, :method => "get", class: "buttonLink", id: "headButton" %>
 
                 <%= button_to "Logout", login_path, method: 'delete', class: "buttonLink", id: "headButton" %>
+
+                <div id='tournament-widget'>
+                    <h1>Join Tournament</h1>
+                    <h3><%= @tournament.nfts.count %> / 4</h3>
+                    <%= button_to 'Join Tournament', nfts_tournament_path, method: 'get', class: "buttonLink", id: "headButton" %>
+
+                </div>
             
                 <% else %>
             

@@ -1,0 +1,7 @@
+<%= form_with model: @user, local: true, html: { multipart: true } do |f| %>
+
+    <%= f.select :nft, ['option1', 'option2']%>
+
+    <%= f.submit %>
+
+<% end %>

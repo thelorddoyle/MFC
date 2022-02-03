@@ -123,3 +123,11 @@ Result.destroy_all
 end
 
 puts "#{ Result.count } Result's created.".green
+
+print "Creating seed Tournaments...".green
+
+Tournament.destroy_all
+
+t1 = Tournament.create!()
+
+puts "#{ Tournament.count } Result's created.".green
