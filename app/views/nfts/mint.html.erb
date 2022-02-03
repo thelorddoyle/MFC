@@ -1,9 +1,24 @@
 <main class="mint">
     <div class="light top-of-page-light">
         <h1 id="mint">Mint Your MFC Fighter</h1>
-        <h2>Connect your wallet and hit 'mint'.</h2>
+        <h2 id='mint-h2'>Connect your wallet and hit 'mint'.</h2>
     </div>
 
-<%= render partial: 'form2' %>
+<div class='two-column-grid-container'>
+    <div id='mint-column1'>
+
+        <%= image_tag 'fighters-carousel.gif', alt: 'mint now!', class: 'fighters-carousel' %>
+
+    </div>
+
+    <div id='mint-column2'>
+
+        <%= render partial: 'form2' %>
+
+    </div>
+</div>
+
+
+
 
 </main>

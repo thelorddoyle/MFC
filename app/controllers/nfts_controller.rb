@@ -92,6 +92,10 @@ class NftsController < ApplicationController
   def mint
     @nft = Nft.find_by user_id: nil
     # redirect_to rankings_path unless @nft.user_id == @current_user.id
+
+    @total_nft_count = Nft.all.count
+    @nfts_unowned = Nft.all.where(user_id: nil).count
+
   end
 
   def tournament

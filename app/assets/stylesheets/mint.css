@@ -1,0 +1,68 @@
+#mint-h2 {
+    padding-bottom: 20px;
+}
+
+#mint {
+    padding-top: 20px;
+}
+
+main.mint form input {
+    padding: 20px;
+}
+
+main.mint form input {
+    padding: 30px 30px;
+    color: black;
+    font-size: large;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+main.mint form input {
+    color: white;
+}
+
+main.mint form input:hover {
+    color: red;
+}
+
+main.mint form input:hover > .buttonLink {
+    background-color: white; 
+}
+
+main.mint form input:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.fighters-carousel {
+    max-width: 300px;
+}
+
+.two-column-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#mint-column1 {
+    display: grid;
+    justify-self: end;
+    padding-right: 40px;
+}
+
+#mint-column2 {
+    display: grid;
+    align-items:center;
+    justify-content: start;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.mint-h2-body {
+    padding-bottom: 30px;
+}
+
+.mint-h1-body {
+    padding-bottom: 30px;
+}

@@ -1,5 +1,9 @@
 <%= form_with model: @nft, local: true do |f| %>
 
+<h2 class='mint-h2-body'>Be one of the only owners of the MFC.</h2>
+
+<h1 class='mint-h1-body'><%= @nfts_unowned %> / <%= @total_nft_count %> remaining</h1>
+
     <%= f.hidden_field :user_id, value:@current_user.id %>
     <%= f.hidden_field :mint_season %>
     <%= f.hidden_field :mint_bracket %>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mfc</title>
+    <title>Metaverse Fighting Championship</title>
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,7 +9,8 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= cloudinary_js_config %>
-    <%# <link rel="stylesheet" href="/main.css"> %>
+ 
+    <%= favicon_link_tag asset_path('favicon.png') %>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -31,8 +32,8 @@
         <ul>
           <li><%= link_to "Home", home_path %></li>
           <li><%= link_to "Rankings", rankings_path %></li>
-          <li><%= link_to "Whitepaper", whitepaper_path %></li>
           <li><a href="https://metaverse-fighting-championship.gitbook.io/mfc/">Docs</a></li>
+          <li><%= link_to "Mint", nfts_mint_path %></li>
         </ul>
       </div>
 

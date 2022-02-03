@@ -148,7 +148,7 @@ button {
 }
 
 .bannerDiv1 {
-    background-image: url("banner2.png");
+    background-image: url("banner-fighter1.png");
     flex-grow: 2;
 }
 
@@ -163,7 +163,7 @@ button {
 }
 
 .bannerDiv3 {
-    background-image: url("banner1.png");
+    background-image: url("banner-fighter2.png");
     flex-grow: 2;
 }
 
@@ -277,4 +277,8 @@ footer {
 
 .nft_image {
     border-radius: 15px;
+}
+
+.bottom-line-card {
+    margin-top: -50px;
 }
