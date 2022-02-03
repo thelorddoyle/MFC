@@ -148,7 +148,12 @@ input#fightButton:hover {
     border-radius: 15px;
 }
 
-#tournament-widget h1,h3 {
+#tournament-widget h1 {
+    color: black;
+    padding-bottom: 10px;
+}
+
+#tournament-widget h3 {
     color: black;
     padding-bottom: 10px;
 }
