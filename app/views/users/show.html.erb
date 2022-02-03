@@ -10,6 +10,7 @@
         <div id='profile-options' class='flex-column-start'>
 
             <h1> Hello, <%= @current_user.username %>.</h1>
+            <h2> <%= @current_user.profile_image %> </h2>
 
             <%= cl_image_tag @current_user.profile_image, alt: @current_user.username, class: 'profile_image' %>
 
@@ -80,7 +81,7 @@
                 </div>
 
                 <div class='asset-id'>
-                    <h3><%= link_to nft.fights_won, nft_path(nft.id)  %></h3>
+                    <h3><%= link_to nft.wins, nft_path(nft.id)  %></h3>
                 </div>
 
                 <div class='asset-id'>

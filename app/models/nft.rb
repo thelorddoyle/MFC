@@ -23,10 +23,19 @@ class Nft < ApplicationRecord
         # raise 'hell'
 
         # sort the loser NFT out
+        new_total_fights = (loser.total_fights.to_i + 1)
+        new_amount_won = (loser.amount_won.to_f - 0.2)
+        loser.update total_fights: new_total_fights
+        loser.update amount_won: new_amount_won
+
+        #sort the loser NFT owner out
         losers_eth_in_wallet = (loser.user.eth_in_wallet.to_f - 0.2)
         loser.user.update eth_in_wallet: losers_eth_in_wallet
 
         # update results
+
+        r1 = Result.create!(winner_id: winner.id, loser_id: loser.id, eth_bet: 0.2, total_prize_pool: 0.4)
+        r1.save
 
         # TODO: THIS IS WHERE I WILL MANIPULATE THE RESULTS TABLE
 

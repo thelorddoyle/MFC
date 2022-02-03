@@ -1,7 +1,11 @@
 <main class="nft_showcase">
     <div class="light top-of-page-light">
         <h1 id="profile">#<%= @nft.id %></h1>
+        <% if @nft.user == nil %>
+        <h2 id='owned-by'>Owned by: Unowned!</h2>
+        <% else %>
         <h2 id='owned-by'>Owned by: <%= @nft.user.username %></h2>
+        <% end %>
     </div>
     <div id='showcase-wrapper'>
         <div id='showcase-container'>
@@ -50,6 +54,14 @@
                         <% end %>
                 </p>
                 <p>
+                    <strong>Owner username: </strong> 
+                        <% if @nft.user_id == nil %>
+                        N/A
+                        <% else %>
+                        <%= @nft.user.username %>
+                        <% end %>
+                </p>
+                <p>
                     <strong>Mint Season: </strong> <%= @nft.mint_season %>
                 </p>
                 <p>
@@ -60,10 +72,13 @@
 
             <div class='nft-showcase-stats-table' id='fight_stats'>
                 <p>
-                    <strong>Total Fights: </strong> <%= @nft.total_fights %>
+                    <strong>Total Fights: </strong> <%= @results.count %>
                 </p>
                 <p>
-                    <strong>Best Position: </strong> <%= @nft.best_position %>
+                    <strong>Fights Won: </strong> <%= @wins %>
+                </p>
+                <p>
+                    <strong>Best Position: </strong> <%= @losses %>
                 </p>
                 <p>
                     <strong>Amount Won: </strong> <%= @nft.amount_won %>
@@ -74,10 +89,7 @@
         </div>
     </div>
 
-<%= link_to 'Fight', fight_path(@nft.id) %>
-
-                <h1>Wins: <%= @wins %></h1>
-                <h1>Losses: <%= @losses %></h1>
+<%= button_to 'Fight', fight_path(@nft.id), method:'get', class: "buttonLink fight_button_show", id: "fightButton" %>
 
         <div id='nft-top-of-asset-grid' class='nft-asset-grid'>
 
@@ -109,61 +121,67 @@
                     <h3>Prize Pool</h3>
                 </div>
 
+            <% if @results.length > 0 %>
+                <% @results.order([:id]).reverse.each do |result| %>
 
-            <% @results.each do |result| %>
-
-                <% if result.winner.user.id != @current_user.id && result.loser.user.id != @current_user.id %>
-                    <div class='nft-asset-id'>
-                        <h3><%= result.id %></h3>
-                    </div>
-                <% else %>
-                    <% if result.winner.user.id == @current_user.id %>
-                        <div class='nft-asset-id results-graph-winner'>
-                            <h3>YOU WON: <%= result.id %></h3>
+                    <% if result.winner.user.id != @current_user.id && result.loser.user.id != @current_user.id %>
+                        <div class='nft-asset-id'>
+                            <h3><%= result.id %></h3>
                         </div>
                     <% else %>
-                        <div class='nft-asset-id results-graph-loser'>
-                            <h3>YOU LOST: <%= result.id %></h3>
-                        </div>
+                        <% if result.winner.user.id == @current_user.id %>
+                            <div class='nft-asset-id results-graph-winner'>
+                                <h3>YOU WON: <%= result.id %></h3>
+                            </div>
+                        <% else %>
+                            <div class='nft-asset-id results-graph-loser'>
+                                <h3>YOU LOST: <%= result.id %></h3>
+                            </div>
+                        <% end %>
                     <% end %>
+
+                    <div class='nft-asset-id'>
+                        <%= link_to image_tag(result.winner.image, class: "profile_asset_image"), nft_path(result.winner.id) %>
+                    </div>
+
+                    <div class='nft-asset-id'>
+                        <h3>
+                            <% if result.winner.user != nil %>
+                            <%= result.winner.user.username %>
+                            <% else %>
+                            Unowned
+                            <% end %>
+                        </h3>
+                    </div>
+
+                    <div class='nft-asset-id'>
+                        <%= link_to image_tag(result.loser.image, class: "profile_asset_image"), nft_path(result.loser.id) %>
+                    </div>
+
+                    <div class='nft-asset-id'>
+                        <h3>
+                            <% if result.loser.user != nil %>
+                            <%= result.loser.user.username %>                        
+                            <% else %>
+                            Unowned
+                            <% end %>
+                        </h3>
+                    </div>                
+
+                    <div class='nft-asset-id'>
+                        <h3><%= result.eth_bet %></h3>
+                    </div>                
+
+                    <div class='nft-asset-id'>
+                        <h3><%= result.total_prize_pool %></h3>
+                    </div>
+
                 <% end %>
-
-                <div class='nft-asset-id'>
-                    <%= link_to image_tag(result.winner.image, class: "profile_asset_image"), nft_path(result.winner.id) %>
-                </div>
-
-                <div class='nft-asset-id'>
-                    <h3>
-                        <% if result.winner.user != nil %>
-                        <%= result.winner.user.username %>
-                        <% else %>
-                        Unowned
-                        <% end %>
-                    </h3>
-                </div>
-
-                <div class='nft-asset-id'>
-                    <%= link_to image_tag(result.loser.image, class: "profile_asset_image"), nft_path(result.loser.id) %>
-                </div>
-
-                <div class='nft-asset-id'>
-                    <h3>
-                        <% if result.loser.user != nil %>
-                        <%= result.loser.user.username %>                        
-                        <% else %>
-                        Unowned
-                        <% end %>
-                    </h3>
-                </div>                
-
-                <div class='nft-asset-id'>
-                    <h3><%= result.eth_bet %></h3>
-                </div>                
-
-                <div class='nft-asset-id'>
-                    <h3><%= result.total_prize_pool %></h3>
-                </div>
-
+            <% else %>
+            <div></div><div></div><div></div>
+            <div>
+                <h1>No results available.</h1>
+            </div>
+                
             <% end %>
-
 </main>

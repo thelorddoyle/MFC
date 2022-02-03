@@ -25,8 +25,8 @@
                     <td class="tg-0x09"><%= link_to image_tag(nft.image), nft_path(nft.id), class: "table-image" %></td>
                     <td class="tg-0lax"><%= nft.mint_season %></td>
                     <td class="tg-0lax"><%= nft.mint_bracket %></td>
-                    <td class="tg-0lax"><%= nft.total_fights %></td>
-                    <td class="tg-0lax"><%= nft.fights_won %></td>
+                    <td class="tg-0lax"><%= Result.where(winner:nft.id).or(Result.where(loser:nft.id)).count %></td>
+                    <td class="tg-0lax"><%= nft.wins %></td>
                     <td class="tg-0lax"><%= nft.average_position %></td>
                     <td class="tg-0lax"><%= nft.best_position %></td>
                     <td class="tg-0lax"><%= nft.amount_won %></td>

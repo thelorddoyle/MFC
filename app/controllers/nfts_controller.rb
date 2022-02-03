@@ -24,7 +24,7 @@ class NftsController < ApplicationController
     @nft = Nft.find params[:id]
 
     eth_range = 0.2..1000000
-    opponent_list = Nft.joins(:user).where(:users => {:eth_in_wallet => eth_range})
+    opponent_list = Nft.joins(:user).where(users: {eth_in_wallet: eth_range})
     #had to add this in to only keep others from foghting
     opponent_list_final = opponent_list.where.not(user_id: @current_user.id)
 
@@ -57,6 +57,7 @@ class NftsController < ApplicationController
 
   def show
     @nft = Nft.find params[:id]
+    # raise 'hell'
     @results = Result.where(winner:@nft.id).or(Result.where(loser:@nft.id))
     @wins = @nft.wins
     @losses = @nft.losses

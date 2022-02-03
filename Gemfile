@@ -55,4 +55,3 @@ gem 'colorize'
 gem 'jquery-rails'
 
 gem 'cloudinary'
-

@@ -69,3 +69,7 @@ main {
     display: grid;
     min-height: 332px;
 }
+
+.fight_button_show {
+    margin-top: 40px
+}

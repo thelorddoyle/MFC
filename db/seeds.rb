@@ -4,19 +4,21 @@ print "Creating seed users...".green
 
 User.destroy_all
 
-users_array = [ nil, ]
+# the reason I'm seeding this is so that I can assign results to only NFTs with owners
+users_for_results_array = []
 
-User.create! username: 'thelorddoyle', email: 'dlorddoyle@gmail.com', password: 'chicken', eth_in_wallet: 30
-User.create! username: 'lukearthur', email: 'lukearthur@gmail.com', password: 'chicken', eth_in_wallet: 30
-User.create! username: 'jordo2017', email: 'jdog@outlook.com', password: 'chicken', eth_in_wallet: 30
+User.create! username: 'thelorddoyle', email: 'dlorddoyle@gmail.com', password: 'chicken', eth_in_wallet: 30, profile_image: 'ape1.png'
+User.create! username: 'lukearthur', email: 'lukearthur@gmail.com', password: 'chicken', eth_in_wallet: 30, profile_image: 'ape2.png'
+User.create! username: 'jordo2017', email: 'jdog@outlook.com', password: 'chicken', eth_in_wallet: 30, profile_image: 'ape3.png'
 
-users_array.push User.all.first.id
-users_array.push User.all.second.id
-users_array.push User.all.third.id
-
-puts users_array
+users_for_results_array.push User.all.first.id
+users_for_results_array.push User.all.second.id
+users_for_results_array.push User.all.third.id
 
 puts "#{ User.count } users created.".green
+
+puts users_for_results_array
+
 
 ############################################
 
@@ -37,13 +39,13 @@ tattoos_options = ['None', 'Dragon', 'Celtic', 'Tribal', 'Kids Names']
 
 nfts_array = []
 
-100.times do |i|
+80.times do |i|
 
     nftName = 'nft'+(i+1).to_s
     imageName = 'fighter' + (rand(1..32)).to_s + '.png'
 
     nftName = Nft.create!
-    nftName.user_id = users_array.sample
+    nftName.user_id = users_for_results_array.sample
     nftName.mint_season = rand(1..3)
     nftName.mint_bracket = rand(1..10)
     nftName.eye_colour = eye_colour_options.sample
@@ -69,6 +71,36 @@ nfts_array = []
 
 end
 
+20.times do |i|
+
+    nftName = 'nft'+(i+81).to_s
+    imageName = 'fighter' + (rand(1..32)).to_s + '.png'
+
+    nftName = Nft.create!
+    nftName.user_id = nil
+    nftName.mint_season = rand(1..3)
+    nftName.mint_bracket = rand(1..10)
+    nftName.eye_colour = eye_colour_options.sample
+    nftName.hair_style = hair_style_options.sample
+    nftName.hair_colour = hair_colour_options.sample
+    nftName.skin_colour = skin_colour_options.sample
+    nftName.shorts = shorts_options.sample
+    nftName.facial_expression = facial_expression_options.sample
+    nftName.body_type = body_type_options.sample
+    nftName.handwear = handwear_options.sample
+    nftName.background_colour = background_colour_options.sample
+    nftName.tattoos = tattoos_options.sample
+    nftName.image = imageName
+    nftName.total_fights = 0
+    nftName.best_position = 0
+    nftName.amount_won = 0
+    nftName.fights_won = 0
+    nftName.average_position = 0
+
+    nftName.save
+
+end
+
 puts "#{ Nft.count } NFT's created.".green
 p nfts_array
 
@@ -76,7 +108,7 @@ print "Creating seed Results...".green
 
 Result.destroy_all
 
-300.times do |i|
+200.times do |i|
 
     resultName = 'result'+(i+1).to_s
 
