@@ -15,13 +15,15 @@ class Tournament < ApplicationRecord
 
         prize_pool = 0.2 * array_of_fighters.length
 
-        fight_card = array_of_fighters.shuffle.each_slice(2).to_a
+        # fight_card = array_of_fighters.shuffle.each_slice(2).to_a
+
+        # raise 'hell'
 
         # Resolve the first round
-        round1_fight1_winner = fight_card[0][0].fight(fight_card[0][1])
+        round1_fight1_winner = array_of_fighters[0].fight(array_of_fighters[1])
         round1_fight1_winner = round1_fight1_winner.won_fights.last.loser
 
-        round1_fight2_winner = fight_card[1][0].fight(fight_card[1][1])
+        round1_fight2_winner = array_of_fighters[2].fight(array_of_fighters[3])
         round1_fight2_winner = round1_fight2_winner.won_fights.last.loser
 
         # Perform the updates on THE RESULT for the fights (give them the right round number and the correct prize pool)
