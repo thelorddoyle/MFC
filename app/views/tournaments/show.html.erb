@@ -54,7 +54,7 @@
         <div id='final-3'>
             <h1>Champion</h4>
             <% if @tournament.results[2].winner.user.profile_image == nil %>
-                <%= image_tag @tournament.results[2].winner.image, class: 'contender-nft-image-winner' %>
+                <%= cl_image_tag @tournament.results[2].winner.image, class: 'contender-nft-image-winner' %>
             <% else %>
                 <%= image_tag @tournament.results[2].winner.user.profile_image, class: 'contender-nft-image-winner' %>
             <% end %>
