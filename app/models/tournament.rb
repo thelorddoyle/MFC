@@ -21,14 +21,16 @@ class Tournament < ApplicationRecord
 
         # Resolve the first round
         round1_fight1_winner = array_of_fighters[0].fight(array_of_fighters[1])
-        round1_fight1_winner = round1_fight1_winner.won_fights.last.loser
+        round1_fight1_loser = round1_fight1_winner.won_fights.last.loser
 
         round1_fight2_winner = array_of_fighters[2].fight(array_of_fighters[3])
-        round1_fight2_winner = round1_fight2_winner.won_fights.last.loser
+        round1_fight2_loser = round1_fight2_winner.won_fights.last.loser
 
         # Perform the updates on THE RESULT for the fights (give them the right round number and the correct prize pool)
         round1_fight1_winner.won_fights.last.update tournament_id: Tournament.last.id, round_number: 1, total_prize_pool: (prize_pool)
         round1_fight2_winner.won_fights.last.update tournament_id: Tournament.last.id, round_number: 1, total_prize_pool: (prize_pool)
+
+        # raise 'hell'
 
         # Resolve the second round
         tournament_winner = round1_fight1_winner.fight(round1_fight2_winner)
