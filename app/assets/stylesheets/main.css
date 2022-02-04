@@ -290,3 +290,8 @@ footer {
 .form-field-connect {
     margin-top: 10px;
 }
+
+.press-conference {
+    max-width: 800px;
+    border-radius: 15px;
+}
