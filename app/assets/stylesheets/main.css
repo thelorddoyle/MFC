@@ -282,3 +282,11 @@ footer {
 .bottom-line-card {
     margin-top: -50px;
 }
+
+#file-field {
+    margin-left: 115px;
+}
+
+.form-field-connect {
+    margin-top: 10px;
+}

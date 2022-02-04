@@ -2,27 +2,27 @@
 
     <%= f.label :username  %>
     <br>
-    <%= f.text_field :username %>
+    <%= f.text_field :username, class: 'form-field-connect' %>
     <br><br>
 
     <%= f.label :email  %>
     <br>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, class: 'form-field-connect' %>
     <br><br>
 
     <%= f.label :profile_image  %>
-    <br>
-    <%= f.file_field :profile_image %>
+    <br><br>
+    <%= f.file_field :profile_image, id: 'file-field', class: 'form-field-connect' %>
     <br><br>
 
     <%= f.label :password %>
     <br>
-    <%= f.password_field :password %>
+    <%= f.password_field :password, class: 'form-field-connect' %>
     <br><br>
 
     <%= f.label :password_confirmation %>
     <br>
-    <%= f.password_field :password_confirmation %>
+    <%= f.password_field :password_confirmation, class: 'form-field-connect' %>
     <br><br>
 
     <%= f.hidden_field :eth_in_wallet, :value => 0 %>

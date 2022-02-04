@@ -2,21 +2,21 @@
 
     <%= f.label :eth_in_wallet %>
     <br>
-    <%= f.text_field :eth_in_wallet %>
+    <%= f.text_field :eth_in_wallet, class: 'form-field-connect' %>
     <br><br>
 
     <%= f.hidden_field :username %>
 
-    <%= f.hidden_field :email %>
+    <%= f.hidden_field :email, class: 'form-field-connect' %>
 
     <%= f.label :password %>
     <br>
-    <%= f.password_field :password %>
+    <%= f.password_field :password, class: 'form-field-connect' %>
     <br><br>
 
     <%= f.label :password_confirmation %>
     <br>
-    <%= f.password_field :password_confirmation %>
+    <%= f.password_field :password_confirmation, class: 'form-field-connect' %>
     <br><br>
 
     <%= f.submit %>
