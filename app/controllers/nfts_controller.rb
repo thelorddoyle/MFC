@@ -101,7 +101,10 @@ class NftsController < ApplicationController
   def tournament
     @nft = @current_user.nfts.sample
 
-    Tournament.last.nfts << @nft
+    if Tournament.last.nfts.include? @nft
+      else
+      Tournament.last.nfts << @nft
+    end
 
     if Tournament.last.nfts.count >= 4
       @live_tournament = Tournament.last

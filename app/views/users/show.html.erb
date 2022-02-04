@@ -33,8 +33,21 @@
                     <h1>Join Tournament</h1>
                     <h3><%= @tournament.nfts.count %> / 4</h3>
 
-                    <%= button_to 'Bet 0.2 ETH', nfts_tournament_path, method: 'get', class: "tournament-button" %>
+                    <% if @tournament.nfts.where(user_id:@current_user.id).count <= 1 %>
+                        <%= button_to 'Bet 0.2 ETH', nfts_tournament_path, method: 'get', class: "tournament-button" %>
+                    <% else %>
+                        <h3>Please wait. The max is 2 fighters per player.</h3>
+                    <% end %>
 
+
+                    <% if @tournament.nfts.where(user_id:@current_user.id).count >= 1 %>
+                    <br>
+                        <% if @tournament.nfts.where(user_id:@current_user.id).count == 1 %>
+                            <h3>You have <%= @tournament.nfts.where(user_id:@current_user.id).count %> fighter registered.</h3>
+                        <% else %>
+                            <h3>You have <%= @tournament.nfts.where(user_id:@current_user.id).count %> fighters registered.</h3>
+                        <% end %>
+                    <% end %>
                 </div>
             
                 <% else %>

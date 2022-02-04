@@ -53,10 +53,10 @@
 
         <div id='final-3'>
             <h1>Champion</h4>
-            <% if @tournament.results[2].winner.user.profile_image.empty? == false %>
-                <%= image_tag @tournament.results[2].winner.user.profile_image, class: 'contender-nft-image-winner' %>
-            <% else %>
+            <% if @tournament.results[2].winner.user.profile_image == nil %>
                 <%= image_tag @tournament.results[2].winner.image, class: 'contender-nft-image-winner' %>
+            <% else %>
+                <%= image_tag @tournament.results[2].winner.user.profile_image, class: 'contender-nft-image-winner' %>
             <% end %>
             <h1><%= @tournament.results[2].winner.user.username %> WINS 0.8 ETH!</h1>
         </div>  

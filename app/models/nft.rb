@@ -21,7 +21,6 @@ class Nft < ApplicationRecord
         # sort the winner NFT owner out
         winners_eth_in_wallet = (winner.user.eth_in_wallet.to_f + 0.2)
         winner.user.update eth_in_wallet: winners_eth_in_wallet
-        # raise 'hell'
 
         # sort the loser NFT out
         new_total_fights = (loser.total_fights.to_i + 1)
