@@ -48,7 +48,12 @@
                             <h3>You have <%= @tournament.nfts.where(user_id:@current_user.id).count %> fighters registered.</h3>
                         <% end %>
                     <% end %>
+
                 </div>
+
+                <h1 id='tournament_button_title'>Tournaments</h1>
+
+                <%= button_to 'Watch Most Recent Tournament', tournament_path(@most_recent_tournament.id), method: 'get', class: "recent_tournament_button", id: "recent_tournament_button_id" %>
             
                 <% else %>
             

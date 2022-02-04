@@ -54,3 +54,32 @@
 #final-3 {
     display: none;
 }
+
+input.recent_tournament_button {
+    padding: 10px;
+}
+
+input.recent_tournament_button {
+    padding: 20px 20px;
+    color: black;
+    font-size: large;
+    background-color: red;
+    border: 2px solid black;
+}
+
+input.recent_tournament_button {
+    color: white;
+}
+
+input.recent_tournament_button:hover {
+    color: red;
+}
+
+input.recent_tournament_button:hover > .buttonLink {
+    background-color: white; 
+}
+
+input.recent_tournament_button:hover {
+    cursor: pointer;
+    background-color: white;
+}

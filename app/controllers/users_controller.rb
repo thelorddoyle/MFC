@@ -34,6 +34,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find params[:id]
     @tournament = Tournament.last
+    @most_recent_tournament = Tournament.all[-2]
   end
 
   def edit
