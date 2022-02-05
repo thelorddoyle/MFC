@@ -111,7 +111,7 @@ class NftsController < ApplicationController
       @winner = @live_tournament.play
       redirect_to tournament_path(@live_tournament.id) and return
     else
-      redirect_to user_path(@current_user.id) and return
+      redirect_to tournaments_index_path and return
     end
     
   end

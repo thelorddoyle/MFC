@@ -6,7 +6,7 @@
 
     <div class="flex-row-stretch">
 
-        <div id='profile-left' class="flex-column-start">
+        <div id='profile-left' class="flex-column-shrink">
 
             <div id='profile-options' class='flex-column-start'>
 
@@ -76,9 +76,13 @@
                     <h3>Champion</h3>
                 </div>
 
+                <div class='asset-id'>
+                    <h3>Click to watch</h3>
+                </div>
+
                 <% @tournaments.order([:id]).reverse.each do |t| %>
                     <div class='asset-id'>
-                        <h3><%= t.id %></h3>                    
+                        <h3><%= link_to t.id, tournament_path(t.id) %></h3>                    
                     </div>
                     <div class='asset-id'>
                         <%= link_to image_tag(t.nfts.first.image, class: "contender-in-index-image"), nft_path(t.nfts.first.id) %>
@@ -91,6 +95,9 @@
                     </div>
                     <div class='asset-id'>
                         <%= link_to image_tag(t.results[2].winner.image, class: 'contender-in-index-image'), nft_path(t.results[2].winner.id) %>
+                    </div>
+                    <div class='asset-id'>
+                        <h3><%= button_to 'View', tournament_path(t.id), method: 'get' %></h3>                    
                     </div>
                 <% end %>
 

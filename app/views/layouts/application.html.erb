@@ -21,19 +21,25 @@
   </head>
 
   <body>
-
     <nav>
-
       <div>
         <%= link_to image_tag("MFC-logo.png"), home_path, class: "navLogo" %>
       </div>
 
       <div class="navLinks">      
         <ul>
-          <li><%= link_to "Home", home_path %></li>
-          <li><%= link_to "Rankings", rankings_path %></li>
-          <li><a href="https://metaverse-fighting-championship.gitbook.io/mfc/">Docs</a></li>
-          <li><%= link_to "Mint", nfts_mint_path %></li>
+          <% if @current_user.present? %>
+            <li><%= link_to "Mint", nfts_mint_path %></li>
+            <li><%= link_to "Fight", user_path(@current_user.id) %></li>
+            <li><%= link_to "Rankings", rankings_path %></li>
+            <li><%= link_to "Tournaments", tournaments_index_path %></li>
+            <li><a href="https://metaverse-fighting-championship.gitbook.io/mfc/">Docs</a></li>
+          <% else %>
+            <li><%= link_to "Home", home_path %></li>
+            <li><%= link_to "Rankings", rankings_path %></li>
+            <li><a href="https://metaverse-fighting-championship.gitbook.io/mfc/">Docs</a></li>
+            <li><%= link_to "Mint", nfts_mint_path %></li>
+          <% end %>
         </ul>
       </div>
 

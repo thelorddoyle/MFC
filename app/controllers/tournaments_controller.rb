@@ -5,9 +5,12 @@ class TournamentsController < ApplicationController
     end
 
     def index
+
         # This is just going to exclude the ONE live tournament that has no results, due there being less than 4 fighters associated with it
-        @pendingtournament = Tournament.last
         @tournaments = Tournament.all.includes(:results).where.not(results:{id:nil})
+        
+        @pendingtournament = Tournament.last
+    
     end
 
 end

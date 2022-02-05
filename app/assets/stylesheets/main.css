@@ -100,7 +100,7 @@ nav li {
     font-size: large;
 }
 
-nav a:hover {
+a:hover {
     color: red;
 }
 
@@ -148,7 +148,7 @@ button {
 }
 
 .bannerDiv1 {
-    background-image: url("banner-fighter1.png");
+    background-image: url("banner-fighter1");
     flex-grow: 2;
 }
 

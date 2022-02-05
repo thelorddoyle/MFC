@@ -19,7 +19,7 @@ class UsersController < ApplicationController
 
     if @user.persisted? #saved
       session[:user_id] = @user.id
-      redirect_to rankings_path
+      redirect_to user_path(session[:user_id])
     else
       render :new
     end

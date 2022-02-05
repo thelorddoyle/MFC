@@ -89,7 +89,9 @@
         </div>
     </div>
 
+<% if @nft.user.id == @current_user.id %>
 <%= button_to 'Fight', fight_path(@nft.id), method:'get', class: "buttonLink fight_button_show", id: "fightButton" %>
+<% end %>
 
         <div id='nft-top-of-asset-grid' class='nft-asset-grid'>
 

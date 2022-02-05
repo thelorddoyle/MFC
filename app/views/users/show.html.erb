@@ -131,7 +131,17 @@
                 </div>
 
             <% end %>
+
         </div>
+
+            <% if @user.nfts.all.count == 0 %>
+                <div id='no-nfts-mint-section-under-table'>
+                    <h1>You have no fighters!</h1>
+                    <h3>Mint one now.</h3>
+                    <%= button_to "Mint A Fighter", nfts_mint_path, method:'get', class: "buttonLink", id: "headButton" %>
+                </div>
+
+            <% end %>        
 
     </div>
 

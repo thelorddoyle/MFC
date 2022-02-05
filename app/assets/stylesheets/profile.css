@@ -26,6 +26,12 @@ main {
     flex-grow: 1;
 }
 
+.flex-column-shrink {
+    display:flex;
+    flex-direction:column;
+    flex-shrink: 1;
+}
+
 .flex-column-flex-start-align {
     display:flex;
     flex-direction:column;
@@ -188,4 +194,16 @@ input.tournament-button:hover {
 
 .recent_tournament_button {
     margin-bottom: 10px;
+}
+
+#no-nfts-mint-section-under-table {
+    padding-top: 15px;
+}
+
+#no-nfts-mint-section-under-table h1 {
+    padding-bottom: 15px;
+}
+
+#no-nfts-mint-section-under-table h3 {
+    padding-bottom: 15px;
 }
