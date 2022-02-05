@@ -61,7 +61,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: stretch;
-
 }
 
 .asset-id {
@@ -185,4 +184,8 @@ input.tournament-button:hover > .buttonLink {
 input.tournament-button:hover {
     cursor: pointer;
     background-color: white;
+}
+
+.recent_tournament_button {
+    margin-bottom: 10px;
 }

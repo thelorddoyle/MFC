@@ -34,7 +34,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find params[:id]
     @tournament = Tournament.last
-    @most_recent_tournament = Tournament.all[-2]
+    @most_recent_tournament = Tournament.all.includes(:results).where.not(results:{id:nil}).last
   end
 
   def edit

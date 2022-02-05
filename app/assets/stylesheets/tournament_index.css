@@ -1,0 +1,13 @@
+#top-of-tournament-index-grid {
+    padding: 40px 130px 0px 50px;
+}
+
+.tournament-asset-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+}
+
+.contender-in-index-image {
+    max-width: 75px;
+}

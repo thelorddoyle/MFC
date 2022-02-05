@@ -59,11 +59,11 @@ nfts_array = []
     nftName.background_colour = background_colour_options.sample
     nftName.tattoos = tattoos_options.sample
     nftName.image = imageName
-    nftName.total_fights = rand(0..75)
-    nftName.best_position = rand(1..32)
-    nftName.amount_won = rand(0.01..2.34).round(2)
-    nftName.fights_won = rand(0..36)
-    nftName.average_position = rand(4..28)
+    nftName.total_fights = 0
+    nftName.best_position = 0
+    nftName.amount_won = 0
+    nftName.fights_won = 0
+    nftName.average_position = 0
 
     nftName.save
 

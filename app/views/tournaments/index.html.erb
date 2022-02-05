@@ -1,0 +1,107 @@
+<main class="mint">
+    <div class="light top-of-page-light">
+        <h1 id="mint">Tournaments</h1>
+        <h2 id='mint-h2'>View or Play</h2>
+    </div>
+
+    <div class="flex-row-stretch">
+
+        <div id='profile-left' class="flex-column-start">
+
+            <div id='profile-options' class='flex-column-start'>
+
+                <h1> Let's join a tournament, <%= @current_user.username %>!</h1>
+
+                <%= cl_image_tag @current_user.profile_image, alt: @current_user.username, class: 'profile_image' %>
+
+                <div class="flex-column-flex-start-align">
+
+                    <% if @current_user.present? %>
+
+                        <div id='tournament-widget'>
+
+                            <h1>Join Tournament</h1>
+                            <h3><%= @pendingtournament.nfts.count %> / 4</h3>
+
+                            <% if @pendingtournament.nfts.where(user_id:@current_user.id).count <= 1 %>
+                                <%= button_to 'Bet 0.2 ETH', nfts_tournament_path, method: 'get', class: "tournament-button" %>
+                            <% else %>
+                                <h3>Please wait. The max is 2 fighters per player.</h3>
+                            <% end %>
+
+
+                            <% if @pendingtournament.nfts.where(user_id:@current_user.id).count >= 1 %>
+                            <br>
+                                <% if @pendingtournament.nfts.where(user_id:@current_user.id).count == 1 %>
+                                    <h3>You have <%= @pendingtournament.nfts.where(user_id:@current_user.id).count %> fighter registered.</h3>
+                                <% else %>
+                                    <h3>You have <%= @pendingtournament.nfts.where(user_id:@current_user.id).count %> fighters registered.</h3>
+                                <% end %>
+                            <% end %>
+
+                        </div>
+
+                        <h4 id='wallet_amount'>Available Funds In Wallet:</h2>
+                        <h1 id='wallet_amount_number'><%= @current_user.eth_in_wallet %></h1>
+                
+                    <% else %>
+                
+                        redirect_to login_path
+                
+                    <% end %>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div id='profile-right' class='flex-column-start'>
+            <div id='top-of-tournament-index-grid' class='tournament-asset-grid'>
+
+                <%# In the right column, show an index of the tournaments ordered by Tournament ID. This is the first/title row. %>
+                <div class='asset-id asset-top-row'>
+                    <h3>Tournament #</h3>
+                </div>
+
+                <div class='asset-id'>
+                    <h3>Contenders</h3>
+                </div>
+
+                <div class='asset-id'>
+                    <h3>Prize Pool</h3>
+                </div>      
+
+                <div class='asset-id'>
+                    <h3>Champion</h3>
+                </div>
+
+                <% @tournaments.order([:id]).reverse.each do |t| %>
+                    <div class='asset-id'>
+                        <h3><%= t.id %></h3>                    
+                    </div>
+                    <div class='asset-id'>
+                        <%= link_to image_tag(t.nfts.first.image, class: "contender-in-index-image"), nft_path(t.nfts.first.id) %>
+                        <%= link_to image_tag(t.nfts.second.image, class: "contender-in-index-image"), nft_path(t.nfts.second.id) %>
+                        <%= link_to image_tag(t.nfts.third.image, class: "contender-in-index-image"), nft_path(t.nfts.third.id) %>
+                        <%= link_to image_tag(t.nfts.fourth.image, class: "contender-in-index-image"), nft_path(t.nfts.fourth.id) %>
+                    </div>
+                    <div class='asset-id'>
+                        <h3>0.8 ETH</h3>
+                    </div>
+                    <div class='asset-id'>
+                        <%= link_to image_tag(t.results[2].winner.image, class: 'contender-in-index-image'), nft_path(t.results[2].winner.id) %>
+                    </div>
+                <% end %>
+
+            </div>
+        </div>
+
+    </div>
+<div>
+
+
+
+</div>
+
+</main>
