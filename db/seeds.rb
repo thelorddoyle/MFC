@@ -39,6 +39,8 @@ tattoos_options = ['None', 'Dragon', 'Celtic', 'Tribal', 'Kids Names']
 
 nfts_array = []
 
+# Creates 80 'minted' fighters
+
 80.times do |i|
 
     nftName = 'nft'+(i+1).to_s
@@ -70,6 +72,8 @@ nfts_array = []
     nfts_array.push nftName.id
 
 end
+
+# Creates 20 'un-minted' fighters
 
 20.times do |i|
 

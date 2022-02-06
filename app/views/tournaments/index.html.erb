@@ -21,17 +21,20 @@
                         <div id='tournament-widget'>
 
                             <h1>Join Tournament</h1>
-                            <h3><%= @pendingtournament.nfts.count %> / 4</h3>
 
-                            <% if @pendingtournament.nfts.where(user_id:@current_user.id).count <= 1 %>
+                            <%= link_to 'New Tournament', tournament_new_path, class: "new_tournament" %>
+
+                            <%# TODO: Project TournamentLogic - change this back to how it was after testing %>
+
+                            <h3><%= @pendingtournament.nfts.count %> / 16</h3>
                                 <%= button_to 'Bet 0.2 ETH', nfts_tournament_path, method: 'get', class: "tournament-button" %>
+                            <% if @pendingtournament.nfts.where(user_id:@current_user.id).count <= 1 %>
                             <% else %>
                                 <h3>Please wait. The max is 2 fighters per player.</h3>
-                            <% end %>
+                            <% end  %>
 
 
                             <% if @pendingtournament.nfts.where(user_id:@current_user.id).count >= 1 %>
-                            <br>
                                 <% if @pendingtournament.nfts.where(user_id:@current_user.id).count == 1 %>
                                     <h3>You have <%= @pendingtournament.nfts.where(user_id:@current_user.id).count %> fighter registered.</h3>
                                 <% else %>
@@ -84,14 +87,13 @@
                     <div class='asset-id'>
                         <h3><%= link_to t.id, tournament_path(t.id) %></h3>                    
                     </div>
-                    <div class='asset-id'>
-                        <%= link_to image_tag(t.nfts.first.image, class: "contender-in-index-image"), nft_path(t.nfts.first.id) %>
-                        <%= link_to image_tag(t.nfts.second.image, class: "contender-in-index-image"), nft_path(t.nfts.second.id) %>
-                        <%= link_to image_tag(t.nfts.third.image, class: "contender-in-index-image"), nft_path(t.nfts.third.id) %>
-                        <%= link_to image_tag(t.nfts.fourth.image, class: "contender-in-index-image"), nft_path(t.nfts.fourth.id) %>
+                    <div class='contenders-asset'>
+                        <% t.nfts.each do |nft| %>
+                        <%= link_to image_tag(nft.image, class: "contender-in-index-image"), nft_path(nft.id) %>                   
+                        <% end %>
                     </div>
                     <div class='asset-id'>
-                        <h3>0.8 ETH</h3>
+                        <h3><%= t.nfts.count * 0.2 %> ETH</h3>
                     </div>
                     <div class='asset-id'>
                         <%= link_to image_tag(t.results[2].winner.image, class: 'contender-in-index-image'), nft_path(t.results[2].winner.id) %>

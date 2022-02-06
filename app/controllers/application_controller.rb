@@ -27,5 +27,4 @@ class ApplicationController < ActionController::Base
 
     end # end of check if logged in
 
-
 end

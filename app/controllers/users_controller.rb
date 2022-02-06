@@ -60,6 +60,7 @@ class UsersController < ApplicationController
       return
     end
 
+    # This manages the adding of the ETH to the wallet
     eth_to_add = user_params[:eth_in_wallet].to_f
     new_eth_total = (eth_to_add + @user.eth_in_wallet.to_f)
     

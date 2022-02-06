@@ -9,5 +9,31 @@
 }
 
 .contender-in-index-image {
-    max-width: 75px;
+    max-width: 37.5px;
+}
+
+.asset-id {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenders-asset {
+    width: 305px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.new_tournament {
+    color: black;
 }

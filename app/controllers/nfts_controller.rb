@@ -21,18 +21,26 @@ class NftsController < ApplicationController
   end
 
   def fight
+
     @nft = Nft.find params[:id]
 
+    # Check if the user has the minimum amount for the bet
+    # TODO: Project BetAmount
     eth_range = 0.2..1000000
+
+    # Creates a list of opponents where the NFT is owned, and the user who owns the NFT has enough to bet on the fight
     opponent_list = Nft.joins(:user).where(users: {eth_in_wallet: eth_range})
-    #had to add this in to only keep others from foghting
+
+    # This line simply reduces the opponent list by removing the current owners NFTs
     opponent_list_final = opponent_list.where.not(user_id: @current_user.id)
 
     @opponent = (opponent_list_final).sample  
     @winner = @nft.fight(@opponent)
+
   end
 
   def create
+
     @nft = Nft.new nft_params()
     @nft.user_id = @current_user.id
     @nft.save
@@ -66,11 +74,6 @@ class NftsController < ApplicationController
 
     @nft = Nft.find params[:id]
 
-    # TODO: Ask Luke where @current_nft is 
-    # if @nft.id != @current_nft.id
-    #   redirect_to login_path
-    #   return
-    # end
     if @current_user.eth_in_wallet >= 0.8
 
       eth_to_take_from = @current_user.eth_in_wallet.to_f
@@ -90,7 +93,9 @@ class NftsController < ApplicationController
   end
 
   def mint
+
     @nft = Nft.find_by user_id: nil
+
     # redirect_to rankings_path unless @nft.user_id == @current_user.id
 
     @total_nft_count = Nft.all.count
@@ -99,14 +104,19 @@ class NftsController < ApplicationController
   end
 
   def tournament
-    @nft = @current_user.nfts.sample
 
+    # Updated to now pick the first NFT a user has where it is not in the Tournament's NFTs list
+    @nft = @current_user.nfts.where.not(id: Tournament.last.nfts.ids).first
+
+    # Checks to see if NFT that is randomly selected is included in the tournament already, if it isn't it adds it in
     if Tournament.last.nfts.include? @nft
       else
       Tournament.last.nfts << @nft
     end
 
-    if Tournament.last.nfts.count >= 4
+    # If the tournament is full it initiates the tournament and shows it
+    # TODO: Project TournamentLogic
+    if Tournament.last.nfts.count >= 16
       @live_tournament = Tournament.last
       @winner = @live_tournament.play
       redirect_to tournament_path(@live_tournament.id) and return

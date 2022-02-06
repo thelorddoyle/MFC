@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   get 'tournaments/:id/show' => 'tournaments#show', as: 'tournament'
   get 'tournaments/index' => 'tournaments#index'
+  get 'tournament/new' => 'tournaments#new'
 
   get 'users/:id/addfunds' => 'users#addfunds', as: 'addfunds'
   post 'users/new' => 'users#new'
@@ -25,5 +26,6 @@ Rails.application.routes.draw do
   resources :users
   resources :nfts
   resources :results
+  resources :tournaments
 
 end

@@ -35,12 +35,14 @@
                         <h1>Join Tournament</h1>
                         <h3><%= @tournament.nfts.count %> / 4</h3>
 
-                        <% if @tournament.nfts.where(user_id:@current_user.id).count <= 1 %>
+                        <%# Project TournamentLogic - change this back to how it was after testing %>
+                        <% if @tournament.nfts.where(user_id:@current_user.id).count <= 16 %>
                             <%= button_to 'Bet 0.2 ETH', nfts_tournament_path, method: 'get', class: "tournament-button" %>
+                        <!-->
                         <% else %>
                             <h3>Please wait. The max is 2 fighters per player.</h3>
-                        <% end %>
-
+                        -->
+                        <% end %> 
 
                         <% if @tournament.nfts.where(user_id:@current_user.id).count >= 1 %>
                         <br>

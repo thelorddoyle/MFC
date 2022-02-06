@@ -2,49 +2,95 @@ class Tournament < ApplicationRecord
     has_many :results
     has_and_belongs_to_many :nfts, optional: true
 
-
     def play
-        array_of_fighters = []
 
-        nft1 = self.nfts.first
-        nft2 = self.nfts.second
-        nft3 = self.nfts.third
-        nft4 = self.nfts.fourth
+        # VARIABLES REQUIRED
+        @prize_pool = self.nfts.count * 0.2
+        @first_round_contenders = []
+        @second_round_contenders = []
+        @third_round_contenders = []
+        @semi_finalists = []
+        @finalists = []
 
-        array_of_fighters.push nft1, nft2, nft3, nft4
+        def simulate_round(contender_array, round_number, winners_array)
+            contender_array.each do |match|
+                winner = match.first.fight(match.second)
+                winner.won_fights.last.update tournament_id: self.id, round_number: round_number, total_prize_pool: (@prize_pool)
+                winners_array.push(winner)
+            end
+        end
 
-        prize_pool = 0.2 * array_of_fighters.length
+        # Just always sets up the first fight card
+        self.nfts.each { |nft| @first_round_contenders.push(nft)}
+        first_round_fight_card = @first_round_contenders.shuffle.each_slice(2).to_a
 
-        # fight_card = array_of_fighters.shuffle.each_slice(2).to_a
+        # Create the loop that fights the fighters
+        if first_round_fight_card.count == 2
 
-        # raise 'hell'
+            # loop through all of the fights this round
+            first_round_fight_card.each do |match|
+                winner = match.first.fight(match.second)
+                winner.won_fights.last.update tournament_id: self.id, round_number: 1, total_prize_pool: (@prize_pool)
+            end
 
-        # Resolve the first round
-        round1_fight1_winner = array_of_fighters[0].fight(array_of_fighters[1])
-        round1_fight1_loser = round1_fight1_winner.won_fights.last.loser
+            fight_1_winner = self.results[0].winner
+            fight_2_winner = self.results[1].winner
+                
+            champion = fight_1_winner.fight(fight_2_winner)
+            champion.won_fights.last.update tournament_id: Tournament.last.id, round_number: 2, total_prize_pool: (@prize_pool)
+            runner_up = champion.won_fights.last.loser
+            # I don't actually NEED to return this as I don't use it anywhere, but keeping it in for now, just incase.
+            champion        
 
-        round1_fight2_winner = array_of_fighters[2].fight(array_of_fighters[3])
-        round1_fight2_loser = round1_fight2_winner.won_fights.last.loser
+        end
 
-        # Perform the updates on THE RESULT for the fights (give them the right round number and the correct prize pool)
-        round1_fight1_winner.won_fights.last.update tournament_id: Tournament.last.id, round_number: 1, total_prize_pool: (prize_pool)
-        round1_fight2_winner.won_fights.last.update tournament_id: Tournament.last.id, round_number: 1, total_prize_pool: (prize_pool)
+        if first_round_fight_card.count == 8
 
-        # raise 'hell'
+            # first round
+            simulate_round first_round_fight_card, 1, @second_round_contenders
 
-        # Resolve the second round
-        tournament_winner = round1_fight1_winner.fight(round1_fight2_winner)
-        runner_up = tournament_winner.won_fights.last.loser
+            # second round
 
-        # Perform the updates on THE RESULT for the fights (give them the right round number and the correct prize pool)
-        tournament_winner.won_fights.last.update tournament_id: Tournament.last.id, round_number: 2, total_prize_pool: (prize_pool)
+            # TODO: I could actually cut this top line and put it in to function, too.
+            second_round_fight_card = @second_round_contenders.shuffle.each_slice(2).to_a
+            simulate_round second_round_fight_card, 2, @semi_finalists
 
-        # raise 'hell'
+            # semi-finals
+            semi_finals = @semi_finalists.shuffle.each_slice(2).to_a
+            simulate_round semi_finals, 3, @finalists
 
+            # final
+            champion = @finalists[0].fight(@finalists[1])
+            champion.won_fights.last.update tournament_id: self.id, round_number: 4, total_prize_pool: (@prize_pool)
+
+            champion
+            
+        end
+
+        if first_round_fight_card.count == 16
+
+            simulate_round first_round_fight_card, 1, @second_round_contenders
+
+            second_round_fight_card = @second_round_contenders.shuffle.each_slice(2).to_a
+            simulate_round second_round_fight_card, 2, @third_round_contenders
+
+            third_round_fight_card = @third_round_contenders.shuffle.each_slice(2).to_a
+            simulate_round third_round_fight_card, 3, @semi_finalists
+
+            semi_finals = @semi_finalists.shuffle.each_slice(2).to_a
+            simulate_round semi_finals, 4, @finalists
+
+            champion = @finalists[0].fight(@finalists[1])
+            champion.won_fights.last.update tournament_id: self.id, round_number: 5, total_prize_pool: (@prize_pool)
+
+            champion
+
+        end
+
+        # Regardless of the number of participants in the tournament, a new tournament still needs to be created for now.
         @new_tournament = Tournament.new
         @new_tournament.save
 
-        tournament_winner
     end
 
 end
