@@ -132,6 +132,8 @@ print "Creating seed Tournaments...".green
 
 Tournament.destroy_all
 
-t1 = Tournament.create!()
+t1 = Tournament.create! tournament_size: 4
+t2 = Tournament.create! tournament_size: 16
+t3 = Tournament.create! tournament_size: 32
 
-puts "#{ Tournament.count } Result's created.".green
+puts "#{ Tournament.count } Tournaments created.".green
