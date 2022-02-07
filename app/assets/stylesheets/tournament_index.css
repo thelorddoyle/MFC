@@ -37,3 +37,7 @@
 .new_tournament {
     color: black;
 }
+
+#replays-header {
+    padding-top: 30px;
+}

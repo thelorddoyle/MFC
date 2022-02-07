@@ -32,7 +32,6 @@ main.fight {
     grid-area: b;
     background-color: #111111;
     padding: 20px;
-    border-radius: 10px;
 }
 
 #versus {
@@ -68,7 +67,6 @@ main.fight {
 }
 
 #winner_img {
-    border-radius: 15px;
 }
 
 #live-fight-comment {

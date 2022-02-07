@@ -20,46 +20,32 @@ class Tournament < ApplicationRecord
             end
         end
 
-        # Just always sets up the first fight card
+        # Sets up the first fight card
         self.nfts.each { |nft| @first_round_contenders.push(nft)}
-        first_round_fight_card = @first_round_contenders.shuffle.each_slice(2).to_a
 
-        # Create the loop that fights the fighters
-        if first_round_fight_card.count == 2
+        if @first_round_contenders.count == 4
 
-            # loop through all of the fights this round
-            first_round_fight_card.each do |match|
-                winner = match.first.fight(match.second)
-                winner.won_fights.last.update tournament_id: self.id, round_number: 1, total_prize_pool: (@prize_pool)
-            end
+            first_round_fight_card = @first_round_contenders.shuffle.each_slice(2).to_a
+            simulate_round(first_round_fight_card, 1, @finalists)
 
-            fight_1_winner = self.results[0].winner
-            fight_2_winner = self.results[1].winner
-                
-            champion = fight_1_winner.fight(fight_2_winner)
-            champion.won_fights.last.update tournament_id: Tournament.last.id, round_number: 2, total_prize_pool: (@prize_pool)
-            runner_up = champion.won_fights.last.loser
-            # I don't actually NEED to return this as I don't use it anywhere, but keeping it in for now, just incase.
+            champion = @finalists[0].fight(@finalists[1])
+            champion.won_fights.last.update tournament_id: self.id, round_number: 2, total_prize_pool: (@prize_pool)
+
             champion        
 
         end
 
-        if first_round_fight_card.count == 8
+        if @first_round_contenders.count == 16
 
-            # first round
-            simulate_round first_round_fight_card, 1, @second_round_contenders
+            first_round_fight_card = @first_round_contenders.shuffle.each_slice(2).to_a
+            simulate_round(first_round_fight_card, 1, @second_round_contenders)
 
-            # second round
-
-            # TODO: I could actually cut this top line and put it in to function, too.
             second_round_fight_card = @second_round_contenders.shuffle.each_slice(2).to_a
-            simulate_round second_round_fight_card, 2, @semi_finalists
+            simulate_round(second_round_fight_card, 2, @semi_finalists)
 
-            # semi-finals
             semi_finals = @semi_finalists.shuffle.each_slice(2).to_a
-            simulate_round semi_finals, 3, @finalists
+            simulate_round(semi_finals, 3, @finalists)
 
-            # final
             champion = @finalists[0].fight(@finalists[1])
             champion.won_fights.last.update tournament_id: self.id, round_number: 4, total_prize_pool: (@prize_pool)
 
@@ -67,18 +53,19 @@ class Tournament < ApplicationRecord
             
         end
 
-        if first_round_fight_card.count == 16
+        if @first_round_contenders.count == 32
 
-            simulate_round first_round_fight_card, 1, @second_round_contenders
+            first_round_fight_card = @first_round_contenders.shuffle.each_slice(2).to_a
+            simulate_round(first_round_fight_card, 1, @second_round_contenders)
 
             second_round_fight_card = @second_round_contenders.shuffle.each_slice(2).to_a
-            simulate_round second_round_fight_card, 2, @third_round_contenders
+            simulate_round(second_round_fight_card, 2, @third_round_contenders)
 
             third_round_fight_card = @third_round_contenders.shuffle.each_slice(2).to_a
-            simulate_round third_round_fight_card, 3, @semi_finalists
+            simulate_round(third_round_fight_card, 3, @semi_finalists)
 
             semi_finals = @semi_finalists.shuffle.each_slice(2).to_a
-            simulate_round semi_finals, 4, @finalists
+            simulate_round(semi_finals, 4, @finalists)
 
             champion = @finalists[0].fight(@finalists[1])
             champion.won_fights.last.update tournament_id: self.id, round_number: 5, total_prize_pool: (@prize_pool)
@@ -86,10 +73,6 @@ class Tournament < ApplicationRecord
             champion
 
         end
-
-        # Regardless of the number of participants in the tournament, a new tournament still needs to be created for now.
-        @new_tournament = Tournament.new
-        @new_tournament.save
 
     end
 

@@ -20,32 +20,14 @@
 
                         <div id='tournament-widget'>
 
-                            <h1>Join Tournament</h1>
-
                             <%= link_to 'New Tournament', tournament_new_path, class: "new_tournament" %>
 
                             <%# TODO: Project TournamentLogic - change this back to how it was after testing %>
 
-                            <h3><%= @pendingtournament.nfts.count %> / 16</h3>
-                                <%= button_to 'Bet 0.2 ETH', nfts_tournament_path, method: 'get', class: "tournament-button" %>
-                            <% if @pendingtournament.nfts.where(user_id:@current_user.id).count <= 1 %>
-                            <% else %>
-                                <h3>Please wait. The max is 2 fighters per player.</h3>
-                            <% end  %>
-
-
-                            <% if @pendingtournament.nfts.where(user_id:@current_user.id).count >= 1 %>
-                                <% if @pendingtournament.nfts.where(user_id:@current_user.id).count == 1 %>
-                                    <h3>You have <%= @pendingtournament.nfts.where(user_id:@current_user.id).count %> fighter registered.</h3>
-                                <% else %>
-                                    <h3>You have <%= @pendingtournament.nfts.where(user_id:@current_user.id).count %> fighters registered.</h3>
-                                <% end %>
-                            <% end %>
-
                         </div>
 
                         <h4 id='wallet_amount'>Available Funds In Wallet:</h2>
-                        <h1 id='wallet_amount_number'><%= @current_user.eth_in_wallet %></h1>
+                        <h1 id='wallet_amount_number'><%= (@current_user.eth_in_wallet).round(2) %></h1>
                 
                     <% else %>
                 
@@ -60,6 +42,67 @@
         </div>
 
         <div id='profile-right' class='flex-column-start'>
+
+            <h1>Available Tournaments</h1>
+                <div id='top-of-tournament-index-grid' class='tournament-asset-grid'>
+
+                    <%# In the right column, show an index of the tournaments ordered by Tournament ID. This is the first/title row. %>
+                    <div class='asset-id asset-top-row'>
+                        <h3>Tournament #</h3>
+                    </div>
+
+                    <div class='asset-id'>
+                        <h3>Contenders</h3>
+                    </div>
+
+                    <div class='asset-id'>
+                        <h3>Players</h3>
+                    </div>
+
+                    <div class='asset-id'>
+                        <h3>Joining Fee / Prize Pool</h3>
+                    </div>      
+
+                    <div class='asset-id'>
+                        <h3>Click to watch</h3>
+                    </div>
+
+                    <% @available_tournaments.order([:id]).reverse.each do |t| %>
+                        <div class='asset-id'>
+                            <h3><%= t.id %></h3>                    
+                        </div>
+                        <div class='contenders-asset'>
+
+                            <% if t.nfts.count > 0 %>
+                                <% t.nfts.each do |nft| %>
+                                <%= link_to image_tag(nft.image, class: "contender-in-index-image"), nft_path(nft.id) %>                   
+                                <% end %>
+                            <% else %>
+                                <h3>None</h3>
+                            <% end %>
+
+                        </div>
+                        
+                        <div class='asset-id'>
+                            <h3><%= (t.nfts.count) %> / <%=(t.tournament_size.to_i)%> </h3>
+                        </div>
+
+                        <div class='asset-id'>
+                            <% if t.nfts.count > 0 %>
+                                <h3>0.2 / <%= (t.tournament_size * 0.2).round(2) %> ETH</h3>
+                            <% else %>
+                                <h3>0.2 / 0</h3>
+                            <% end %>
+
+                        </div>
+                        <div class='asset-id'>
+                            <%= link_to 'Join', nfts_tournament_path(:id => t.id), method: 'get' %>
+                        </div>
+                    <% end %>
+
+                </div>
+
+            <h1 id='replays-header'>Replays</h1>
             <div id='top-of-tournament-index-grid' class='tournament-asset-grid'>
 
                 <%# In the right column, show an index of the tournaments ordered by Tournament ID. This is the first/title row. %>
@@ -93,13 +136,13 @@
                         <% end %>
                     </div>
                     <div class='asset-id'>
-                        <h3><%= t.nfts.count * 0.2 %> ETH</h3>
+                        <h3><%= (t.nfts.count * 0.2).round(2) %> ETH</h3>
                     </div>
                     <div class='asset-id'>
                         <%= link_to image_tag(t.results[2].winner.image, class: 'contender-in-index-image'), nft_path(t.results[2].winner.id) %>
                     </div>
                     <div class='asset-id'>
-                        <h3><%= button_to 'View', tournament_path(t.id), method: 'get' %></h3>                    
+                        <h3><%= button_to 'View', nfts_tournament_path(t.id), method: 'get' %></h3>                    
                     </div>
                 <% end %>
 

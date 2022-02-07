@@ -16,7 +16,6 @@ main.mint form input {
     font-size: large;
     background-color: red;
     border: 2px solid black;
-    border-radius: 15px;
 }
 
 main.mint form input {

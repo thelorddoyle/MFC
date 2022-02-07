@@ -112,7 +112,6 @@ input#headButton:hover {
 
 .profile_image {
     margin: 0 auto;
-    border-radius: 50%;
     width: 150px;
     padding: 20px 0;
 }
@@ -150,7 +149,6 @@ input#fightButton:hover {
     margin: 30px;
     background-color: white;
     padding: 20px;
-    border-radius: 15px;
 }
 
 #tournament-widget h1 {

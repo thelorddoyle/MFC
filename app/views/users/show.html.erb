@@ -20,7 +20,7 @@
                 <% if @current_user.present? %>
                     
                     <h4 id='wallet_amount'>Available Funds In Wallet:</h2>
-                    <h1 id='wallet_amount_number'><%= @current_user.eth_in_wallet %></h1>
+                    <h1 id='wallet_amount_number'><%= (@current_user.eth_in_wallet).round(2) %></h1>
 
                     <%= button_to "Add Funds", addfunds_path, method: "get", class: "buttonLink", id: "headButton" %>
 
@@ -29,48 +29,6 @@
                     <%= button_to "Tournaments", tournaments_index_path, method: 'get', class: "buttonLink", id: "headButton" %>
 
                     <%= button_to "Logout", login_path, method: 'delete', class: "buttonLink", id: "headButton" %>
-
-                    <div id='tournament-widget'>
-
-                        <h1>Join Tournament</h1>
-                        <h3><%= @tournament.nfts.count %> / 4</h3>
-
-                        <%# Project TournamentLogic - change this back to how it was after testing %>
-                        <% if @tournament.nfts.where(user_id:@current_user.id).count <= 16 %>
-                            <%= button_to 'Bet 0.2 ETH', nfts_tournament_path, method: 'get', class: "tournament-button" %>
-                        <!-->
-                        <% else %>
-                            <h3>Please wait. The max is 2 fighters per player.</h3>
-                        -->
-                        <% end %> 
-
-                        <% if @tournament.nfts.where(user_id:@current_user.id).count >= 1 %>
-                        <br>
-                            <% if @tournament.nfts.where(user_id:@current_user.id).count == 1 %>
-                                <h3>You have <%= @tournament.nfts.where(user_id:@current_user.id).count %> fighter registered.</h3>
-                            <% else %>
-                                <h3>You have <%= @tournament.nfts.where(user_id:@current_user.id).count %> fighters registered.</h3>
-                            <% end %>
-                        <% end %>
-
-                    </div>
-
-                    <h1 id='tournament_button_title'>Recent Tournaments</h1>
-
-                        <%# Need to do this because when I first seed, there are no tournaments so it throws an error %>
-                        <% if Tournament.all.count > 1 %>
-
-                            <%# This is going to simply take all tournaments that HAVE results, order them by ID in descending order and then take the top 3 (but this does mean it gets all of the results. Could have used limit which is a smaller DB query but it isn't necessary yet) %>
-                            <% Tournament.all.includes(:results).where.not(results:{id:nil}).order([:id]).reverse.take(3).each do |t| %>
-                                <%= tournament_id = t.id %>
-                                <%= button_to 'Watch', tournament_path(t.id), method: 'get', class: "recent_tournament_button", id: "recent_tournament_button_id" %>
-                            <% end %>
-
-                        <% else %>
-
-                            <h3>There are no tournaments to show.</h3> 
-
-                        <% end %>
             
                 <% else %>
             
@@ -121,7 +79,7 @@
                 </div>
 
                 <div class='asset-id'>
-                    <h3><%= link_to nft.amount_won, nft_path(nft.id)  %></h3>
+                    <h3><%= link_to (nft.amount_won).round(2), nft_path(nft.id)  %></h3>
                 </div>
 
                 <div class='asset-id'>

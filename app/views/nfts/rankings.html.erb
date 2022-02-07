@@ -29,7 +29,7 @@
                     <td class="tg-0lax"><%= nft.wins %></td>
                     <td class="tg-0lax"><%= nft.average_position %></td>
                     <td class="tg-0lax"><%= nft.best_position %></td>
-                    <td class="tg-0lax"><%= nft.amount_won %></td>
+                    <td class="tg-0lax"><%= (nft.amount_won).round(2) %></td>
                 </tr>
             <% end %>
         </tbody>

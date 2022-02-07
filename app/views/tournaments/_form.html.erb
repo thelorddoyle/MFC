@@ -2,6 +2,12 @@
 
     <h2>What tournament would you like?</h2>
 
+    <%= f.label :tournament_size %>
+    <br>
+    <%= f.select(:tournament_size, [4,16,32]) %>
+    <br><br>
+
+
     <%= f.submit %>
 
 <% end %>

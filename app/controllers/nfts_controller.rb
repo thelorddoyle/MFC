@@ -107,17 +107,18 @@ class NftsController < ApplicationController
 
     # Updated to now pick the first NFT a user has where it is not in the Tournament's NFTs list
     @nft = @current_user.nfts.where.not(id: Tournament.last.nfts.ids).first
+    @tournament = Tournament.find params[:id]
 
     # Checks to see if NFT that is randomly selected is included in the tournament already, if it isn't it adds it in
-    if Tournament.last.nfts.include? @nft
+    if @tournament.nfts.include? @nft
       else
-      Tournament.last.nfts << @nft
+      @tournament.nfts << @nft
     end
 
     # If the tournament is full it initiates the tournament and shows it
     # TODO: Project TournamentLogic
-    if Tournament.last.nfts.count >= 16
-      @live_tournament = Tournament.last
+    if @tournament.nfts.count >= @tournament.tournament_size
+      @live_tournament = @tournament
       @winner = @live_tournament.play
       redirect_to tournament_path(@live_tournament.id) and return
     else
@@ -131,6 +132,10 @@ class NftsController < ApplicationController
 
   def nft_params
     params.require(:nft).permit(:mint_season, :mint_bracket, :eye_colour, :hair_style, :hair_colour, :skin_colour, :shorts, :facial_expression, :body_type, :handwear, :background_colour, :tattoos, :total_fights, :best_position, :amount_won, :image, :fights_won, :average_position, :user_id )
+  end
+
+  def tournament_params
+    params.require(:tournament).permit(:id, :tournament_size)
   end
 
 end
