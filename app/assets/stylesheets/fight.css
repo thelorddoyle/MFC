@@ -43,10 +43,11 @@ main.fight {
     grid-area: c;
     background-color: #111111;
     padding-top: 30px;
+    max-width: 650px;
 }
 
 .fighter_image {
-    width: 200px;
+    max-width: 150px;
 }
 
 .sidebar-name {
@@ -67,6 +68,7 @@ main.fight {
 }
 
 #winner_img {
+    max-width: 150px;
 }
 
 #live-fight-comment {
@@ -103,7 +105,11 @@ main.fight {
   50% { border-color: #111111 }
 }
 
-p.para { display: none; }
+p.para { 
+    display: none; 
+    font-size: medium;
+}
+
 
 #para7 {
     font-weight: 800;

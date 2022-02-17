@@ -101,7 +101,7 @@ nav li {
 }
 
 a:hover {
-    color: red;
+    color: #BE0C10;
 }
 
 button:hover {
@@ -110,7 +110,7 @@ button:hover {
 
 button:hover > .buttonLink { 
     background-color: white; 
-    color: red 
+    color: #BE0C10 
 }
 
 nav img {
@@ -121,7 +121,7 @@ button {
     padding: 10px 20px;
     color: black;
     font-size: large;
-    background-color: red;
+    background-color: #BE0C10;
 }
 
 .banner {
@@ -141,21 +141,23 @@ button {
     align-items:center;
     align-content:center;
     height: 70vh;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     background-size:contain;
     background-repeat: no-repeat;
     background-position:bottom;
 }
 
 .bannerDiv1 {
-    background-image: url("banner-fighter1");
-    flex-grow: 2;
+    background-image: url("fighterPosing1.png");
+    flex-grow: 2.5;
 }
 
 .bannerDiv2 h1 {
     font-size: 1.75rem;
     padding: 20px 0;
     font-weight: 700;
+    flex-wrap: wrap;
+    flex-shrink: -1;
 }
 
 .pageButton {
@@ -163,8 +165,9 @@ button {
 }
 
 .bannerDiv3 {
-    background-image: url("banner-fighter2.png");
-    flex-grow: 2;
+    background-image: url("fighterPosing2.png");
+    flex-grow: 2.5;
+    z-index: 10;
 }
 
 h1 {
@@ -198,14 +201,14 @@ h3 {
     padding: 0 0 30px;
     font-size: 4rem;
     font-weight: 700;
-    text-shadow: 3px 3px red;
+    text-shadow: 3px 3px #BE0C10;
 }
 
 h1#fight {
     padding: 0 0 30px;
     font-size: 4rem;
     font-weight: 700;
-    text-shadow: 3px 3px red;
+    text-shadow: 3px 3px #BE0C10;
 }
 
 .light p {
@@ -235,7 +238,7 @@ h1#fight {
     padding: 0 0 30px;
     font-size: 4rem;
     font-weight: 700;
-    text-shadow: 3px 3px red;
+    text-shadow: 3px 3px #BE0C10;
 }
 
 .blackBack p {
@@ -291,9 +294,22 @@ footer {
 }
 
 .press-conference {
-    max-width: 800px;
+    max-width: 600px;
 }
 
 #tournament_button_title {
     padding-bottom: 20px;
+}
+
+.home-fighter-carousel {
+    max-width: 250px;
+    padding-bottom: 40px;
+}
+
+/* .hometop {
+    border: #BE0C10 10px solid;
+} */
+
+.white-border-img {
+    border: solid 5px #BE0C10;
 }

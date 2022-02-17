@@ -44,7 +44,7 @@ nfts_array = []
 80.times do |i|
 
     nftName = 'nft'+(i+1).to_s
-    imageName = 'fighter' + (rand(1..32)).to_s + '.png'
+    imageName = 'card' + (rand(1..6)).to_s + '.jpeg'
 
     nftName = Nft.create!
     nftName.user_id = users_for_results_array.sample
@@ -78,7 +78,7 @@ end
 20.times do |i|
 
     nftName = 'nft'+(i+81).to_s
-    imageName = 'fighter' + (rand(1..32)).to_s + '.png'
+    imageName = 'card' + (rand(1..6)).to_s + '.jpeg'
 
     nftName = Nft.create!
     nftName.user_id = nil
