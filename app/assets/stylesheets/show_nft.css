@@ -72,3 +72,7 @@ main {
 .fight_button_show {
     margin-top: 40px
 }
+
+.nft_image {
+    max-width: 200px;
+}
