@@ -106,7 +106,7 @@ class NftsController < ApplicationController
   def tournament
 
     # Updated to now pick the first NFT a user has where it is not in the Tournament's NFTs list
-    @nft = @current_user.nfts.where.not(id: Tournament.last.nfts.ids).first
+    @nft = @current_user.nfts.where.not(id: Tournament.last.nfts.ids).sample
     @tournament = Tournament.find params[:id]
 
     # Checks to see if NFT that is randomly selected is included in the tournament already, if it isn't it adds it in

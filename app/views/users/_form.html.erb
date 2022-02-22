@@ -15,19 +15,20 @@
     <%= f.file_field :profile_image, id: 'file-field', class: 'form-field-connect' %>
     <br><br>
 
-    <%= f.label :password %>
+    <%= f.hidden_field :password %>
     <br>
-    <%= f.password_field :password, class: 'form-field-connect' %>
+    <%= f.hidden_field :password, class: 'form-field-connect' %>
     <br><br>
 
-    <%= f.label :password_confirmation %>
+    <%= f.hidden_field :password_confirmation %>
     <br>
-    <%= f.password_field :password_confirmation, class: 'form-field-connect' %>
+    <%= f.hidden_field :password_confirmation, class: 'form-field-connect' %>
     <br><br>
 
     <%= f.hidden_field :eth_in_wallet, :value => 0 %>
 
     <%= f.submit %>
+    
 <% end %>
 
 <% if @user.errors.any? %>
