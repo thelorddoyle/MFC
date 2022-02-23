@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/whitepaper' => 'nfts#whitepaper'
   get '/connect' => 'nfts#connect'
   get '/rankings' => 'nfts#rankings'
+  get '/roadmap' => 'nfts#roadmap'
 
   get 'nfts/index' => 'nfts#index'
   get 'nfts/show' => 'nfts#show'

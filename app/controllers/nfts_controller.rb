@@ -1,6 +1,6 @@
 class NftsController < ApplicationController
 
-  before_action :check_if_logged_in, except: [:index, :show, :whitepaper, :connect, :rankings, :home]
+  before_action :check_if_logged_in, except: [:index, :show, :whitepaper, :connect, :rankings, :home, :roadmap]
 
   def home
     @nfts = Nft.all
@@ -14,6 +14,9 @@ class NftsController < ApplicationController
 
   def rankings
     @nfts = Nft.all
+  end
+
+  def roadmap    
   end
 
   def new
