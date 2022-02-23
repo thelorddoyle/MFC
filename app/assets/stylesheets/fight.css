@@ -43,7 +43,6 @@ main.fight {
     grid-area: c;
     background-color: #111111;
     padding-top: 30px;
-    max-width: 650px;
 }
 
 .fighter_image {
